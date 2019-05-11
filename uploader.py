@@ -13,7 +13,7 @@ def fixName(name):
 @app.route('/uploader', methods = ['GET','POST'])
 def upload():
     if request.method == 'POST':
-        f = request.files['file']         
+        f = request.files['file']
         filename = secure_filename(f.filename)
         print(f)
 
@@ -29,21 +29,21 @@ def upload():
 
             tempDict['subject']=sheet.lower()
             jsonArray.append(tempDict)
-    
+
             for row in ws.iter_rows(min_row=2, values_only=True):
                 for i,cell in enumerate(row):
                     tempDict = {}
                     tempDict[header[i]]=cell.lower()
                     jsonArray.append(tempDict)
 
- 
+
         #print(jsonArray)
-        j = json.dumps(jsonArray,indent=4,sort_keys=True)      
+        j = json.dumps(jsonArray,indent=4,sort_keys=True)
         newfilename = fixName(filename)
         p = os.path.join(app.root_path, newfilename)
         with open(p, "w") as fn:
             fn.write(j)
-        
+
         return p
     else:
         return "Not posted"
@@ -51,4 +51,4 @@ def upload():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

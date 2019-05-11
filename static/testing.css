@@ -1,0 +1,275 @@
+html {
+    min-height: 100%;
+}
+
+bbody {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: purple;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: purple;
+}
+#container {
+    background-color: #c5efa7;
+    border-radius: 10px;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#headerTop {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #73AD21;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+#menuTop {
+    text-align: center;
+    overflow: hidden;
+}
+
+.testName {
+    background: #73AD21;
+    width: 100px;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.testName:hover {
+    background-color: green;
+}
+
+.mainWorkplace {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+#topicsMenu {
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    background: #73AD21;
+    padding: 20px;
+    color: white;
+    min-width: 250px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#topicsMenu ul{
+    border-radius: 10px;
+    border: 1px solid white;
+    margin:0;
+    padding:5;
+    /*background-color: #c5efa7;*/
+    background-color: purple;
+    color:white;
+}
+
+ul li{
+    text-align: left;
+    list-style-position: inside;
+}
+ul li:hover {
+    background-color: #73AD21;
+}
+ul li a {
+    color:white;
+}
+#data {
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    background: #73AD21;
+    padding: 10px;
+    color: white;
+    width: auto;
+    position:sticky;
+    /*flex-grow: 2;*/
+}
+
+#innerData {
+    float: right;
+    color: black;
+    font-size: 16px;
+    border: 2px solid green;
+    background-color: #c5efa7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#innerData:empty {
+    display: none;
+}
+
+table {
+    border: 0px solid #c5efa7;
+    border-radius: 10px;
+}
+
+th {
+    padding: 15px;
+    color: white;
+    border-bottom: 3px solid #9ED929;
+    background-color: #9DD929;
+    background: -webkit-gradient( linear, left bottom, left top, color-stop(0.02, rgb(123, 192, 67)), color-stop(0.51, rgb(139, 198, 66)), color-stop(0.87, rgb(158, 217, 41)));
+    background: -moz-linear-gradient( center bottom, rgb(123, 192, 67) 3%, rgb(139, 198, 66) 52%, rgb(158, 217, 41) 88%);
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+td {
+    /*min-width: 100px;*/
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    background-color: #DEF3CA;
+    border: 1px solid #BED3AB;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.tdNoDrag {
+    color: black;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.tdHidden {
+    font-size: 0;
+    color: #DEF3CA;
+}
+
+.tdDrag {
+    color: black;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/*button container <div> for positioning*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* dropdown button*/
+.dropbtn {
+    background-color: purple;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* dropdown button on hover and focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: purple;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+/* links inside the dropdown */
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+}
+
+/* change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: grey;
+}
+
+/* show dropdown menu use js to add this class to .dropdown-content on clicked*/
+
+.show {
+    display: block;
+}
+
+footer {
+    background-color: #c5efa7;
+    border-radius: 10px;
+    position: relative;
+    /*overflow: hidden;*/
+    margin: 2px;
+}
+
+#mainpagecat {
+    /* text-align: center; doesn't seem to work */
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;*/
+    animation: rotation 1s 5 linear;
+    animation-play-state: paused;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+#finished {
+    display:block;
+    margin:left;
+}
+#instructions {
+    background-color:yellow;
+    font-size:16px;
+    border-radius: 10px;
+
+}
+#instructionsP {
+    border:1px dashed black;
+    padding:10px;
+    border-radius:10px;
+}
+#instructionsP:empty {
+    display: none;
+}
+#answerDiv {
+    margin: 10px;
+    top: 0;
+    right:0;
+    position:sticky;
+    position: -webkit-sticky;
+}
