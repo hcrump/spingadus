@@ -85,7 +85,7 @@ function makeMyObject(theObject) {
 function getMyJSON(jsonFileName) {
     console.log('getMyJSON:' + jsonFileName);
     var myJson;
-    $.getJSON('json/' + jsonFileName, function(json) {
+    $.getJSON('/json/' + jsonFileName, function(json) {
         //console.log(json);
         myJson = json;
     }).fail(function(json, textstatus, error) {
