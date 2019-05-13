@@ -6,6 +6,9 @@ function staticScreenInit() {
     var filename = '/media/alienScript.txt';
     loadDoc(filename,typeWriter);
     // loadDoc(filename,testwriter);
+    var lines = ['what the happs','get out fo the room','its the end'];
+    //delayme(lines,2000);
+    //typeWriter();
 }
 
 function testwriter(xhttp){
@@ -19,21 +22,30 @@ function testwriter(xhttp){
 
     document.getElementById('scrollTextP').innerHTML = line;
 }
+
+function delayme(arr,speed){
+    console.log(arr);
+    arr.forEach(function(el,i){
+        console.log(arr.length);
+        setTimeout(function(){
+            document.getElementById('scrollTextPre').innerHTML += arr[i];
+            if(i = el.length-1){
+                console.log('br');
+                document.getElementById('scrollTextPre').innerHTML += '<br>';
+            }
+        },(speed*i));
+        document.getElementById('scrollTextPre').innerHTML += '<br>';
+    })
+}
+
 function typeWriter(xhttp) {
     console.log('typeWriter()');
     var txt = xhttp;
-    var lines = txt.split(/\r\n|\n/);
-    var speed = 2000; //ms
-    var lines = ['aaaaaa','bbbbbb','cccwcccc'];
-    var myPre = document.getElementById('scrollTextPre');
-    for (var i = 0; i < lines.length; i++) {
-        setTimeout((function(i){
-            return function() {
-                document.getElementById('scrollTextPre').innerHTML += lines[i];
-            }
-        })(i),speed*i);
-        document.getElementById('scrollTextPre').innerHTML += '<br>';
-    }
+    var lines = txt.split(/\r\n|\n|\r/);
+    //console.log(lines);
+    var speed = 200; //ms
+    // var lines = ['aaaaaa','bbbbbb','cccwcccc'];
+    delayme(lines,speed);
 }
 
 function loadDoc(filename,callback) {
