@@ -30,11 +30,10 @@ function delayme(arr,speed){
     "Those","what","asdf", "fuckk","noway","buh","bb","cc"
     );
     aText = arr;
-    console.log(aText);
     var iSpeed = speed; // time delay of print out
     var iIndex = 0; // start printing array at this posision
     var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
+    var iScrollAt = 38; // start scrolling up at this many lines
 
     var iTextPos = 0; // initialise text position
     var sContents = ''; // initialise contents variable
@@ -47,7 +46,7 @@ function delayme(arr,speed){
         while ( iRow < iIndex ) {
             sContents += aText[iRow++] + '<br />';
         }
-        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + '_';
         if ( iTextPos++ == iArrLength ) {
             iTextPos = 0;
             iIndex++;
@@ -121,27 +120,33 @@ function bgColorOn(){
 }
 function staticOn(){
     console.log('staticOn');
-    document.body.style.backgroundImage = 'url('+static+')';
+    //document.body.style.backgroundImage = 'url('+imgNoise+')';
+    $('body').toggleClass('wtf2');
+    //alert($('body').css("backgroundImage"));
+    //$('body').addClass('body1');
 }
 function staticOff(){
     console.log('staticOff');
-    document.body.style.backgroundImage = 'none';
+    //document.body.style.backgroundImage = 'none';
+    //document.body.style.background = 'none';
+    //$('body').toggleClass('wtf2');
+    //$('body').toggleClass('body1');
+    //$('body').addClass('body1::after');
 }
+function flicker(){
+    console.log('flicker');
+    $('body').toggleClass('wtf2');
+    $('body').toggleClass('wtf2');
+}
+var myInterval = setInterval(function(){
+    var rand = Math.floor(Math.random() * 100);
+    //console.log(rand);
+    if(rand % 100 == 0){
+        //console.log('yup');
+        $('body').addClass('wtf2');
+    }else{
+        $('body').removeClass('wtf2');
+    }
 
-// var myInterval = setInterval(function(){
-//     number++;
-//     console.log(number + ":" + toggle);
-//     if(number % 2 == 0){
-//         if(toggle == 0){
-//             toggle = 1;
-//             //document.body.className = 'myColor';
-//             //bgColorOn();
-//             staticOff();
-//         } else {
-//             toggle=0;
-//             //document.body.className = 'myImage';
-//             staticOn();
-//             //document.body.style.backgroundImage="url('/cat1-tp.png')";
-//         }
-//     }
-// }, 1000);
+
+}, 1000);
