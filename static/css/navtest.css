@@ -142,26 +142,6 @@ pre {
     overflow: hidden;
 
 }
-#scrollTextDiv {
-    font-size: 14px;
-    white-space: pre;
-    word-break: keep-all;
-    /* animation: 1s blinking step-end infinite; */
-    /* animation: blink 1s linear infinite alternate; */
-    /* border-right: .15em solid orange; */
-    overflow: hidden;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    /* animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite; */
-}
-#scrollTextPre {
-    /* animation: 1s blinking step-end infinite; */
-    /* animation: blink 1s linear infinite alternate; */
-    /* border-right: .15em solid orange; */
-}
-
 .cursor{
     position: absolute;
     top: 0;
@@ -256,4 +236,62 @@ pre {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: darkgreen;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#scrollTextDiv {
+    font-size: 11px;
+    white-space: pre;
+    word-break: keep-all;
+    overflow: hidden;
+    margin: auto;
+    flex-grow: 1;
+}
+
+#iframeDivOuter {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    flex-grow: 2;
+}
+
+#iframeDiv{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+#centerDiv{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    flex-grow: 2;
+}
+
+#iframeDiv iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+}
+
+.hide {
+    /* display:none; handles space */
+    visibility: hidden; /* only handles visibility */
+}
+.see {
+    visibility: visible;
 }

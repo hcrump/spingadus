@@ -1,4 +1,19 @@
 
+function normaliseLeadingSpaces(arr){
+    var small = 1000;
+    for(var i = 0; i< arr.length;i++){
+        var num = arr[i].search(/\S/);
+        if(small > num && num >= 0){
+            small = num;
+        }
+    }
+    for(var i =0; i< arr.length;i++){
+        // console.log(arr[i]);
+        arr[i] = arr[i].slice(small - 1); //keep a space
+        // console.log(arr[i]);
+    }
+    return arr;
+}
 
 
 function staticScreenInit() {
@@ -80,6 +95,7 @@ function typeWriter(xhttp) {
     var txt = xhttp;
     var lines = txt.split(/\r\n|\n|\r/);
     lines = fixArray(lines);
+    lines = normaliseLeadingSpaces(lines);
     //console.log(lines);
     var speed = 50; //ms
     // var lines = ['aaaaaa','bbbbbb','cccwcccc'];
