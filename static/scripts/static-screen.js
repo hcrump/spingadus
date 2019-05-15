@@ -126,43 +126,71 @@ var number = 0;
 var toggle = 0;
 //document.body.className = 'myColor';
 
-function bgColorOff(){
-    console.log('dark');
-    document.body.style.background='0';
-    //document.body.style.backgroundImage= 'cat1-tp.png';
+function screenGlitch(){
+    console.log('screenGlitch()');
+    $('body').queue(function(){
+        $(this).addClass('wtf2');
+        $(this).dequeue();
+    }).delay(500).queue(function(){
+        $(this).removeClass('wtf2');
+        $(this).dequeue();
+    });
 }
-function bgColorOn(){
-    document.body.style.background= 'blue';
+function incoming(){
+    console.log('incoming()');
+    var delay1 = 5000;
+    var delay2 = 3000;
+    var delay3 = 1000;
+    var count = (delay1 / 1000);
+
+    var interval = setInterval(function(){
+        $('.ring').html(count--);
+        if(count < 0){
+            clearInterval(interval);
+            $('.ring').html("IMPACT!!!");
+        }
+    },1000);
+
+    $('#glowring').queue(function(){
+        $(this).css('visibility','visible');
+        $(this).dequeue();
+    }).delay(delay1).queue(function(){
+        $('body').addClass('shakeit');
+        $(this).dequeue();
+    }).delay(delay2).queue(function(){
+        $('#glowring').css('visibility','hidden');
+        $(this).dequeue();
+    }).delay(delay3).queue(function(){
+        $('body').removeClass('shakeit');
+        $(this).dequeue();
+    });
 }
-function staticOn(){
-    console.log('staticOn');
-    //document.body.style.backgroundImage = 'url('+imgNoise+')';
-    $('body').toggleClass('wtf2');
-    //alert($('body').css("backgroundImage"));
-    //$('body').addClass('body1');
-}
-function staticOff(){
-    console.log('staticOff');
-    //document.body.style.backgroundImage = 'none';
-    //document.body.style.background = 'none';
-    //$('body').toggleClass('wtf2');
-    //$('body').toggleClass('body1');
-    //$('body').addClass('body1::after');
-}
-function flicker(){
-    console.log('flicker');
-    $('body').toggleClass('wtf2');
-    $('body').toggleClass('wtf2');
-}
+// stackoverflow functions to chain queue, might use
+$.fn.queueAddClass = function(className) {
+    this.queue('fx', function(next) {
+        $(this).addClass(className);
+        next();
+    });
+    return this;
+};
+// stackoverflow functions to chain queue, might use
+$.fn.queueRemoveClass = function(className) {
+    this.queue('fx', function(next) {
+        $(this).removeClass(className);
+        next();
+    });
+    return this;
+};
+var loopCount = 0;
 var myInterval = setInterval(function(){
     var rand = Math.floor(Math.random() * 100);
-    //console.log(rand);
-    if(rand % 100 == 0){
-        //console.log('yup');
-        $('body').addClass('wtf2');
-    }else{
-        $('body').removeClass('wtf2');
+    //console.log(loopCount);
+    if(loopCount == 100 || loopCount == 0){
+        incoming();
+        loopCount = 0;
     }
-
-
+    loopCount++;
+    if(rand % 100 == 0){
+        screenGlitch();
+    }
 }, 1000);
