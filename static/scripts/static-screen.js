@@ -114,7 +114,9 @@ function loadDoc(filename,callback) {
     httpRequest.open('GET', filename,true);
     httpRequest.send();
 }
-
+function divBordersOn(){
+    $('div').toggleClass("div");
+}
 function fixArray(arr){
     let tmp = arr;
     while(tmp[0] == ''){
@@ -138,30 +140,56 @@ function screenGlitch(){
 }
 function incoming(){
     console.log('incoming()');
-    var delay1 = 5000;
-    var delay2 = 3000;
-    var delay3 = 1000;
-    var count = (delay1 / 1000);
+    var delay1 = 5000; //wait for shaking
+    var delay2 = 5000; //wait to hide planet
+    var delay3 = 5000; //wait to stop shaking
+    var count = (delay1 + delay2) / 1000;
+    var countdown = count - (delay2/1000)
 
+
+    $('.spantest').html("");
+    $('.ring').html("");
+
+    $('.ring').css('visibility','visible');
+    // $('.ring').html("WTF!!");
+    $('.ring').css('font-size','28');
+    $('.ringtxt2').html("INCOMING!!");
     var interval = setInterval(function(){
-        $('.ring').html(count--);
-        if(count < 0){
-            clearInterval(interval);
-            $('.ring').html("IMPACT!!!");
+        $('.ringtxt1').html(countdown-1);
+        if(countdown < 1){
+            $('.ring').html("");
+            $('.ring').css('font-size','38');
+            $('.ringtxt2').html("IMPACT!!!");
         }
+
+        console.log(count);
+        if(count<1){
+            clearInterval(interval);
+            $('.spantest').html("ALL CLEAR!");
+            $('.ringtxt2').html("");
+        }
+        count--;
+        countdown--;
     },1000);
 
     $('#glowring').queue(function(){
         $(this).css('visibility','visible');
+        // $(this).prepend('INCOMING!!');
         $(this).dequeue();
     }).delay(delay1).queue(function(){
         $('body').addClass('shakeit');
         $(this).dequeue();
     }).delay(delay2).queue(function(){
-        $('#glowring').css('visibility','hidden');
+        $('body').removeClass('shakeit');
+        $(this).dequeue();
+    }).delay(1000).queue(function(){
+        $('.ring').css('visibility','hidden');
         $(this).dequeue();
     }).delay(delay3).queue(function(){
-        $('body').removeClass('shakeit');
+        $('.ring').offsetWidth;
+        $('#glowring').css('visibility','hidden');
+
+        // $('.ring').addClass('ring-animation');
         $(this).dequeue();
     });
 }
@@ -185,7 +213,7 @@ var loopCount = 0;
 var myInterval = setInterval(function(){
     var rand = Math.floor(Math.random() * 100);
     //console.log(loopCount);
-    if(loopCount == 100 || loopCount == 0){
+    if(loopCount == 20 || loopCount == 0){
         incoming();
         loopCount = 0;
     }

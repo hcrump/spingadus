@@ -2,6 +2,7 @@
 html {
     height: 100%;
     position:relative;
+    font-size: 11px;
 }
 #nav {
     position: sticky;
@@ -256,6 +257,55 @@ body::after{
     flex-grow: 2;
     order:1;
 }
+#centerTopDiv {
+    position: relative;
+    width:100%;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* z-index: 9; */
+    justify-content:space-between;
+}
+/*Needed to wrap glowring for aspect ratio*/
+#centerTopLeftDiv{
+    position: relative;
+    flex-grow: 2;
+}
+#glowring {
+    position: relative;
+    flex-grow: 1;
+    /* visibility: hidden; */
+    border-radius:50%;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    /* left: 100px; */
+    /* right: 0; */
+    /* transform: translateY(-50%); */
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 80px green,
+        inset -20px 0 80px brown,
+        inset 20px 0 300px green,
+        inset -20px 0 300px brown,
+        0 0 20px #fff,
+        -10px 0 50px #f0f,
+        10px 0 50px #0ff;
+    object-fit: scale-down
+}
+#centerTopRightDiv{
+    position: relative;
+    flex-grow: 1;
+    font-size: 11;
+}
+#centerBottomDiv{
+    position: relative;
+    z-index: 4;
+    font-size: 11;
+    clear:both;
+}
 
 #iframeDivOuter {
     position: relative;
@@ -271,7 +321,9 @@ body::after{
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    border-radius: 10%;
+    border-radius: 10%;\
+    box-shadow: 0 0 200px rgba(27,191,52,1);
+    box-shadow: inset 0px 0px 61px 31px rgba(27,191,52,1);
 }
 
 
@@ -305,33 +357,6 @@ body::after{
     left: 0;
     right: 0;
 } */
-#glowring {
-    position: relative;
-        visibility: hidden;
-    border-radius:50%;
-    width: 200px;
-    height: 200px;
-    top: 20%;
-    left: 20%;
-    /* left: 100px; */
-    /* right: 0; */
-    /* ransform: translateY(-50%); */
-    box-shadow:
-        inset 0 0 50px #fff,
-        inset 20px 0 80px green,
-        inset -20px 0 80px brown,
-        inset 20px 0 300px green,
-        inset -20px 0 300px brown,
-        0 0 20px #fff,
-        -10px 0 50px #f0f,
-        10px 0 50px #0ff;
-}
-centerBottomDiv{
-    position: relative;
-    z-index: 4;
-    font-size: 11;
-    clear:both;
-}
 
 /* #glowring:before,
 #glowring:after,#glowSpan{
@@ -353,17 +378,19 @@ centerBottomDiv{
 /* #glowSpan {
     animation-delay: 1.33s;
 } */
-
+.ring-animation {
+    animation: pulse 4s ease-out infinite;
+}
 .ring{
     position: absolute;
     border-radius: 50%;
-    top: 0;
-    left: 0;
+    top: 20%;
+    left: 50%;
     width: 100px;
     height: 100px;
     z-index: 2;
+    font-size: 18;
     animation: pulse 4s ease-out infinite;
-    /* animation: glow-grow 2s ease-out infinite; */
 }
 .ring2 {
         animation-delay: 1s;
@@ -374,7 +401,17 @@ centerBottomDiv{
 .ring4 {
         animation-delay: 3s;
 }
-
+.spantest {
+    position: absolute;
+    border-radius: 50%;
+    top: 20%;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    font-size: 38;
+    animation: blink 1s infinite;
+}
 @keyframes glow-grow {
   0% {
     opacity: 0;

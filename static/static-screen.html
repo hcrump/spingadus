@@ -1,11 +1,14 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Clyde's Test Page</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="/scripts/static-screen.js"></script>
-<script src="/scripts/variables.js"></script>
+<script src="/scripts/static-screen.js?n=1"></script>
+<script src="/scripts/variables.js?n=1"></script>
 <link rel="stylesheet" href="/css/navtest.css">
 
 <nav id="nav">
@@ -26,6 +29,8 @@
             </ul>
         </li>
         <li><a href="/">Pics</a></li>
+        <li><button onclick="divBordersOn()">divBordersOn</button></li>
+        <li><button onclick="location.reload(true)">reload</button></li>
     </ul>
 </nav>
 </head>
@@ -33,12 +38,21 @@
 <div id='container'>
     <div id='scrollTextDiv'>ScrollTextDiv</div>
     <div id='centerDiv'>CenterDiv
-        <div id='glowring' class='wrapper'>Glowring
-            <span class='ring ring1'></span>
-            <span class='ring ring2'></span>
-            <span class='ring ring3'></span>
-            <span class='ring ring4'></span>
-            <span id='spantest'></span>
+        <div id='centerTopDiv'>centerTopDiv
+            <div id='centerTopLeftDiv'>centerTopLeftDiv
+                <div id='glowring' class='wrapper'>glowring
+                    <span class='ring ring1 ringtxt1'></span>
+                    <span class='ring ring2 ringtxt2'></span>
+                    <span class='ring ring3 ringtxt1'></span>
+                    <span class='ring ring4 ringtxt2'></span>
+                    <span class='spantest'></span>
+                </div>
+            </div>
+            <div id='centerTopRightDiv'>centerTopRightDiv
+                <ul>
+                    <li>Casualties: 20 Milli0n</li>
+                </ul>
+            </div>
         </div>
         <div id="centerBottomDiv">centerBottomDiv
             <img id="mainpagecat" src="/media/cat1-tp.png" alt="its a fricken cat!">
