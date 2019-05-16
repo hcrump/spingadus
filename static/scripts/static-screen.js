@@ -15,15 +15,12 @@ function normaliseLeadingSpaces(arr){
     return arr;
 }
 
-
 function staticScreenInit() {
     console.log('staticScreenInit()');
     var filename = '/media/alienScript.txt';
     loadDoc(filename,typeWriter);
-    // loadDoc(filename,testwriter);
-    var lines = ['what the happs','get out fo the room','its the end'];
-    //delayme(lines,2000);
-    //typeWriter();
+    tmpFillText();
+
 }
 
 function testwriter(xhttp){
@@ -76,20 +73,6 @@ function delayme(arr,speed){
     typewriter2();
 }
 
-// function delayme(arr,speed){
-//     //console.log(arr);
-//     arr.forEach(function(el,i){
-//         console.log(arr.length);
-//         setTimeout(function(){
-//             document.getElementById('scrollTextPre').innerHTML += arr[i];
-//             if(i = el.length-1){
-//                 console.log('br');
-//                 document.getElementById('scrollTextPre').innerHTML += '<br>';
-//             }
-//         },(speed*i));
-//     })
-// }
-
 function typeWriter(xhttp) {
     console.log('typeWriter()');
     var txt = xhttp;
@@ -114,15 +97,45 @@ function loadDoc(filename,callback) {
     httpRequest.open('GET', filename,true);
     httpRequest.send();
 }
+
 function divBordersOn(){
     $('div').toggleClass("div");
 }
+
 function fixArray(arr){
     let tmp = arr;
     while(tmp[0] == ''){
         tmp.shift();
     }
     return tmp;
+}
+
+function casualties(){
+    console.log('casualties()');
+    var lvl = Math.floor(Math.random()*100);
+    var rand = Math.floor(Math.random()*100);
+    var levels = [10,33,66,100];
+    var status = ["Shields Held!","Minor damage to sections 18, 39 and 34!","Severe damage sustained!","WE DEAD!"];
+    var news = [];
+    var msg = [];
+    var all = {};
+
+    for (var i =0; i < levels.length;i++){
+        if(lvl <= levels[i]){
+            var deaths= lvl * Math.pow(rand,i);
+            all['Attack Level']=lvl;
+            all['Deaths'] = (deaths).toLocaleString();
+            all['Wounded'] = (deaths * rand/10).toLocaleString();
+            all['Status'] = status[i];
+            break;
+        }
+    }
+    $("#centerTopRightDiv").contents().filter(function(){ return this.nodeType == 3; }).first().replaceWith("Post-Mortem Briefing:");
+
+    $('#centerTopRightDiv ul').html("");
+    for(var i in all){
+        $('#centerTopRightDiv ul').append('<li>' + i + ': ' + all[i] + '</li>');
+    }
 }
 var number = 0;
 var toggle = 0;
@@ -138,6 +151,7 @@ function screenGlitch(){
         $(this).dequeue();
     });
 }
+
 function incoming(){
     console.log('incoming()');
     var delay1 = 5000; //wait for shaking
@@ -162,7 +176,7 @@ function incoming(){
             $('.ringtxt2').html("IMPACT!!!");
         }
 
-        console.log(count);
+        //console.log(count);
         if(count<1){
             clearInterval(interval);
             $('.spantest').html("ALL CLEAR!");
@@ -188,11 +202,13 @@ function incoming(){
     }).delay(delay3).queue(function(){
         $('.ring').offsetWidth;
         $('#glowring').css('visibility','hidden');
-
+        // casualties();
         // $('.ring').addClass('ring-animation');
         $(this).dequeue();
     });
+
 }
+
 // stackoverflow functions to chain queue, might use
 $.fn.queueAddClass = function(className) {
     this.queue('fx', function(next) {
@@ -201,6 +217,7 @@ $.fn.queueAddClass = function(className) {
     });
     return this;
 };
+
 // stackoverflow functions to chain queue, might use
 $.fn.queueRemoveClass = function(className) {
     this.queue('fx', function(next) {
@@ -209,12 +226,25 @@ $.fn.queueRemoveClass = function(className) {
     });
     return this;
 };
+
+function tmpFillText() {
+    // a = $.get('/media/starwars.txt');
+    var a = "";
+    for(var i=0;i< 20;i++){
+        a += i + '<br>';
+    }
+    setTimeout(function(){
+        $('#iframeDivCenter').append(a);
+    },2000);
+}
+
 var loopCount = 0;
 var myInterval = setInterval(function(){
     var rand = Math.floor(Math.random() * 100);
-    //console.log(loopCount);
+    // console.log(rand);
     if(loopCount == 20 || loopCount == 0){
         incoming();
+        casualties();
         loopCount = 0;
     }
     loopCount++;

@@ -256,9 +256,8 @@ body::after{
 
 
 #container {
-    /* position: absolute; */
+    /* position: relative; */
     width:100%;
-    height:90vh;
     display: flex;
     flex-basis: auto;
     flex-direction: row;
@@ -281,6 +280,7 @@ body::after{
 #centerDiv{
     position: relative;
     padding-bottom: 56.25%;
+    height: 0;
     overflow: hidden;
     flex-grow: 1;
     order:1;
@@ -342,25 +342,20 @@ body::after{
     /* clear:both; */
 }
 
-#centerDiv{
-    position: relative;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    flex-grow: 1;
-    order:1;
-    display:flex;
-    flex-direction: column;
-    align-content: space-between;
-}
 #iframeDivOuter {
     position: relative;
     padding-bottom: 56.25%;
+    height: 0;
     overflow: hidden;
     flex-grow: 1;
+    flex-shrink: 1;
     order:2;
     display:flex;
     flex-direction: column;
     align-content: space-between;
+    margin:auto;
+    max-width: 560px;
+    max-height: 316px;
 }
 
 #iframeDiv{
@@ -390,7 +385,7 @@ body::after{
 #iframeDivCenter{
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 10px;
+    padding-top: 30px;
     height: 0;
     overflow: hidden;
     flex: 1;
