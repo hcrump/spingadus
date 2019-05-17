@@ -187,7 +187,7 @@ body::after{
 }
 .scifiBorder {
   border: 1px solid;
-  border-radius: 10%
+  border-radius: 15%
 }
 /* The typing effect */
 @keyframes typing {
