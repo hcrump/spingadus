@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Clyde's Test Page</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="/scripts/flex.js?n=1"></script>
+<link rel="stylesheet" href="/css/flex.css">
+<button onclick="divBordersOn()">divBordersOn</button>
+<button onclick="location.reload(true)">reload</button>
+
+</head>
+<body>
+    <div id='container'>
+        <div id='scrollTextDiv'></div>
+        <div id='centerDiv'>
+            <div id='centerTopDiv'>
+                <div id='centerTopLeftDiv'>
+                    <div id='glowring' class='wrapper'>
+                        <span class='ring ring1 ringtxt1'></span>
+                        <span class='ring ring2 ringtxt2'></span>
+                        <span class='ring ring3 ringtxt1'></span>
+                        <span class='ring ring4 ringtxt2'></span>
+                        <span class='spantest'></span>
+                    </div>
+                </div>
+                <div id='centerTopRightDiv' class='scifiBorder'>
+                    <ul>
+                        <li>REPORT</li>
+                    </ul>
+                </div>
+            </div>
+            <div id='centerBottomDiv1'>
+                <img id="mainpagecat" src="/media/cat1-tp.png" alt="its a fricken cat!">
+            </div>
+            <div id="centerBottomDiv">
+                <img id="mainpagecat" src="/media/cat1-tp.png" alt="its a fricken cat!">
+            </div>
+        </div>
+        <div id='iframeDivOuter'>
+            <div id='iframeDiv'>
+                <iframe class='myFrame' width="360" height="203"
+                src="https://www.youtube.com/embed/bWQyoUSLlXI?list=TLGGW4Eokq-ETXgxNDA1MjAxOQ;&autoplay=0&vq=medium"
+                frameborder="0" allow="autoplay;picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div id='iframeDivCenter' class='scifiBorder'>
+            </div>
+            <!-- <div id='iframeDivBottom'>
+                <iframe width="560" height="316"
+                src="https://www.youtube.com/embed/f2mI2lwkvRY?controls=1&autoplay=1&vq=medium"
+                frameborder="0" allow="autoplay;picture-in-picture"></iframe>
+            </div> -->
+        </div>
+    </div>
+    	<!--<div class="static-motion" style="height:200px;">>static motion</div>-->
+    <footer id='footer'>Copyright 2019 by me</footer>
+    <script>
+        //normal startup
+        window.addEventListener('load',(event) =>{
+            console.log('static-screen');
+            //staticScreenInit();
+            staticScreenInit();
+        });
+    </script>
+</body>
+</html>

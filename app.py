@@ -23,7 +23,7 @@ def render_static(page_name):
 
 @app.route('/')
 def index():
-    return app.send_static_file('static-screen.html')
+    return app.send_static_file('flex.html')
 
 @app.route('/dashboard')
 @login_required
