@@ -1,14 +1,86 @@
 @import '/css/misc.css';
 html {
-    /* border: 1px solid green; */
+    box-shadow: 0 0 10px;
 }
 
 .div {
         border: solid white 1px;
+        /* box-shadow: 0 0 10px; */
 }
-footer {
-    border: 1px solid green;
+
+#nav {
+    position: sticky;
+    /* background: linear-gradient(darkorange, #f06d06); */
+    z-index: 9999;
 }
+
+
+#nav ul{
+    /* background: darkorange; */
+    list-style: none;
+    margin: 0;
+    overflow:hidden;
+    /* border-bottom: 1px dotted; */
+}
+
+#nav ul li {
+    color: #fff;
+    /* background: darkorange; */
+    display: inline-block;
+    /* float: right; */
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+        /* background: linear-gradient(darkorange, #f06d06); */
+
+}
+
+#nav ul li:active {
+    background-color: #4CAF50;
+    color: white;
+}
+/* Change the background color when mouse over items */
+#nav ul li:hover {
+    background: darkgreen;
+    cursor: pointer;
+}
+#nav ul li ul {
+    background: darkgreen;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+#nav ul li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#nav ul li a:hover {
+    background-color: #green;
+    color: white;
+}
+
+#nav ul li:hover > ul,
+#nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+#nav ul li ul li {
+    /* clear: both; */
+    width: 100%;
+}
+
 body {
     background-color: black;
     background: radial-gradient(
@@ -41,7 +113,7 @@ body::after{
         transparent 2px
         );
     /* background-attachment: fixed; */
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .overlay:before {
@@ -119,6 +191,18 @@ body::after{
     padding: 10px;
     min-width: 180px;
 }
+#centerTopRightDiv ul{
+    list-style: georgian;
+    padding: 0;
+    margin:0;
+}
+#centerTopRightDiv ul li{
+    padding-left: 16px;
+}
+#centerTopRightDiv ul li::before {
+    content:"\25bb";
+    padding-right: 8px;
+}
 #centerBottomDiv1 {
     flex: 1 1 200px;
 }
@@ -133,6 +217,7 @@ body::after{
     align-items: center;
     justify-content: space-between;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 #iframeDiv{
     /* margin-top: 20px; */
@@ -190,7 +275,7 @@ body::after{
 #iframeDivBottom iframe{
 } */
 .scifiBorder {
-  border: 1px solid;
+  /* border: 1px solid; */
   border-radius: 15px;
   box-shadow: 0 0 10px;
 
@@ -239,13 +324,15 @@ body::after{
 .spantest {
     position: absolute;
     border-radius: 50%;
-    top: 10%;
-    left: 35%;
+    top: 15%;
+    left: 30%;
     width: 100px;
     height: 100px;x
     z-index: 2;
-    font-size: 38;
+    font-size: 28;
     animation: blink 1s infinite;
+    white-space: nowrap;
+    color:red;
 }
 @keyframes blink {
   50% {
@@ -301,4 +388,8 @@ body::after{
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+footer {
+    /* border-bottom: 1px solid green; */
+    box-shadow: 0 0 10px;
 }

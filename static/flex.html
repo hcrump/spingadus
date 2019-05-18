@@ -7,11 +7,31 @@
 <script src="/scripts/flex.js?n=1"></script>
 <script src="/scripts/variables.js?n=1"></script>
 <link rel="stylesheet" href="/css/flex.css">
-<button onclick="divBordersOn()">divBordersOn</button>
-<button onclick="location.reload(true)">reload</button>
-
 </head>
-<body class=' bgCircle bgLines overlay'>
+<nav id="nav">
+    <ul>
+        <li>
+            <a href="/">Home</a>
+            <ul>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </li>
+        <li><a href="/">Blog</a></li>
+        <li>
+            <a href="maintestpage.html">Tests</a>
+            <ul>
+                <li><a href="/">tbd</a></li>
+                <li><a href="/">tbd</a></li>
+            </ul>
+        </li>
+        <li><a href="/">Pics</a></li>
+        <li><button onclick="divBordersOn()">divBordersOn</button></li>
+        <li><button onclick="location.reload(true)">reload</button></li>
+    </ul>
+</nav>
+
+<body class='overlay'>
     <div id='container'>
         <div id='scrollTextDiv'></div>
         <div id='centerDiv'>
@@ -55,7 +75,7 @@
         </div>
     </div>
     	<!--<div class="static-motion" style="height:200px;">>static motion</div>-->
-    <footer id='footerStatus'>Copyright 2019 by me</footer>
+    <footer id='footerStatus'></footer>
     <footer id='footer'>Copyright 2019 by me</footer>
     <script>
         //normal startup

@@ -10,7 +10,7 @@ function normaliseLeadingSpaces(arr){
     for(var i =0; i< arr.length;i++){
         // console.log(arr[i]);
         arr[i] = arr[i].slice(small - 1); //keep a space
-        arr[i] = '>' + arr[i];
+        arr[i] = '\u2b9e' + arr[i];
         // console.log(arr[i]);
     }
     return arr;
@@ -20,7 +20,7 @@ function staticScreenInit() {
     console.log('staticScreenInit()');
     var filename = '/media/alienScript.txt';
     loadDoc(filename,typeWriter);
-    tmpFillText();
+    tmpFillText(['asdfasdf','1211212'],100);
 
 }
 
@@ -180,7 +180,7 @@ function incoming(){
         //console.log(count);
         if(count<1){
             clearInterval(interval);
-            $('.spantest').html("ALL CLEAR!");
+            $('.spantest').html('\u27ea'+" ALL CLEAR "+'\u27eb');
             $('.ringtxt2').html("");
         }
         count--;
@@ -192,7 +192,7 @@ function incoming(){
         // $(this).prepend('INCOMING!!');
         $(this).dequeue();
     }).delay(delay1).queue(function(){
-        $('body').addClass('shakeit');
+        // $('body').addClass('shakeit');
         $(this).dequeue();
     }).delay(delay2).queue(function(){
         $('body').removeClass('shakeit');
@@ -228,17 +228,37 @@ $.fn.queueRemoveClass = function(className) {
     return this;
 };
 
-function tmpFillText() {
-    // a = $.get('/media/starwars.txt');
-    var a = "";
-    for(var i=0;i< 10;i++){
-        a += 'aasdasdfasdfad'  + '<br>';
-    }
-    setTimeout(function(){
-        $('#iframeDivCenter').append(a);
-    },2000);
-}
+function tmpFillText(myarray,myspeed = 200){
+	console.log('tmpFillText()');
+    var txtArray = myarray || ['aaaaaaaa','bbbbbbbb','cccccccc'];
+	var arrIndex = 0;
+    var contents = '';
+    var charIndex = 0;
+	var speed = myspeed;
+	var count = 0;
+	var sub = 0;
+	var piece = "";
 
+	contents += txtArray[arrIndex] + '<br>';
+
+	var interval = setInterval(function(){
+		if(arrIndex < txtArray.length){
+			if(charIndex < contents.length){
+				piece = contents.substring(0,charIndex+1) + '_';
+                console.log(speed);
+				$('#iframeDivCenter').html(piece);
+                //$('#iframeDivCenter').append(charIndex+":"+txtArray[arrIndex].length+'<br>');
+				charIndex++;
+			}else{
+				arrIndex++;
+				contents += txtArray[arrIndex] + '<br>';
+				// charIndex = 0;
+			}
+		}else{
+			clearInterval(interval);
+		}
+	},speed);
+}
 var loopCount = 0;
 var myInterval = setInterval(function(){
     var rand = Math.floor(Math.random() * 100);
