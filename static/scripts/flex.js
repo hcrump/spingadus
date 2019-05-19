@@ -20,8 +20,6 @@ function staticScreenInit() {
     console.log('staticScreenInit()');
     var filename = '/media/alienScript.txt';
     loadDoc(filename,typeWriter);
-    tmpFillText(['asdfasdf','1211212'],100);
-
 }
 
 function testwriter(xhttp){
@@ -115,28 +113,33 @@ function casualties(){
     console.log('casualties()');
     var lvl = Math.floor(Math.random()*100);
     var rand = Math.floor(Math.random()*100);
-    var levels = [10,33,66,100];
-    var status = ["Shields Held!","Minor damage to sections 18, 39 and 34!","Severe damage sustained!","WE DEAD!"];
     var news = [];
     var msg = [];
     var all = {};
+    var sendArray = []; // if sending to typewriter function
+    var status = ["Pfft!","Shields Held!","Minor damage to sections 18, 39 and 34!",
+    "Shields are down!","Better to burn out than to fade away?", "Revenge is a dish best served cold!",
+    "Severe damage sustained!","We got our asses kicked!","Do you want to live forever?!",
+    "WE DEAD!","..."];
 
-    for (var i =0; i < levels.length;i++){
-        if(lvl <= levels[i]){
-            var deaths= lvl * Math.floor(Math.pow(rand,i) * lvl);
-            all['Attack Level']=lvl;
-            all['Deaths'] = (deaths).toLocaleString();
-            all['Wounded'] = (deaths * rand/10).toLocaleString();
-            all['Status'] = status[i];
-            break;
-        }
+    var i = Math.floor(lvl / 10);
+    var deaths= lvl * Math.floor(Math.pow(10,i) * lvl);
+    all['Attack Level']=lvl;
+    all['Deaths'] = (deaths).toLocaleString();
+    all['Wounded'] = (deaths * rand/10).toLocaleString();
+    all['Status'] = status[i];
+
+    for (var i of Object.keys(all)){
+        sendArray.push(i+':\t'+all[i]);
     }
     $("#centerTopRightDiv").contents().filter(function(){ return this.nodeType == 3; }).first().replaceWith("Post-Mortem Briefing:");
-
     $('#centerTopRightDiv ul').html("");
-    for(var i in all){
-        $('#centerTopRightDiv ul').append('<li>' + i + ': ' + all[i] + '</li>');
-    }
+
+    //only for manually printing to the div
+    // for(var i in all){
+    //     $('#centerTopRightDiv ul').append('<li>' + i + ': ' + all[i] + '</li>');
+    // }
+    charWrite(sendArray,100,'#centerTopRightDiv');
 }
 var number = 0;
 var toggle = 0;
@@ -155,10 +158,11 @@ function screenGlitch(){
 
 function incoming(){
     console.log('incoming()');
-    var delay1 = 5000; //wait for shaking
-    var delay2 = 5000; //wait to hide planet
+    var delay1 = 5000; //wait for shaking + delay4
+    var delay2 = 7000; //wait to hide planet
     var delay3 = 5000; //wait to stop shaking
-    var count = (delay1 + delay2) / 1000;
+    var delay4 = 2000; //wait to show incoming
+    var count = (delay1 + delay2 + delay4) / 1000;
     var countdown = count - (delay2/1000)
 
 
@@ -166,7 +170,6 @@ function incoming(){
     $('.ring').html("");
 
     $('.ring').css('visibility','visible');
-    // $('.ring').html("WTF!!");
     $('.ring').css('font-size','28');
     $('.ringtxt2').html("INCOMING!!");
     var interval = setInterval(function(){
@@ -186,15 +189,22 @@ function incoming(){
         count--;
         countdown--;
     },1000);
-
+    // $('#glowring').toggleClass('shrink');
+    // $('#centerTopLeftDiv').toggleClass('shrink');
     $('#glowring').queue(function(){
         $(this).css('visibility','visible');
-        // $(this).prepend('INCOMING!!');
+        $('.ring').css('visibility','hidden');
+        $('.spantest').html('\u27ea'+" WARNING "+'\u27eb');
+        // $('#centerTopLeftDiv').toggleClass('grow');
+        // $(this).toggleClass('grow');
         $(this).dequeue();
-    }).delay(delay1).queue(function(){
-        // $('body').addClass('shakeit');
+    }).delay(2000).queue(function(){
+        $('.ring').css('visibility','visible');
         $(this).dequeue();
-    }).delay(delay2).queue(function(){
+    }).delay(5000).queue(function(){
+        $('body').addClass('shakeit');
+        $(this).dequeue();
+    }).delay(8000).queue(function(){
         $('body').removeClass('shakeit');
         $(this).dequeue();
     }).delay(1000).queue(function(){
@@ -202,8 +212,9 @@ function incoming(){
         $(this).dequeue();
     }).delay(delay3).queue(function(){
         $('.ring').offsetWidth;
-        $('#glowring').css('visibility','hidden');
-        // casualties();
+        // $('#centerTopLeftDiv').toggleClass('shrink');
+        // $('#glowring').css('visibility','hidden');
+        casualties();
         // $('.ring').addClass('ring-animation');
         $(this).dequeue();
     });
@@ -228,31 +239,29 @@ $.fn.queueRemoveClass = function(className) {
     return this;
 };
 
-function tmpFillText(myarray,myspeed = 200){
-	console.log('tmpFillText()');
-    var txtArray = myarray || ['aaaaaaaa','bbbbbbbb','cccccccc'];
+function charWrite(myArray, speed = 100, element){
+	console.log('charWrite()');
+    var txtArray = myArray || ['this','is','a','test'];
 	var arrIndex = 0;
     var contents = '';
     var charIndex = 0;
-	var speed = myspeed;
-	var count = 0;
-	var sub = 0;
+	// var speed = mySpeed;
 	var piece = "";
-
+    var date = new Date();
+    txtArray.unshift(date,"");
 	contents += txtArray[arrIndex] + '<br>';
 
 	var interval = setInterval(function(){
 		if(arrIndex < txtArray.length){
 			if(charIndex < contents.length){
 				piece = contents.substring(0,charIndex+1) + '_';
-                console.log(speed);
-				$('#iframeDivCenter').html(piece);
-                //$('#iframeDivCenter').append(charIndex+":"+txtArray[arrIndex].length+'<br>');
+				// $('#iframeDivCenter').html(piece);
+                $(element).html(piece);
 				charIndex++;
 			}else{
 				arrIndex++;
 				contents += txtArray[arrIndex] + '<br>';
-				// charIndex = 0;
+				// charIndex = 0; NO!!! keep increasing since we do +=
 			}
 		}else{
 			clearInterval(interval);
@@ -263,10 +272,11 @@ var loopCount = 0;
 var myInterval = setInterval(function(){
     var rand = Math.floor(Math.random() * 100);
     // console.log(rand);
-    if(loopCount == 20 || loopCount == 0){
+    if(loopCount % 60 == 0){
         incoming();
-        casualties();
-        loopCount = 0;
+    }
+    if(loopCount % 30 == 0){
+
     }
     loopCount++;
     if(rand % 100 == 0){
@@ -274,38 +284,3 @@ var myInterval = setInterval(function(){
     }
 }, 1000);
 /*---------------------------------*/
-// // Find all YouTube videos
-// var $allVideos = $("iframe[src^='//www.youtube.com']"),
-//
-//     // The element that is fluid width
-//     $fluidEl = $("iframeDiv");
-//
-// // Figure out and save aspect ratio for each video
-// $allVideos.each(function() {
-//
-//   $(this)
-//     .data('aspectRatio', this.height / this.width)
-//
-//     // and remove the hard coded width/height
-//     .removeAttr('height')
-//     .removeAttr('width');
-//
-// });
-//
-// // When the window is resized
-// $(window).resize(function() {
-//
-//   var newWidth = $fluidEl.width();
-//
-//   // Resize all videos according to their own aspect ratio
-//   $allVideos.each(function() {
-//
-//     var $el = $(this);
-//     $el
-//       .width(newWidth)
-//       .height(newWidth * $el.data('aspectRatio'));
-//
-//   });
-//
-// // Kick off one resize to fix all videos on page load
-// }).resize();
