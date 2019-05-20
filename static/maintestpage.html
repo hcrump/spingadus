@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Main Page</title>
+    <meta name='description' content="Flask website hosted on Google App Engine">
+    <title>Testing Page</title>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -14,6 +15,28 @@
 </head>
 
 <body>
+    <nav id="nav">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+                <ul>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="/">Blog</a></li>
+            <li>
+                <a href="maintestpage.html">Tests</a>
+                <ul>
+                    <li><a href="/">tbd</a></li>
+                    <li><a href="/">tbd</a></li>
+                </ul>
+            </li>
+            <li><a href="/">Pics</a></li>
+            <li><button onclick="divBordersOn()">divBordersOn</button></li>
+            <li><button onclick="location.reload(true)">reload</button></li>
+        </ul>
+    </nav>
     <div id="container">
         <div id="headerTop">
             <h1>Welcome and Have Fun Testing Yourself !!</h1>
@@ -47,7 +70,7 @@
             </div>
         </div>
         <div id="bottom">
-        <img id="mainpagecat" src="/media/cat1-tp.png" alt="its a fricken cat!">
+        <img id="mainpagecat" src="/media/images/cat1-tp.png" alt="its a fricken cat!">
         <p id="finished"></p>
         </div>
     </div>

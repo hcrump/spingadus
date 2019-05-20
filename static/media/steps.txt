@@ -1,6 +1,0 @@
-turn on visibility
-wait 5s
-turn on shake
-wait 3s
-turn off shake
-turn off visibility

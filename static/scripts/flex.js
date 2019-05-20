@@ -1,27 +1,16 @@
-
-function normaliseLeadingSpaces(arr){
-    var small = 1000;
-    for(var i = 0; i< arr.length;i++){
-        var num = arr[i].search(/\S/);
-        if(small > num && num >= 0){
-            small = num;
-        }
-    }
-    for(var i =0; i< arr.length;i++){
-        // console.log(arr[i]);
-        arr[i] = arr[i].slice(small - 1); //keep a space
-        arr[i] = '\u2b9e' + arr[i];
-        // console.log(arr[i]);
-    }
-    return arr;
+var DEBUG = true;
+if(!DEBUG){
+    console.log('console.log has been disabled.');
+    console.log = function(t){};
 }
-
 function staticScreenInit() {
     console.log('staticScreenInit()');
-    var filename = '/media/alienScript.txt';
-    loadDoc(filename,typeWriter);
+    // var filename = '/media/docs/alienScript.txt';
+    // loadDoc(filename,typeWriter);
 }
-
+function divBordersOn(){
+    $('div').toggleClass("div");
+}
 function testwriter(xhttp){
     console.log('testwriter()');
     var txt = xhttp;
@@ -34,7 +23,7 @@ function testwriter(xhttp){
     document.getElementById('scrollTextP').innerHTML = line;
 }
 
-function delayme(arr,speed){
+function delayme(arr,speed,a){
     console.log('delayme()');
     var aText = new Array(
     "There ",
@@ -53,7 +42,9 @@ function delayme(arr,speed){
     var typewriter2 = function() {
         sContents =  ' ';
         iRow = Math.max(0, iIndex-iScrollAt);
-        var destination = document.getElementById("scrollTextDiv");
+        // var destination = document.getElementById("scrollTextDiv");
+        var destination = document.getElementById(a);
+
         while ( iRow < iIndex ) {
             sContents += aText[iRow++] + '<br />';
         }
@@ -72,24 +63,36 @@ function delayme(arr,speed){
     typewriter2();
 }
 
-function typeWriter(xhttp) {
+function typeWriter(xhttp,a) {
     console.log('typeWriter()');
     var txt = xhttp;
     var lines = txt.split(/\r\n|\n|\r/);
     lines = fixArray(lines);
     lines = normaliseLeadingSpaces(lines);
-    //console.log(lines);
     var speed = 50; //ms
     // var lines = ['aaaaaa','bbbbbb','cccwcccc'];
-    delayme(lines,speed);
+    delayme(lines,speed,a);
 }
 
-function loadDoc(filename,callback) {
-    httpRequest = new XMLHttpRequest();
+//typeWriter without arrows
+function typeWriterNa(txt,a) {
+    console.log('typeWriterNa()');
+    var lines = txt.split(/\r\n|\n|\r/);
+    lines = fixArray(lines);
+    lines = normaliseLeadingSpaces(lines);
+    var speed = 50; //ms
+    charWrite(lines,speed,a);
+}
+
+function loadDoc(filename,callback,params) {
+    console.log('loadDoc()');
+    var httpRequest = new XMLHttpRequest();
+
     httpRequest.onreadystatechange = function () {
         if(httpRequest.readyState === 4) {
             if(httpRequest.status === 200) {
-                callback(httpRequest.responseText);
+                // callback(httpRequest.responseText);
+                callback(httpRequest.responseText,params);
             }
         }
     }
@@ -97,16 +100,36 @@ function loadDoc(filename,callback) {
     httpRequest.send();
 }
 
-function divBordersOn(){
-    $('div').toggleClass("div");
-}
-
+//remove empty lines before first line
 function fixArray(arr){
     let tmp = arr;
     while(tmp[0] == ''){
         tmp.shift();
     }
+    while(tmp[tmp.length-1] == ''){
+        tmp.pop();
+    }
     return tmp;
+}
+//rids empty spaces up to smallest amount, keeps form
+function normaliseLeadingSpaces(arr){
+    console.log('normaliseLeadingSpaces()');
+    var small = 1000;
+    for(var i = 0; i< arr.length;i++){
+        var num = arr[i].search(/\S/);
+        if(small > num && num >= 0){
+            small = num;
+        }
+    }
+    if(small != 0){  // 0=no spaces; slice -1 is bad
+        for(var i =0; i< arr.length;i++){
+            // console.log(arr[i]);
+            arr[i] = arr[i].slice(small - 1); //keep a space
+            // arr[i] = '\u2b9e' + arr[i];
+            // console.log(arr[i]);
+        }
+    }
+    return arr;
 }
 
 function casualties(){
@@ -220,25 +243,37 @@ function incoming(){
     });
 
 }
-
-// stackoverflow functions to chain queue, might use
-$.fn.queueAddClass = function(className) {
-    this.queue('fx', function(next) {
-        $(this).addClass(className);
-        next();
-    });
-    return this;
-};
-
-// stackoverflow functions to chain queue, might use
-$.fn.queueRemoveClass = function(className) {
-    this.queue('fx', function(next) {
-        $(this).removeClass(className);
-        next();
-    });
-    return this;
-};
-
+function rotatePhotos(txt){
+    console.log('rotatePhotos()');
+    var lines = txt.split(/\r\n|\n|\r/);
+    lines = fixArray(lines);
+    var i = 0;
+    var newval = setInterval(function(){
+        if(i<lines.length){
+            var src = '/media/images/' + lines[i];
+            $('#centerCenterDivImage').attr('src',src);
+            i++;
+        }else{
+            i=0;
+        }
+    },60000);
+}
+function getPicList(){
+    console.log('getPicList()');
+    var fn = '/json/piclist.txt';
+    loadDoc(fn ,rotatePhotos);
+    // console.log(x);
+}
+function writeRepeat(){
+    console.log('writeRepeat()');
+    var fn2 = '/media/docs/starwars.txt';
+    loadDoc(fn2,typeWriterNa,'#iframeDivCenter'); //needs #
+}
+function writeOnce(){
+    console.log('writeOnce()');
+    var fn1 = '/media/docs/alienScript.txt';
+    loadDoc(fn1,typeWriter,'scrollTextDiv'); //no #
+}
 function charWrite(myArray, speed = 100, element){
 	console.log('charWrite()');
     var txtArray = myArray || ['this','is','a','test'];
@@ -248,6 +283,8 @@ function charWrite(myArray, speed = 100, element){
 	// var speed = mySpeed;
 	var piece = "";
     var date = new Date();
+
+    $(element).html("");
     txtArray.unshift(date,"");
 	contents += txtArray[arrIndex] + '<br>';
 
@@ -267,16 +304,24 @@ function charWrite(myArray, speed = 100, element){
 			clearInterval(interval);
 		}
 	},speed);
+    contents = "";
+    piece = "";
 }
 var loopCount = 0;
+var once = true;
 var myInterval = setInterval(function(){
     var rand = Math.floor(Math.random() * 100);
     // console.log(rand);
-    if(loopCount % 60 == 0){
+    if(once){
+        writeOnce();
+        getPicList();
+        once = false;
+    }
+    if(loopCount % 600 == 0){
         incoming();
     }
-    if(loopCount % 30 == 0){
-
+    if(loopCount % 200 == 0){
+        writeRepeat();
     }
     loopCount++;
     if(rand % 100 == 0){
