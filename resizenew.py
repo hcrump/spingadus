@@ -11,7 +11,6 @@ EXIF_KEYS = [
         'DateTimeOriginal',
         'Model',
         'ISOSpeedRatings',
-        'MaxApertureValue',
         'GPSInfo',
         'FocalLengthIn35mmFilm',
         'MeteringMode',
@@ -107,8 +106,42 @@ def get_gps(exif):
             for(key,val) in ExifTags.GPSTAGS.items():
                 if key in exif[idx]:
                     geotagging[val] = exif[idx][key]
-    
+ 
     return geotagging;
+def humanizeExif(dic):
+    print('humanizeExif()')
+    ''' 'DateTimeOriginal',
+        'Model',
+        'ISOSpeedRatings',
+        'GPSInfo',
+        'FocalLengthIn35mmFilm',
+        'MeteringMode',
+        'FNumber',
+        'ExposureTime',
+        'Copyright']
+        '''
+    print('========================================================')
+    ## MeteringMode
+    meteringModes = ['Unknown','Average','Center-weighted average','Spot','Multi-spot','Multi-Segment','Partial']
+    if 'MeteringMode' in dic:
+        try:
+            dic['MeteringMode']=meteringModes[dic['MeteringMode']]
+        except:
+            dic['MeteringMode']='Other'
+    print(dic['MeteringMode'])
+    
+    ## F-Stop
+    if ('FNumber' in dic and dic['FNumber'] != 0):
+        dic['FNumber'] = "f"+str(float(dic['FNumber'][0])/float(dic['FNumber'][1])) 
+        print(dic['FNumber'])
+
+    ## ExposureTime
+    if ('ExposureTime' in dic and dic['ExposureTime'] != 0):
+        dic['ExposureTime'] = str(int(dic['ExposureTime'][0]/dic['ExposureTime'][0])) +"/"+ str(int(dic['ExposureTime'][1]/dic['ExposureTime'][0]))
+        print(dic['ExposureTime'])
+    print('========================================================')
+
+    return dic
 
 def get_exif(im):
     print('get_exif()')
@@ -126,8 +159,12 @@ def get_exif(im):
                 labeled[newkey] = 'Copyright by this website'
             else:
                 labeled[newkey]=exif[key]
-            print(f'...{newkey} : {labeled[newkey]}')
-    return labeled
+            #print(f'...{newkey} : {labeled[newkey]}')
+            
+    buh = humanizeExif(labeled);
+    print(buh)
+    
+    return buh
 
 def main():
     print('main()')
