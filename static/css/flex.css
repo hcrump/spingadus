@@ -5,6 +5,7 @@ html {
 
 .div {
         border: solid white 1px;
+        box-shadow: inset 0 0 10px 1px;
         /* box-shadow: 0 0 10px; */
 }
 
@@ -228,7 +229,10 @@ body::after{
 #centerCenterDiv {
     flex: 1 1 200px;
     /* border-radius: 20px; */
-    box-shadow: 0 0 10px;
+    box-shadow: inset 0 0 10px,
+    opacity: 1;
+    z-index: -1;
+
 }
 #centerBottomDiv{
     flex: 1 1 200px;
@@ -256,8 +260,8 @@ body::after{
     /* border: 1px dashed orange; */
     /* border-radius: 15px; */
     /* box-shadow: inset 0 0 100px 10px purple; */
-    box-shadow: 0 0 100px 10px darkgreen;
-    z-index: 100;
+    box-shadow: 0 0 10px 10px darkgreen;
+    z-index: 1;
     /* height:56.25%; */
     width:100%;
     overflow: hidden;
@@ -272,17 +276,18 @@ body::after{
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 99;
+    /* z-index: 99; */
     /* height:56.25%;
     width:100%; */
-    box-shadow: inset 0 0 90px 1px darkgreen;
+    box-shadow: inset 0 0 20px 1px darkgreen;
     /* box-shadow: 0 0 20px 20px purple; */
     pointer-events: none;
     border-radius: 15px;
 
 }
 .myFrame{
-	opacity: .4; display:
+	opacity: .8; display:
+    z-index:-1;
     /* position: relative;
     width: 100%;
     height: 100%; */
@@ -307,7 +312,7 @@ body::after{
 #iframeDiv, .mainImage {
   /* border: 1px solid; */
   border-radius: 50px /15px;
-  box-shadow: 0 0 10px;
+  box-shadow: 0 0 15px;
 }
 .ring{
     position: absolute;
@@ -361,7 +366,7 @@ body::after{
     position:absolute;
 /*     bottom:0; */
     left:0;
-    border-left: 1px solid white;
+    border-left: 1px solid red;
     animation: moveVline 3s ease-in alternate infinite;
     z-index: 100;
 }
@@ -369,7 +374,7 @@ body::after{
     position:absolute;
     top:0;
 /*     left:0; */
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid red;
     animation: moveHline 3s ease-in alternate infinite;
     z-index: 100;
 }

@@ -75,13 +75,13 @@ function typeWriter(xhttp,a) {
 }
 
 //typeWriter without arrows
-function typeWriterNa(txt,a) {
+function typeWriterNa(txt,element) {
     console.log('typeWriterNa()');
     var lines = txt.split(/\r\n|\n|\r/);
     lines = fixArray(lines);
     lines = normaliseLeadingSpaces(lines);
     var speed = 50; //ms
-    charWrite(lines,speed,a);
+    charWrite(lines,speed,element);
 }
 
 function loadDoc(filename,callback,params) {
@@ -212,12 +212,13 @@ function incoming(){
         count--;
         countdown--;
     },1000);
-    // $('#glowring').toggleClass('shrink');
-    // $('#centerTopLeftDiv').toggleClass('shrink');
+
     $('#glowring').queue(function(){
         $(this).css('visibility','visible');
         $('.ring').css('visibility','hidden');
         $('.spantest').html('\u27ea'+" WARNING "+'\u27eb');
+        $('#aimH').toggleClass(horLine);
+        $('#aimV').toggleClass(vertLine);
         // $('#centerTopLeftDiv').toggleClass('grow');
         // $(this).toggleClass('grow');
         $(this).dequeue();
@@ -232,46 +233,64 @@ function incoming(){
         $(this).dequeue();
     }).delay(1000).queue(function(){
         $('.ring').css('visibility','hidden');
+        $('.spantest').html('Warping out of orbit');
         $(this).dequeue();
     }).delay(delay3).queue(function(){
         $('#centerTopLeftDiv').toggleClass('shrink');
+        $('.spantest').html('');
+        $('#aimH').toggleClass(horLine);
+        $('#aimV').toggleClass(vertLine);
         // $('.ring').addClass('ring-animation');
         $(this).dequeue();
     }).delay(delay3).queue(function(){
+        $('#centerTopLeftDiv').toggleClass('grow');
+        $('.spantest').html('We have returned!');
+        $(this).dequeue();
+    }).delay(delay3).queue(function(){
         casualties();
-        $('#glowring').css('visibility','hidden');
+        // $('#glowring').css('visibility','hidden');
         $('.spantest').html('');
-        // $('#centerTopLeftDiv').toggleClass('grow');
+
         // $('.ring').addClass('ring-animation');
         $(this).dequeue();
     });
 
 }
-function rotatePhotos(txt){
+function rotatePhotos(myJson){
     console.log('rotatePhotos()');
-    var lines = txt.split(/\r\n|\n|\r/);
-    lines = fixArray(lines);
+    var newJson = JSON.parse(myJson);
+    var lines = Object.keys(newJson);
     var i = 0;
     var newval = setInterval(function(){
         if(i<lines.length){
-            var src = '/media/images/' + lines[i];
+            var src = '/media/images/slideshow/' + lines[i];
             $('#centerCenterDivImage').attr('src',src);
-            charWrite(['...Acquiring data'],100,'#centerBottomDiv');
+            var a = newJson[lines[i]];
+            var c = []
+            for(var b of Object.keys(a)){
+                c.push(b + ": " + a[b]);
+            }
+            charWrite(c,50,'#centerBottomDiv');
             i++;
         }else{
             i=0;
         }
     },60000);
 }
+
 function getPicList(){
     console.log('getPicList()');
-    var fn = '/json/piclist.txt';
+    var fn = '/json/slideshow.json';
     loadDoc(fn ,rotatePhotos);
-    // console.log(x);
+
+}
+function myRandomGen(min,max){
+    return Math.floor(Math.random() * (max-min + 1)) + min;
 }
 function writeRepeat(){
     console.log('writeRepeat()');
-    var fn2 = '/media/docs/starwars.txt';
+    var episode= myRandomGen(1,8);
+    var fn2 = '/media/docs/smallText/starwars'+episode+'.txt';
     loadDoc(fn2,typeWriterNa,'#iframeDivCenter'); //needs #
 }
 function writeOnce(){
@@ -285,7 +304,6 @@ function charWrite(myArray, speed = 100, element){
 	var arrIndex = 0;
     var contents = '';
     var charIndex = 0;
-	// var speed = mySpeed;
 	var piece = "";
     var date = new Date();
 
@@ -297,7 +315,6 @@ function charWrite(myArray, speed = 100, element){
 		if(arrIndex < txtArray.length){
 			if(charIndex < contents.length){
 				piece = contents.substring(0,charIndex+1) + '_';
-				// $('#iframeDivCenter').html(piece);
                 $(element).html(piece);
 				charIndex++;
 			}else{
@@ -306,12 +323,12 @@ function charWrite(myArray, speed = 100, element){
 				// charIndex = 0; NO!!! keep increasing since we do +=
 			}
 		}else{
+            $(element).html(contents.substring(0,charIndex-1) + '_');
 			clearInterval(interval);
 		}
 	},speed);
-    contents = "";
-    piece = "";
 }
+
 var loopCount = 0;
 var once = true;
 var myInterval = setInterval(function(){
@@ -322,7 +339,7 @@ var myInterval = setInterval(function(){
         getPicList();
         once = false;
     }
-    if(loopCount % 30 == 0){
+    if(loopCount % 300 == 0){
         incoming();
     }
     if(loopCount % 200 == 0){
