@@ -146,7 +146,7 @@ function casualties(){
     "WE DEAD!","..."];
 
     var i = Math.floor(lvl / 10);
-    var deaths= lvl * Math.floor(Math.pow(10,i) * lvl);
+    var deaths= lvl * Math.floor(Math.pow(10,i));
     all['Attack Level']=lvl;
     all['Deaths'] = (deaths).toLocaleString();
     all['Wounded'] = (deaths * rand/10).toLocaleString();
@@ -204,7 +204,7 @@ function incoming(){
         }
 
         //console.log(count);
-        if(count<1){
+        if(count<0){
             clearInterval(interval);
             $('.spantest').html('\u27ea'+" ALL CLEAR "+'\u27eb');
             $('.ringtxt2').html("");
@@ -234,10 +234,14 @@ function incoming(){
         $('.ring').css('visibility','hidden');
         $(this).dequeue();
     }).delay(delay3).queue(function(){
-        $('.ring').offsetWidth;
-        // $('#centerTopLeftDiv').toggleClass('shrink');
-        // $('#glowring').css('visibility','hidden');
+        $('#centerTopLeftDiv').toggleClass('shrink');
+        // $('.ring').addClass('ring-animation');
+        $(this).dequeue();
+    }).delay(delay3).queue(function(){
         casualties();
+        $('#glowring').css('visibility','hidden');
+        $('.spantest').html('');
+        // $('#centerTopLeftDiv').toggleClass('grow');
         // $('.ring').addClass('ring-animation');
         $(this).dequeue();
     });
@@ -252,6 +256,7 @@ function rotatePhotos(txt){
         if(i<lines.length){
             var src = '/media/images/' + lines[i];
             $('#centerCenterDivImage').attr('src',src);
+            charWrite(['...Acquiring data'],100,'#centerBottomDiv');
             i++;
         }else{
             i=0;
@@ -317,7 +322,7 @@ var myInterval = setInterval(function(){
         getPicList();
         once = false;
     }
-    if(loopCount % 600 == 0){
+    if(loopCount % 30 == 0){
         incoming();
     }
     if(loopCount % 200 == 0){
