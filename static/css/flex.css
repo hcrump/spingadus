@@ -298,10 +298,8 @@ body::after{
 }
 #iframeDivCenter{
     flex:auto;
-	/* min-width:350px; */
     padding: 20px;
-    /* border-radius: 20%; */
-        /* box-shadow: 0 0 20px 20px purple; */
+    text-align: center;
 }
  /* #iframeDivBottom {
     flex: 1 1 100px;

@@ -153,20 +153,15 @@ function casualties(){
     all['Status'] = status[i];
 
     for (var i of Object.keys(all)){
-        sendArray.push(i+':\t'+all[i]);
+        sendArray.push(i + ':  ' + all[i]);
     }
+    var date = new Date();
+    sendArray.unshift(date,"");
     $("#centerTopRightDiv").contents().filter(function(){ return this.nodeType == 3; }).first().replaceWith("Post-Mortem Briefing:");
-    $('#centerTopRightDiv ul').html("");
-
-    //only for manually printing to the div
-    // for(var i in all){
-    //     $('#centerTopRightDiv ul').append('<li>' + i + ': ' + all[i] + '</li>');
-    // }
     charWrite(sendArray,100,'#centerTopRightDiv');
 }
 var number = 0;
 var toggle = 0;
-//document.body.className = 'myColor';
 
 function screenGlitch(){
     console.log('screenGlitch()');
@@ -202,8 +197,6 @@ function incoming(){
             $('.ring').css('font-size','38');
             $('.ringtxt2').html("IMPACT!!!");
         }
-
-        //console.log(count);
         if(count<0){
             clearInterval(interval);
             $('.spantest').html('\u27ea'+" ALL CLEAR "+'\u27eb');
@@ -217,10 +210,9 @@ function incoming(){
         $(this).css('visibility','visible');
         $('.ring').css('visibility','hidden');
         $('.spantest').html('\u27ea'+" WARNING "+'\u27eb');
-        $('#aimH').toggleClass(horLine);
-        $('#aimV').toggleClass(vertLine);
+        $('#aimH').addClass('horLine');
+        $('#aimV').addClass('vertLine');
         // $('#centerTopLeftDiv').toggleClass('grow');
-        // $(this).toggleClass('grow');
         $(this).dequeue();
     }).delay(2000).queue(function(){
         $('.ring').css('visibility','visible');
@@ -236,22 +228,19 @@ function incoming(){
         $('.spantest').html('Warping out of orbit');
         $(this).dequeue();
     }).delay(delay3).queue(function(){
-        $('#centerTopLeftDiv').toggleClass('shrink');
+        $('#centerTopLeftDiv').addClass('shrink');
         $('.spantest').html('');
-        $('#aimH').toggleClass(horLine);
-        $('#aimV').toggleClass(vertLine);
+        $('#aimH').removeClass('horLine');
+        $('#aimV').removeClass('vertLine');
         // $('.ring').addClass('ring-animation');
         $(this).dequeue();
     }).delay(delay3).queue(function(){
-        $('#centerTopLeftDiv').toggleClass('grow');
+        $('#centerTopLeftDiv').addClass('grow');
         $('.spantest').html('We have returned!');
         $(this).dequeue();
     }).delay(delay3).queue(function(){
         casualties();
-        // $('#glowring').css('visibility','hidden');
         $('.spantest').html('');
-
-        // $('.ring').addClass('ring-animation');
         $(this).dequeue();
     });
 
@@ -261,6 +250,7 @@ function rotatePhotos(myJson){
     var newJson = JSON.parse(myJson);
     var lines = Object.keys(newJson);
     var i = 0;
+    var speed = 20000;
     var newval = setInterval(function(){
         if(i<lines.length){
             var src = '/media/images/slideshow/' + lines[i];
@@ -275,7 +265,7 @@ function rotatePhotos(myJson){
         }else{
             i=0;
         }
-    },60000);
+    },speed);
 }
 
 function getPicList(){
@@ -308,7 +298,7 @@ function charWrite(myArray, speed = 100, element){
     var date = new Date();
 
     $(element).html("");
-    txtArray.unshift(date,"");
+    // txtArray.unshift(date,"");
 	contents += txtArray[arrIndex] + '<br>';
 
 	var interval = setInterval(function(){
