@@ -69,7 +69,7 @@ html {
 }
 
 #nav ul li a:hover {
-    background-color: #green;
+    background-color: green;
     color: white;
 }
 
@@ -120,7 +120,7 @@ body::after{
     /* border: 1px solid green; */
 }
 
-.overlay:before {
+.overlay::before {
   content : '';
   position : absolute;
   z-index: 10;
@@ -133,29 +133,28 @@ body::after{
   animation: vline 5.25s linear infinite;
 }
 
-.overlay:after {
-  // ... positioning
+.overlay::after {
   box-shadow: 0 2px 6px rgba(25,25,25,0.2),
               inset 0 1px rgba(50,50,50,0.1),
               inset 0 3px rgba(50,50,50,0.05),
               inset 0 3px 8px rgba(64,64,64,0.05),
               inset 0 -5px 10px rgba(25,25,25,0.1);
-
 }
+
 #container {
     height:90vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 /*     border: 1px solid purple; */
 }
 #scrollTextDiv {
-    flex: 1 2 200px;
+    flex: 1 1 200px;
     white-space: pre;
 }
 #centerDiv{
-    flex: 2 1 200px;
+    flex: 1 1 200px;
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -229,10 +228,9 @@ body::after{
 #centerCenterDiv {
     flex: 1 1 200px;
     /* border-radius: 20px; */
-    box-shadow: inset 0 0 10px,
+    box-shadow: inset 0 0 10px;
     opacity: 1;
     z-index: -1;
-
 }
 #centerBottomDiv{
     flex: 1 1 200px;
@@ -243,27 +241,19 @@ body::after{
     padding: 20px;
 }
 #iframeDivOuter {
-    flex: 0 4 200px;
+    flex: 1 1 200px;
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 #iframeDiv{
-    /* margin-top: 20px; */
-	  margin-bottom: 20px;
-    /* margin-left: 10px; */
-    flex: 0 1 auto;
-    /* border: 1px dashed orange; */
-    /* border-radius: 15px; */
-    /* box-shadow: inset 0 0 100px 10px purple; */
+	margin-bottom: 20px;
+    flex: 0 1 200px;
     box-shadow: 0 0 10px 10px darkgreen;
     z-index: 1;
-    /* height:56.25%; */
-    width:100%;
     overflow: hidden;
     transform: translateY(0px);
     display:block;
@@ -286,26 +276,16 @@ body::after{
 
 }
 .myFrame{
-	opacity: .8; display:
+	opacity: .8;
     z-index:-1;
-    /* position: relative;
-    width: 100%;
-    height: 100%; */
-    /* border-radius: 20px;
-    overflow: hidden; */
-    /* box-shadow: 0 0 20px 20px purple; */
-    /* box-shadow: inset 0 0 20px 20px purple;   */
 }
+
 #iframeDivCenter{
     flex:auto;
     padding: 20px;
     text-align: center;
 }
- /* #iframeDivBottom {
-    flex: 1 1 100px;
-}
-#iframeDivBottom iframe{
-} */
+
 .scifiBorder, #centerBottomDiv, #centerCenterDiv,
 #iframeDiv, .mainImage {
   /* border: 1px solid; */
@@ -418,7 +398,7 @@ body::after{
     top: 50%;
     left: 7%;
     width: 100px;
-    height: 100px;x
+    height: 100px;
     z-index: 2;
     font-size: 28;
     animation: blink 1s infinite;
