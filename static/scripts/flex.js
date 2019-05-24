@@ -11,25 +11,11 @@ function staticScreenInit() {
 function divBordersOn(){
     $('div').toggleClass("div");
 }
-function testwriter(xhttp){
-    console.log('testwriter()');
-    var txt = xhttp;
-    var i = 0;
-    var lines = txt.split(/\r\r|\n/);
-    lines.forEach(line => {
-        console.log(line);
-    });
 
-    document.getElementById('scrollTextP').innerHTML = line;
-}
-
-function delayme(arr,speed,a){
+function delayme(arr,speed=50,a){
     console.log('delayme()');
-    var aText = new Array(
-    "There ",
-    "Those","what","asdf", "fuckk","noway","buh","bb","cc"
-    );
-    aText = arr;
+
+    var aText = arr;
     var iSpeed = speed; // time delay of print out
     var iIndex = 0; // start printing array at this posision
     var iArrLength = aText[0].length; // the length of the text array
@@ -87,7 +73,6 @@ function typeWriterNa(txt,element) {
 function loadDoc(filename,callback,params) {
     console.log('loadDoc()');
     var httpRequest = new XMLHttpRequest();
-
     httpRequest.onreadystatechange = function () {
         if(httpRequest.readyState === 4) {
             if(httpRequest.status === 200) {
@@ -100,7 +85,7 @@ function loadDoc(filename,callback,params) {
     httpRequest.send();
 }
 
-//remove empty lines before first line
+//remove empty elements at beginning and end
 function fixArray(arr){
     let tmp = arr;
     while(tmp[0] == ''){
@@ -146,17 +131,17 @@ function casualties(){
     "WE DEAD!","..."];
 
     var i = Math.floor(lvl / 10);
-    var deaths= lvl * Math.floor(Math.pow(10,i));
-    all['Attack Level']=lvl;
+    var deaths= lvl/10 * Math.floor(Math.pow(10,i-1));
+    all['Damage Level']=lvl;
     all['Deaths'] = (deaths).toLocaleString();
-    all['Wounded'] = (deaths * rand/10).toLocaleString();
+    all['Wounded'] = (deaths * 3.14).toLocaleString();
     all['Status'] = status[i];
 
     for (var i of Object.keys(all)){
         sendArray.push(i + ':  ' + all[i]);
     }
     var date = new Date();
-    sendArray.unshift(date,"");
+    sendArray.unshift(date,"","PLANETARY ASSESSMENT","");
     $("#centerTopRightDiv").contents().filter(function(){ return this.nodeType == 3; }).first().replaceWith("Post-Mortem Briefing:");
     charWrite(sendArray,100,'#centerTopRightDiv');
 }
@@ -173,9 +158,157 @@ function screenGlitch(){
         $(this).dequeue();
     });
 }
+function initScenario() {
+    console.log('initScenario()');
+    $('.ring').css('visibility','hidden');
+    $('.ring').css('font-size','28');
+    $('.horLine').hide();
+    $('.vertLine').hide();
+    // $('#aimH').removeClass('horLine');
+    // $('#aimV').removeClass('vertLine');
+    $('#aimH').css('border-color','blue');
+    $('#aimV').css('border-color','blue');
+    $('.ring').html = "";
+    $('.spantest').html('');
+    $('#glowring').css('visibility','visible');
+}
+comms = [
+    ['','...','...','... Standard Orbit','...','... Orbit decaying','...','... Drag coeficient','...','... calculated','...','... compensated'],
+    ['','...','...','... Preparing Scans','...','... Asthenospheric depth'],
+    ['','...','...','... Scans in progress','...','... Scans in progress','...','... Scans in progress'],
+    ['','...','...','... Scanning Complete','...','... No anomalies detected'],
+    ['','...','...','... ALL CLEAR','...','... Continue standard operations'],
+    ['','...','...','... DETECTION','...','... GRAVITY ANOMALY','...','... GRAVITY ANOMALY'],
+    ['','...','...','... RED ALERT','...','... MULTIPLE','... GRAVITY WELLS','...','... INCOMING'],
+    ['','...','...','... INCOMING','...','... REPEAT','...','... GRAVITY WELLS','...','... EVASIVE ACTIONS'],
+    ['','...','...','... IMPLOSION','...','... SHIELDS DOWN','...','... WARPING OUT'],
+    ['','...','...','... WARPING OUT','...','... WARPING OUT','...','... OK STOP','...','... DUDE STOP!'],
+    ['','...','...','... POSITION','...','... MAX DISTANCE','...','... 1 PARSEC','...','... REAPPROCHING PLANET'],
+    ['','...','...','... ESTABLISHING ORBIT','...','... SCANNING','...','...ALL CLEAR']
+]
+function attackOrbit() {
+    console.log('attackOrbit()');
+    $('#c').html("Attack Orbit"); //div solely for a counter display
+    var count = 0;
+    charWrite(comms[0],50,'#centerTopRightDiv');
+    initScenario();
+    var interval = setInterval(function(){
+        if(count == 2){
+            charWrite(comms[1],50,'#centerTopRightDiv');
+        }else if(count == 4){
+            charWrite(comms[2],50,'#centerTopRightDiv');
+            $('.spantest').css('color','blue');
+            $('.spantest').html('\u27ea'+" Scanning "+'\u27eb');
+            $('#aimH').css('border-color','blue');
+            $('#aimV').css('border-color','blue');
+            $('.horLine').show();
+            $('.vertLine').show();
+            // $('#aimH').toggleClass('horLine');
+            // $('#aimV').toggleClass('vertLine');
+            $('.ring').html("INCOMING!!");
+        }else if(count == 6){
+            charWrite(comms[5],50,'#centerTopRightDiv');
+            $('.spantest').css('color','red');
+            $('.spantest').html('\u27ea'+" DETECTION "+'\u27eb');
+            $('#aimH').css('border-color','red');
+            $('#aimV').css('border-color','red');
+        }else if(count == 8){
+            charWrite(comms[6],50,'#centerTopRightDiv');
+            $('.spantest').html('\u27ea'+" RED ALERT "+'\u27eb');
+            $('#aimH').css('display','block');//wtf manually change from
+            $('#aimV').css('display','block');//display none to block
+        }else if(count == 10){
+            charWrite(comms[7],50,'#centerTopRightDiv');
+            $('.ring').css('visibility','visible');
+            $('.ring').html("INCOMING!!");
+        }else if(count == 12){
+            charWrite(comms[8],50,'#centerTopRightDiv');
+            $('.spantest').html('\u27ea'+" WARPING OUT "+'\u27eb');
+            $('body').addClass('shakeit');
+            $('.ring').html("IMPLOSION!!");
+        }else if(count == 14){
+            charWrite(comms[9],50,'#centerTopRightDiv');
+            $('body').removeClass('shakeit');
+            $('#centerTopLeftDiv').toggleClass('shrink');
+        }else if(count == 16){
+            charWrite(comms[10],50,'#centerTopRightDiv');
+            $('.spantest').html('');
+            // $('.ring').css('visibility','hidden');
+            $('.ring').hide();
+            $('.ring').html("");
+        }else if(count == 18){
+            charWrite(comms[11],50,'#centerTopRightDiv');
+            $('#centerTopLeftDiv').toggleClass('grow');
+        }else if(count >= 21){
+            // $('#aimH').removeClass('horLine');
+            // $('#aimV').removeClass('vertLine');
+            $('.horLine').hide();
+            $('.vertLine').hide();
+            count = 0;
+            clearInterval(interval);
+            casualties();
+        }
+        $('#num').html(count);
+        count++;
+    },3000);
 
+}
+function standardOrbit() {
+    console.log('standardOrbit()');
+    $('#c').html("Standard Orbit");
+    var count = 0;
+    charWrite(comms[0],50,'#centerTopRightDiv');
+    initScenario();
+    var interval = setInterval(function(){
+        if(count == 2){
+            charWrite(comms[1],50,'#centerTopRightDiv');
+        }else if(count == 4){
+            charWrite(comms[2],50,'#centerTopRightDiv');
+            $('.spantest').css('color','blue');
+            $('.spantest').html('\u27ea'+" Scanning "+'\u27eb');
+            $('#aimH').css('border-color','blue');
+            $('#aimV').css('border-color','blue');
+            $('.horLine').show();
+            $('.vertLine').show();
+            // $('#aimH').addClass('horLine');
+            // $('#aimV').addClass('vertLine');
+        }else if(count == 6){
+            charWrite(comms[3],50,'#centerTopRightDiv');
+            $('.spantest').html('');
+        }else if(count == 8){
+            charWrite(comms[4],50,'#centerTopRightDiv');
+            $('.horLine').hide();
+            $('.vertLine').hide();
+            // $('#aimH').removeClass('horLine');
+            // $('#aimV').removeClass('vertLine');
+        }else if(count >= 10){
+            count = 0;
+            clearInterval(interval);  //must turn on after code done
+        }
+        $('#num').html(count);
+        count++;
+    },3000);
+}
+function weather(){
+    var weather = ['Weather report for today is grim',
+    'Tuskan raiders are out in force',
+    'so please stay inside.']
+    charWrite(weather,50,'#centerTopRightDiv');
+}
 function incoming(){
     console.log('incoming()');
+    var rand = myRandomGen(0,1);
+    standardOrbit();
+    if(rand == 0){
+        standardOrbit();
+    }else if(rand == 1){
+        attackOrbit();
+    }else {
+        weather();
+    }
+}
+function oldincoming(){
+    console.log('oldincoming()');
     var delay1 = 5000; //wait for shaking + delay4
     var delay2 = 7000; //wait to hide planet
     var delay3 = 5000; //wait to stop shaking
@@ -186,9 +319,9 @@ function incoming(){
 
     $('.spantest').html("");
     $('.ring').html("");
-
-    $('.ring').css('visibility','visible');
-    $('.ring').css('font-size','28');
+    // $('#centerTopLeftDiv').addClass('grow');
+    // $('.ring').css('visibility','hidden');
+    // $('.ring').css('font-size','28');
     $('.ringtxt2').html("INCOMING!!");
     var interval = setInterval(function(){
         $('.ringtxt1').html(countdown-1);
@@ -256,7 +389,7 @@ function rotatePhotos(myJson){
             var src = '/media/images/slideshow/' + lines[i];
             $('#centerCenterDivImage').attr('src',src);
             var a = newJson[lines[i]];
-            var c = []
+            var c = [];
             for(var b of Object.keys(a)){
                 c.push(b + ": " + a[b]);
             }
@@ -267,8 +400,12 @@ function rotatePhotos(myJson){
         }
     },speed);
 }
-
-function getPicList(){
+function doLargeText(){
+    console.log('doLargeText()');
+    var fn1 = '/media/docs/largeText/alienScript.txt';
+    loadDoc(fn1,typeWriter,'scrollTextDiv'); //no #
+}
+function doPicList(){
     console.log('getPicList()');
     var fn = '/json/slideshow.json';
     loadDoc(fn ,rotatePhotos);
@@ -283,10 +420,13 @@ function writeRepeat(){
     var fn2 = '/media/docs/smallText/starwars'+episode+'.txt';
     loadDoc(fn2,typeWriterNa,'#iframeDivCenter'); //needs #
 }
+
+
+// functions that start once. only change on refresh
 function writeOnce(){
     console.log('writeOnce()');
-    var fn1 = '/media/docs/alienScript.txt';
-    loadDoc(fn1,typeWriter,'scrollTextDiv'); //no #
+    doPicList();
+    doLargeText();
 }
 function charWrite(myArray, speed = 100, element){
 	console.log('charWrite()');
@@ -326,7 +466,6 @@ var myInterval = setInterval(function(){
     // console.log(rand);
     if(once){
         writeOnce();
-        getPicList();
         once = false;
     }
     if(loopCount % 300 == 0){
