@@ -4,7 +4,7 @@ from flask import ( Flask,
                     render_template,
                     request,url_for,
                     send_from_directory)
-from flask_login import login_required,current_user
+#from flask_login import login_required,current_user
 import os
 
 #blank static_url_path makes static path not show in browser url_for
@@ -26,7 +26,7 @@ def index():
     return app.send_static_file('flex.html')
 
 @app.route('/dashboard')
-@login_required
+#@login_required
 def account():
     return render_template("account.html")
 

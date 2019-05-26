@@ -131,10 +131,10 @@ function casualties(){
     "WE DEAD!","..."];
 
     var i = Math.floor(lvl / 10);
-    var deaths= lvl/10 * Math.floor(Math.pow(10,i-1));
+    var deaths= Math.floor(lvl * Math.floor(Math.pow(10,i-1)));
     all['Damage Level']=lvl;
     all['Deaths'] = (deaths).toLocaleString();
-    all['Wounded'] = (deaths * 3.14).toLocaleString();
+    all['Wounded'] = Math.floor((deaths * 3.14).toLocaleString());
     all['Status'] = status[i];
 
     for (var i of Object.keys(all)){
@@ -183,20 +183,21 @@ comms = [
     ['','...','...','... INCOMING','...','... REPEAT','...','... GRAVITY WELLS','...','... EVASIVE ACTIONS'],
     ['','...','...','... IMPLOSION','...','... SHIELDS DOWN','...','... WARPING OUT'],
     ['','...','...','... WARPING OUT','...','... WARPING OUT','...','... OK STOP','...','... DUDE STOP!'],
-    ['','...','...','... POSITION','...','... MAX DISTANCE','...','... 1 PARSEC','...','... REAPPROCHING PLANET'],
-    ['','...','...','... ESTABLISHING ORBIT','...','... SCANNING','...','...ALL CLEAR']
+    ['','...','...','... POSITION','...','... MIN SAFE DISTANCE','...','... 1 PARSEC','...','... REAPPROCHING PLANET'],
+    ['','...','...','... ESTABLISHING ORBIT','...','... SCANNING','...','... ALL CLEAR','...','... Stand Down']
 ]
 function attackOrbit() {
     console.log('attackOrbit()');
     $('#c').html("Attack Orbit"); //div solely for a counter display
     var count = 0;
-    charWrite(comms[0],50,'#centerTopRightDiv');
+    var speed = 50;
+    charWrite(comms[0],speed,'#centerTopRightDiv');
     initScenario();
     var interval = setInterval(function(){
         if(count == 2){
-            charWrite(comms[1],50,'#centerTopRightDiv');
+            charWrite(comms[1],speed,'#centerTopRightDiv');
         }else if(count == 4){
-            charWrite(comms[2],50,'#centerTopRightDiv');
+            charWrite(comms[2],speed,'#centerTopRightDiv');
             $('.spantest').css('color','blue');
             $('.spantest').html('\u27ea'+" Scanning "+'\u27eb');
             $('#aimH').css('border-color','blue');
@@ -207,37 +208,37 @@ function attackOrbit() {
             // $('#aimV').toggleClass('vertLine');
             $('.ring').html("INCOMING!!");
         }else if(count == 6){
-            charWrite(comms[5],50,'#centerTopRightDiv');
+            charWrite(comms[5],speed,'#centerTopRightDiv');
             $('.spantest').css('color','red');
             $('.spantest').html('\u27ea'+" DETECTION "+'\u27eb');
             $('#aimH').css('border-color','red');
             $('#aimV').css('border-color','red');
         }else if(count == 8){
-            charWrite(comms[6],50,'#centerTopRightDiv');
+            charWrite(comms[6],speed,'#centerTopRightDiv');
             $('.spantest').html('\u27ea'+" RED ALERT "+'\u27eb');
             $('#aimH').css('display','block');//wtf manually change from
             $('#aimV').css('display','block');//display none to block
         }else if(count == 10){
-            charWrite(comms[7],50,'#centerTopRightDiv');
+            charWrite(comms[7],speed,'#centerTopRightDiv');
             $('.ring').css('visibility','visible');
             $('.ring').html("INCOMING!!");
         }else if(count == 12){
-            charWrite(comms[8],50,'#centerTopRightDiv');
+            charWrite(comms[8],speed,'#centerTopRightDiv');
             $('.spantest').html('\u27ea'+" WARPING OUT "+'\u27eb');
             $('body').addClass('shakeit');
             $('.ring').html("IMPLOSION!!");
         }else if(count == 14){
-            charWrite(comms[9],50,'#centerTopRightDiv');
+            charWrite(comms[9],speed,'#centerTopRightDiv');
             $('body').removeClass('shakeit');
             $('#centerTopLeftDiv').toggleClass('shrink');
         }else if(count == 16){
-            charWrite(comms[10],50,'#centerTopRightDiv');
+            charWrite(comms[10],speed,'#centerTopRightDiv');
             $('.spantest').html('');
             // $('.ring').css('visibility','hidden');
             $('.ring').hide();
             $('.ring').html("");
         }else if(count == 18){
-            charWrite(comms[11],50,'#centerTopRightDiv');
+            charWrite(comms[11],speed,'#centerTopRightDiv');
             $('#centerTopLeftDiv').toggleClass('grow');
         }else if(count >= 21){
             // $('#aimH').removeClass('horLine');

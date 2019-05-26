@@ -1,0 +1,41 @@
+This is the place for python scripts that have nothing to do with the dynamic flask site. Scripts that prepare content like getting exif data and creating json files. In other words scripts I run before production.
+
+
+I KEEP THEM HERE JUST TO BE PART OF THE FLASK GIT STRUCTURE. THEY DO NOT NEED TO BE HERE.
+I USUALLY RUN THEM ELSEWHERE AND MOVE THE FILES TO THE CORRECT PLACE.
+
+resizenew.py
+- gets images from input directory and saves them to output directory as smaller web sized resolution and
+- also gets exif data, which it puts into a json file. For '/' picture and photo data. 
+
+
+todo:
+
+need script for main pictures link. build json file based on each years directory structure. This can be either prebuilt into static html or the json file can be requested as a rule and sent back to js to build the links. not sure which is best. Needs to have thumbnails too. 
+
+Prepare:
+
+1. gather full sized images into appropriate folders 'year/eventname' to keep simple. 
+2. build json for exif for each eventname folder with 'resizenew.py'.
+3. populate static directory appropriately with smaller images, thumbnails and a json file.
+4. create python script to build html file
+
+========
+
+need script to replace main picture slideshow. Get random pic from all the folders. Must read all the json files to get name and exif data and build new json out of it.
+
+This seems like a good use of flask POST request to the python script. Should be a small file. Flask so that it could be a random choice every refresh. Otherwise the file would be static.
+
+=========
+
+Need to rebuild the testing page to change the display for different sized tests. Must be smart enough to choose a different layout. So, the answers would go on the side or below depending on dimensions of matrix.
+
+==============
+
+Need a login method so anyone else can add tests and have their own area to upload tests and share the link.
+
+============
+
+Need to make themes for the pages. Not everyone is cool enough for my alien theme. 
+
+===================

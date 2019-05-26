@@ -303,7 +303,7 @@ body::after{
     width: 50px;
     height: 50px;
     z-index: 2;
-    font-size: 18px;
+    font-size: 18;
     animation: pulse 4s ease-out infinite;
 }
 .ring2 {
@@ -323,7 +323,7 @@ body::after{
 }
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 10px 20px rgba(255, 20, 20, 1);
+        box-shadow: 0 0 10 20px rgba(255, 20, 20, 1);
         transform: scale(0);
     }
     20% {
@@ -403,7 +403,7 @@ body::after{
     width: 100px;
     height: 100px;
     z-index: 2;
-    font-size: 28px;
+    font-size: 28;
     animation: blink 1s infinite;
     white-space: nowrap;
     color:red;
