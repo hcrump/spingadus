@@ -6,3 +6,6 @@ handlers:
 
 - url: /.*
   script: auto
+
+env_variables:
+    APP_SETTINGS: 'config.ProductionConfig'

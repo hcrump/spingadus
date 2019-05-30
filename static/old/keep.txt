@@ -1,0 +1,21 @@
+## old way to use sqlite instead of sqlalchemy
+import sqlite3
+@app.route('/dashboard')
+@login_required
+def dashboard():
+    posts = []
+    try:
+        g.db = connect_db()
+        cur = g.db.execute('select * from posts')
+
+        for row in cur.fetchall():
+            posts.append(dict(title=row[1],description=row[2]))
+        # posts = [dict(title=row[0], description=row[1]) for row in cur.fetchall()]
+        g.db.close()
+    except sqlite3.OperationalError:
+        flash('You have no database!')
+    return render_template("dashboard.html", posts=posts)
+
+
+# def connect_db():
+#     return sqlite3.connect('posts.db')

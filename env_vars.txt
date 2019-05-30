@@ -1,0 +1,11 @@
+
+What envs do I need?
+
+Local machine:
+APP_SETTINGS=config.DevelopmentConfig
+DATABASE_URL='sqlite:///posts.db'
+
+
+for google cloud: use app.yaml file:
+
+APP_SETTINGS=config.ProductionConfig

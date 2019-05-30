@@ -151,9 +151,22 @@ body::after{
     justify-content: flex-start;
 /*     border: 1px solid purple; */
 }
-#scrollTextDiv {
+#leftDiv {
     flex: 1 1 200px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    margin-bottom: 20px;
+}
+#scrollTextDiv {
     white-space: pre;
+    padding:10px;
+
+}
+#leftBottomDiv {
     padding:10px;
 }
 #centerDiv{
@@ -172,9 +185,10 @@ body::after{
     flex-wrap: nowrap;
     justify-content:center;
     margin-bottom: 20px;
+    padding:10px;
 }
 #centerTopLeftDiv {
-    flex: 1 1 200px;
+    flex: 1 0 200px;
     margin-right: 20px;
     transition: transform 2s ease-in-out;
 }
@@ -216,7 +230,7 @@ body::after{
 }
 #centerTopRightDiv {
     flex: 2 1 100px;
-    padding: 10px;
+    padding-left: 20px;
     min-width: 180px;
 }
 #centerTopRightDiv ul{
@@ -291,10 +305,12 @@ body::after{
 }
 
 .scifiBorder, #centerBottomDiv, #centerCenterDiv,
-#iframeDiv, .mainImage {
+#iframeDiv, .mainImage, #leftBottomDiv,
+#centerTopDiv,#iframeDivCenter,#scrollTextDiv{
   border-radius: 50px /15px;
   box-shadow: 0 0 10px;
 }
+
 .ring{
     position: absolute;
     border-radius: 50%;

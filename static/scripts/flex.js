@@ -19,7 +19,7 @@ function delayme(arr,speed=50,a){
     var iSpeed = speed; // time delay of print out
     var iIndex = 0; // start printing array at this posision
     var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 38; // start scrolling up at this many lines
+    var iScrollAt = 43; // start scrolling up at this many lines
 
     var iTextPos = 0; // initialise text position
     var sContents = ''; // initialise contents variable
@@ -134,7 +134,7 @@ function casualties(){
     var deaths= Math.floor(lvl * Math.floor(Math.pow(10,i-1)));
     all['Damage Level']=lvl;
     all['Deaths'] = (deaths).toLocaleString();
-    all['Wounded'] = Math.floor((deaths * 3.14).toLocaleString());
+    all['Wounded'] = Math.floor(deaths * 3.14).toLocaleString();
     all['Status'] = status[i];
 
     for (var i of Object.keys(all)){
@@ -173,18 +173,18 @@ function initScenario() {
     $('#glowring').css('visibility','visible');
 }
 comms = [
-    ['','...','...','... Standard Orbit','...','... Orbit decaying','...','... Drag coeficient','...','... calculated','...','... compensated'],
-    ['','...','...','... Preparing Scans','...','... Asthenospheric depth'],
-    ['','...','...','... Scans in progress','...','... Scans in progress','...','... Scans in progress'],
-    ['','...','...','... Scanning Complete','...','... No anomalies detected'],
-    ['','...','...','... ALL CLEAR','...','... Continue standard operations'],
-    ['','...','...','... DETECTION','...','... GRAVITY ANOMALY','...','... GRAVITY ANOMALY'],
-    ['','...','...','... RED ALERT','...','... MULTIPLE','... GRAVITY WELLS','...','... INCOMING'],
-    ['','...','...','... INCOMING','...','... REPEAT','...','... GRAVITY WELLS','...','... EVASIVE ACTIONS'],
-    ['','...','...','... IMPLOSION','...','... SHIELDS DOWN','...','... WARPING OUT'],
-    ['','...','...','... WARPING OUT','...','... WARPING OUT','...','... OK STOP','...','... DUDE STOP!'],
-    ['','...','...','... POSITION','...','... MIN SAFE DISTANCE','...','... 1 PARSEC','...','... REAPPROCHING PLANET'],
-    ['','...','...','... ESTABLISHING ORBIT','...','... SCANNING','...','... ALL CLEAR','...','... Stand Down']
+    ['','','','Standard Orbit','...','... Orbit decaying','...','... Drag coeficient','...','... calculated','...','... compensated'],
+    ['','','','Preparing Scans','...','... Asthenospheric depth','...','... selected'],
+    ['','','','Scans in progress','...','... Scanning','...','... Scanning'],
+    ['','','','Scanning Results','...','... No anomalies detected','...','... disable scanning'],
+    ['','','','ALL CLEAR','...','... Continue standard operations'],
+    ['','','','DETECTION','...','... GRAVITY ANOMALY','...','... GRAVITY ANOMALY'],
+    ['','','','RED ALERT','...','... MULTIPLE','... GRAVITY WELLS','...','... INCOMING'],
+    ['','','','INCOMING','...','... GRAVITY WAVES','...','... BRACE FOR IMPACT','...','... EVASIVE ACTIONS'],
+    ['','','','IMPLOSION','...','... SHIELDS DOWN','...','... WARPING OUT'],
+    ['','','','WARPING OUT','...','... WARPING OUT','...','... OK STOP','...','... DUDE STOP!'],
+    ['','','','POSITION','...','... MIN SAFE DISTANCE','...','... 1 PARSEC','...','... REAPPROCHING PLANET'],
+    ['','','','ESTABLISHING ORBIT','...','... SCANNING','...','... ALL CLEAR','...','... Stand Down']
 ]
 function attackOrbit() {
     console.log('attackOrbit()');
@@ -245,7 +245,7 @@ function attackOrbit() {
             // $('#aimV').removeClass('vertLine');
             $('.horLine').hide();
             $('.vertLine').hide();
-            count = 0;
+            // count = 0;
             clearInterval(interval);
             casualties();
         }
@@ -283,7 +283,7 @@ function standardOrbit() {
             // $('#aimH').removeClass('horLine');
             // $('#aimV').removeClass('vertLine');
         }else if(count >= 10){
-            count = 0;
+            // count = 0;
             clearInterval(interval);  //must turn on after code done
         }
         $('#num').html(count);
@@ -395,6 +395,7 @@ function rotatePhotos(myJson){
                 c.push(b + ": " + a[b]);
             }
             charWrite(c,50,'#centerBottomDiv');
+            tracker(c);
             i++;
         }else{
             i=0;
@@ -429,15 +430,22 @@ function writeOnce(){
     doPicList();
     doLargeText();
 }
-function charWrite(myArray, speed = 100, element){
+function tracker(l){
+    var len = [];
+    len.push(l);
+    $('#leftBottomDiv').html(':DEBUG:' + '<br>' + l);
+}
+function charWrite(myArray, speed = 50, el=""){
 	console.log('charWrite()');
-    var txtArray = myArray || ['this','is','a','test'];
+    var txtArray = myArray || ['charWrite():','received','empty','myArray','var.'];
 	var arrIndex = 0;
     var contents = '';
     var charIndex = 0;
 	var piece = "";
     var date = new Date();
+    var element = el;
 
+    // tracker(myArray.length);
     $(element).html("");
     // txtArray.unshift(date,"");
 	contents += txtArray[arrIndex] + '<br>';

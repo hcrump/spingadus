@@ -32,10 +32,16 @@
             <li><a href="/pictures.html">Pics</a></li>
             <li><button onclick="divBordersOn()">divBordersOn</button></li>
             <li><button onclick="location.reload(true)">reload</button></li>
+            <li><button class='btn' onclick="window.location.href='/login';">login</button></li>
+
         </ul>
     </nav>
     <div id='container'>
-        <div id='scrollTextDiv'>
+        <div id='leftDiv'>
+            <div id='scrollTextDiv'>
+            </div>
+            <div id='leftBottomDiv'>
+            </div>
         </div>
         <div id='centerDiv'>
             <div id='centerTopDiv'>
@@ -53,7 +59,7 @@
                         <span id='num'></span>
                     </div>
                 </div>
-                <div id='centerTopRightDiv' class='scifiBorder'>
+                <div id='centerTopRightDiv'>
                     <p>Weather report for today is grim.</p>
                     <p>Tuskan raiders are out in force, so please stay inside.</p>
             </div>
@@ -76,7 +82,7 @@
                 frameborder="0" allow="autoplay;picture-in-picture">
                 </iframe>
             </div>
-            <div id='iframeDivCenter' class='scifiBorder'>
+            <div id='iframeDivCenter'>
             </div>
             <!-- <div id='iframeDivBottom'></div> -->
         </div>
