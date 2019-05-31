@@ -2,10 +2,18 @@
 What envs do I need?
 
 Local machine:
+#add to virtualenv file "activate.bat" in  C:\Users\horace\Envs\myFlaskEnv\Scripts>
+# adds every time you run workon <wrappername>
+
+#worked
 APP_SETTINGS=config.DevelopmentConfig
+
+# broke, so i hard coded it. I think it's the quotes around it???
 DATABASE_URL='sqlite:///posts.db'
 
 
+
+========================================
 for google cloud: use app.yaml file:
 
 APP_SETTINGS=config.ProductionConfig

@@ -9,3 +9,4 @@ handlers:
 
 env_variables:
     APP_SETTINGS: 'config.ProductionConfig'
+    DATABASE_URL: 'sqlite:///posts.db'

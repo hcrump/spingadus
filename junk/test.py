@@ -1,4 +1,4 @@
-from main import app
+from project import app
 import unittest
 
 ### all test functions must start with the word 'test'
@@ -45,7 +45,7 @@ class FlaskTestCase(unittest.TestCase):
             follow_redirects = True
         )
         response = tester.get('/logout', follow_redirects=True)
-        self.assertIn(b'You were just logged out',response.data)
+        self.assertIn(b'You were logged out',response.data)
 
     # ensure that the dashboard page requires login
     # change for whatever page you want to be secured

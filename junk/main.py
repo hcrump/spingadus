@@ -2,6 +2,7 @@ from flask import ( Flask, flash, redirect, render_template,
                     request,url_for, send_from_directory,
                     session,g)
 from flask_sqlalchemy import SQLAlchemy
+from flask_bcrypt import Bcrypt
 import os
 from functools import wraps
 # import sqlite3
@@ -10,6 +11,7 @@ from functools import wraps
 #blank static_url_path makes static path not show in browser url_for
 #must precede any static files with '/' or it breaks
 app = Flask(__name__, static_url_path='')
+bcrypt = Bcrypt(app)
 
 app.config.from_object(os.environ['APP_SETTINGS'])
 # app.config.from_object('config.DevelopmentConfig')
@@ -57,7 +59,7 @@ def login():
         else:
             session['logged_in'] = True
             flash('You were just logged in')
-            return redirect(url_for('welcome'))
+            return redirect(url_for('dashboard'))
     return render_template('login.html',error=error)
 
 
@@ -74,10 +76,8 @@ def dashboard():
     posts = db.session.query(BlogPost).all()
     return render_template("dashboard.html", posts=posts)
 
-
 # def connect_db():
-#     return sqlite3.connect('posts.db')
-
+#     return sqlite3.connect(app.database)
 
 @app.route('/upload/')
 def upload():
