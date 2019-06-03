@@ -2,7 +2,9 @@ function doPic(){
     // var img = document.createElement('IMG');
     // img.src = '/media/images/slideshow/640x480-shore.jpg';
     // $('#picViewer').html(img);
-    $('#picViewer').html("<img src= '/media/images/slideshow/640x480-shore.jpg'>");
+    // $('#picViewer').html("<img src= '/media/images/slideshow/640x480-shore.jpg'>");
+    $('#picViewer').html("<img src= {{url_for('static',filename='/media/images/slideshow/640x480-shore.jpg')}}>");
+
 }
 function divBordersOn(){
     $('div').toggleClass("div");

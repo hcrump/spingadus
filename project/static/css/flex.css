@@ -483,6 +483,7 @@ footer {
     /* border-bottom: 1px solid green; */
     position:relative;
     box-shadow: 0 0 10px;
+    bottom:0;
 }
 
 .mainImage {

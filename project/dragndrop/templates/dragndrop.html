@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %} Drag'n'Drop {% endblock title %}
+{% block head %}
+<script src="{{ url_for('static', filename='scripts/testing.js')}}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/aliensimple.css')}}">
+{% endblock head %}
+{% block container %}
+<div id="headerTop">
+    <h1>Welcome and Have Fun Testing Yourself !!</h1>
+</div>
+<div class="dropdown">
+    <button onclick="clickHide()" class="dropbtn">TOPICS MENU</button>
+    <div id="myDropdown" class="dropdown-content">
+
+    </div>
+</div>
+<div class="mainWorkplace">
+    <div id="menuLeft">
+        <div id="topicsMenu">
+            <h3>Get Ready!</h3>
+            <ul></ul>
+        </div>
+    </div>
+    <div id="data">
+        <div id="innerData"></div>
+        <table id='mainTable'>
+            <thead id="thead1">
+                <tr></tr>
+            </thead>
+            <tbody id="tbody1"></tbody>
+        </table>
+    </div>
+    <div id="answerDiv">
+        <div id="instructions">
+            <p id="instructionsP"></p>
+        </div>
+    </div>
+</div>
+<div id="bottom">
+<img id="mainpagecat" src="/media/images/cat1-tp.png" alt="its a fricken cat!">
+<p id="finished"></p>
+</div>
+</div>
+<div id="result"></div>
+{% endblock %}
+{% block script %}
+<script>
+    //normal startup
+    $(document).ready(function() {
+        mainInitScript();
+    });
+</script>
+{% endblock %}

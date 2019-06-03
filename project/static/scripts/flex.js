@@ -395,7 +395,7 @@ function rotatePhotos(myJson){
                 c.push(b + ": " + a[b]);
             }
             charWrite(c,50,'#centerBottomDiv');
-            tracker(c);
+            // tracker(c);
             i++;
         }else{
             i=0;
@@ -429,11 +429,21 @@ function writeOnce(){
     console.log('writeOnce()');
     doPicList();
     doLargeText();
+    tracker();
 }
-function tracker(l){
-    var len = [];
-    len.push(l);
-    $('#leftBottomDiv').html(':DEBUG:' + '<br>' + l);
+function tracker(l=0){
+    var len = "";
+    var buh = setInterval(function(){
+
+        for(var i =0; i < 220;i++){
+            len += myRandomGen(0,1);
+            len += " ";
+        }
+        $('#leftBottomDiv').html(len);
+        len="";
+    },500);
+    // len.push(l);
+    // $('#leftBottomDiv').html(':DEBUG:' + '<br>' + l);
 }
 function charWrite(myArray, speed = 50, el=""){
 	console.log('charWrite()');

@@ -6,38 +6,40 @@
     <meta name='description' content="Flask website hosted on Google App Engine">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    {% block head %}
-    <script src="/scripts/aliensimple.js"></script>
-    <link rel="stylesheet" href="/css/aliensimple.css">
     <title>{% block title %} A Page{% endblock %}</title>
+    {% block head %}
+    <!-- <script src="/scripts/aliensimple.js"></script> -->
+    <script src="{{ url_for('static', filename='scripts/aliensimple.js')}}"></script>
+    <!-- <link rel="stylesheet" href="/css/aliensimple.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aliensimple.css')}}">
     {% endblock head %}
 </head>
 <body class="overlay">
-<nav id="nav">
-    <ul>
-        <li>
-            <a href="/">Home</a>
-            <ul>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li>
-            <a href="/maintestpage.html">Tests</a>
-            <ul>
-                <li><a href="/">tbd</a></li>
-                <li><a href="/">tbd</a></li>
-            </ul>
-        </li>
-        <li><a href="/pictures.html">Pics</a></li>
-        <li><button class='btn' onclick="divBordersOn()">divBordersOn</button></li>
-        <li><button class='btn' onclick="window.location.href='/login';">login</button></li>
-        <li><button class='btn' onclick="window.location.href='/logout';">logout</button></li>
+    <nav id="nav">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="/blog">Blog</a></li>
+            <li>
+                <a href="/dragndrop">Drag'N'Drop</a>
+                <ul>
+                    <li><a href="/maintestpage.html">Testing</a></li>
+                    <li><a href="/dragndrop2">Drag'N'Drop 2</a></li>
+                </ul>
+            </li>
+            <li><a href="/pictures">Pics</a></li>
+            <li><button class='btn' onclick="divBordersOn()">divBordersOn</button></li>
+            <li><button class='btn' onclick="window.location.href='/login';">login</button></li>
+            <li><button class='btn' onclick="window.location.href='/logout';">logout</button></li>
 
-    </ul>
-</nav>
-    <div>
+        </ul>
+    </nav>
+    <div id='container'>
 
         <!-- child template -->
         {% block container %}{% endblock %}
@@ -52,8 +54,11 @@
           {{ message }}
         {% endfor %}
     </div>
+    {% block script %}{% endblock %}
+    <footer>
+        &copy; 2019 by me.
+    </footer>
 </body>
-<footer>
-    &copy; 2019 by me.
-</footer>
+
+
 </html>

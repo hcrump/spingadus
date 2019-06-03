@@ -1,5 +1,8 @@
 *.pyc
 *~
+*.db
+/coverage
+/junk
 __pycache__
 myvenv
 db.sqlite3

@@ -1,44 +1,16 @@
-<DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name='description' content="My about page">
-    <title>About</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="/css/aliensimple.css">
-</head>
-<body class='overlay'>
-    <nav id="nav">
-        <ul>
-            <li>
-                <a href="/">Home</a>
-                <ul>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-            </li>
-            <li><a href="/blog.html">Blog</a></li>
-            <li>
-                <a href="/maintestpage.html">Tests</a>
-                <ul>
-                    <li><a href="/">tbd</a></li>
-                    <li><a href="/">tbd</a></li>
-                </ul>
-            </li>
-            <li><a href="/pictures.html">Pics</a></li>
-        </ul>
-    </nav>
-    <div class="centering">
-        <h1>Contact me?</h1>
+{% extends "base.html" %}
+{% block title %}Contact{% endblock %}
+{% block container %}
 
-        <h2>But I don't want to be contacted!</h2>
-        <h2>...and get off my lawn!</h2>
-        <hr>
-        <p>But if you want contact have some quotes from... Contact!</p>
-        <br>
-        <p>
+<div class="centering">
+    <h1>Contact me?</h1>
+
+    <h2>But I don't want to be contacted!</h2>
+    <h2>...and get off my lawn!</h2>
+    <hr>
+    <p>But if you want contact have some quotes from... Contact!</p>
+    <br>
+    <p>
 <p>"David Drumlin: I know you must think this is all very unfair. Maybe that's an understatement. What you don't know is I agree. I wish the world was a place where fair was the bottom line, where the kind of idealism you showed at the hearing was rewarded, not taken advantage of. Unfortunately, we don't live in that world.
 Ellie Arroway: Funny, I've always believed that the world is what we make of it."</p>
 <p>“The universe is a pretty big place. If it's just us, seems like an awful waste of space.”</p>
@@ -49,11 +21,6 @@ Ellie Arroway: Funny, I've always believed that the world is what we make of it.
 <p>“The major religions on the Earth contradict each other left and right. You can't all be correct. And what if all of you are wrong? It's a possibility, you know. You must care about the truth, right? Well, the way to winnow through all the differing contentions is to be skeptical. I'm not any more skeptical about your religious beliefs than I am about every new scientific idea I hear about. But in my line of work, they're called hypotheses, not inspiration and not revelation.”</p>
 <p>“Our television signals leave this planet and go out into space...the signals spread out from the earth in spherical waves, a little like ripples in a pond. They travel at the speed of light, 186,000 miles a second, and essentially go on forever. The better some other civilizations receivers are, the farther away they could be and still pick up our tv signals. Even we could detect a strong tv transmission from a planet going around the nearest star.' President: 'You mean everything? You mean to say all that crap on television - the car crashes, wrestling, the porno channels, the evening news?”</p>
 <p>"So what's more likely? That an all-powerful, mysterious god created the universe, and decided not to give any proof of his existence? Or, that he simply doesn't exist at all, and that we created him, so that we wouldn't have to feel so small and alone?"</p>
+</div>
 
-
-
-        </p>
-    </div>
-    <footer>&copy 2019 by me</footer>
-</body>
-</html>
+{% endblock %}

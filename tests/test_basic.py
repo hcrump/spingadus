@@ -14,7 +14,7 @@ class FlaskTestCase(BaseTestCase):
 
     # Ensure that main page requires user login
     def test_main_route_requires_login(self):
-        response = self.client.get('/', follow_redirects=True)
+        response = self.client.get('/dashboard', follow_redirects=True)
         self.assertIn(b'Please log in to access this page', response.data)
 
     # Ensure that welcome page loads

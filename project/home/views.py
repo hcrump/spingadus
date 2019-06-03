@@ -4,9 +4,9 @@
 
 from project import app, db
 from project.models import BlogPost
-from flask import ( Flask, flash, redirect, render_template, request,
-                    url_for, send_from_directory,session,g, Blueprint)
-from functools import wraps
+from flask import ( request, redirect, flash, render_template, url_for, send_from_directory, Blueprint)
+from flask_login import login_required, current_user
+from .form import MessageForm
 import os
 
 ################
@@ -21,19 +21,6 @@ home_blueprint = Blueprint(
 ##########################
 #### helper functions ####
 ##########################
-
-
-# login required decorator
-def login_required(f):
-    @wraps(f)
-    def wrap(*args, **kwargs):
-        if 'logged_in' in session:
-            return f(*args, **kwargs)
-        else:
-            flash('You need to login first.')
-            return redirect(url_for('users.login'))
-    return wrap
-
 
 @home_blueprint.route('/')
 def index():
@@ -52,32 +39,26 @@ def favicon():
                                 mimetype='image/vnd.microsoft.icon')
 
 
-# @app.route('/login',methods=['GET', 'POST'])
-# def login():
-#     error = None
-#     if request.method == 'POST':
-#         if request.form['username'] != 'admin' or request.form['password'] != 'admin':
-#             error = 'Invalid credentials. Please try again.'
-#         else:
-#             session['logged_in'] = True
-#             flash('You were just logged in')
-#             return redirect(url_for('dashboard'))
-#     return render_template('login.html',error=error)
-#
-#
-# @app.route('/logout')
-# def logout():
-#     session.pop('logged_in',None)
-#     flash('You were just logged out!')
-#     return redirect(url_for('login'))
-
-
-@home_blueprint.route('/dashboard')
+@home_blueprint.route('/dashboard', methods=['GET','POST'])
 @login_required
 def dashboard():
-    posts = db.session.query(BlogPost).all()
-    return render_template("dashboard.html", posts=posts)
+    error = None
+    form = MessageForm(request.form)
+    if form.validate_on_submit():
+        new_message = BlogPost(
+            form.title.data,
+            form.description.data,
+            current_user.id
+        )
+        db.session.add(new_message)
+        db.session.commit()
+        flash('New entry was successfully posted. Thanks.')
+        return redirect(url_for('home.dashboard'))
+    else:
+        posts = db.session.query(BlogPost).all()
+        return render_template("dashboard.html", posts=posts, error=error, form=form)
 
+# only for direct sql to sqlite3, but we are using sqlalchemy
 # def connect_db():
 #     return sqlite3.connect(app.database)
 
@@ -85,10 +66,26 @@ def dashboard():
 def upload():
     return 'Hellow World!'
 
+@home_blueprint.route('/blog')
+def blog():
+    posts = db.session.query(BlogPost).all()
+    return render_template('blog.html', posts=posts)
 
-@home_blueprint.route('/<string:page_name>/')
-def render_static(page_name):
-    return app.send_static_file(page_name)
+@home_blueprint.route('/pictures')
+def pictures():
+    return render_template('pictures.html')
+
+@home_blueprint.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+@home_blueprint.route('/about')
+def about():
+    return render_template('about.html')
+
+# @home_blueprint.route('/<string:page_name>/')
+# def render_static(page_name):
+#     return app.send_static_file(page_name)
 
 
 @home_blueprint.errorhandler(404)
