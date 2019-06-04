@@ -1,0 +1,252 @@
+a {
+    text-decoration: none;
+}
+
+
+
+.scifiBorder1, #headerTop,.dropdown,
+#topicsMenu,.dropbtn{
+  border-radius: 15px;
+  box-shadow: 0 0 10px;
+}
+#headerTop {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    color: #66FF66;
+    margin: 0 0 0 200px;
+    /* left:0;right:0;top:0;bottom:0; */
+}
+#topicsMenu {
+    border-radius: 10px;
+    padding: 5px;
+    color: #66FF66;
+    min-width: 220px;
+    margin: 10px;
+    margin-left: 0;
+    text-align: center;
+    display:inline-block;
+}
+
+#topicsMenu ul{
+    border-radius: 10px;
+    border: 1px solid darkgreen;
+    margin:0;
+    padding:5;
+    color:#66FF66;
+}
+
+/*button container <div> for positioning*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    opacity: .9;
+    /* width:20%; */
+}
+
+/* dropdown button*/
+.dropbtn {
+    background-color: green;
+    color: #66FF66;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* dropdown button on hover and focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #darkgreen;
+    cursor: pointer;
+}
+
+/* dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkgreen;
+    color: #66FF66;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    /* font-weight: bold; */
+    /* padding: 5px; */
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* links inside the dropdown */
+.dropdown-content a {
+    color: #66FF66;
+    padding: 10px;
+    display: block;
+}
+
+/* change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: green;
+}
+
+.testName {
+    background: #73AD21;
+    width: 100px;
+    color: #66FF66;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.testName:hover {
+    background-color: green;
+}
+
+.mainWorkplace {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+ul li{
+    text-align: left;
+    list-style-position: inside;
+}
+ul li:hover {
+    /* background-color: #73AD21; */
+    background-color: #4CAF50;
+}
+ul li a {
+    color:#66FF66;
+}
+#data {
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    /* background: #73AD21; */
+    padding: 10px;
+    color: #66FF66;
+    width: auto;
+    position:sticky;
+    /*flex-grow: 2;*/
+    z-index: 1;
+}
+
+#innerData {
+    float: right;
+    color: #66FF66;
+    font-size: 16px;
+    border: 2px solid green;
+    /* background-color: #c5efa7; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#innerData:empty {
+    display: none;
+}
+
+table {
+    border: 0px solid #66FF66;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+th {
+    padding: 15px;
+    color: #66FF66;
+    border-bottom: 3px solid #4CAF50;
+    /* background-color: #9DD929; */
+    /* background: -webkit-gradient( linear, left bottom, left top, color-stop(0.02, rgb(123, 192, 67)), color-stop(0.51, rgb(139, 198, 66)), color-stop(0.87, rgb(158, 217, 41)));
+    background: -moz-linear-gradient( center bottom, rgb(123, 192, 67) 3%, rgb(139, 198, 66) 52%, rgb(158, 217, 41) 88%); */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-radius: 10px;
+}
+
+td {
+    /*min-width: 100px;*/
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    /* background-color: #DEF3CA; */
+    border: 1px solid #66FF66;
+    border-radius: 10px;
+}
+
+.tdNoDrag {
+    color: #66FF66;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.tdHidden {
+    font-size: 0;
+    color: #DEF3CA;
+}
+
+.tdDrag {
+    color: #66FF66;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* show dropdown menu use js to add this class to .dropdown-content on clicked*/
+
+.show {
+    display: block;
+}
+
+#catDiv {
+    position: fixed;
+    display: inline-block;
+    top:400px;
+}
+#mainpagecat {
+    /* text-align: center; doesn't seem to work */
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;*/
+    animation: rotation 1s 5 linear;
+    animation-play-state: paused;
+    position:sticky;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+#finished {
+    display:block;
+    margin:left;
+}
+#instructions {
+    /* background-color:yellow; */
+    color: #66ff66;
+    font-size:16px;
+    border-radius: 10px;
+}
+#instructionsP {
+    border:1px dashed green;
+    padding:10px;
+    border-radius:10px;
+}
+#instructionsP:empty {
+    display: none;
+}
+#answerDiv {
+    margin: 10px;
+    top: 0;
+    right:0;
+    position:sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+}

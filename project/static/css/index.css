@@ -511,6 +511,7 @@ footer {
         -1px 0 5px #f0f,
         1px 0 5px #0ff;
     animation: orbit 20s 1s linear forwards infinite;
+    display: none;
 }
 @keyframes orbit {
     0% {
