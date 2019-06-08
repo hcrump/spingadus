@@ -1,0 +1,29 @@
+{% extends "frame.html" %}
+{% block nav %}
+<nav id="nav">
+    <ul>
+        <li>
+            <a href="/">Home</a>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </li>
+        <li><a href="/blog">Blog</a></li>
+        <li>
+            <a href="/dragndrop">Drag'N'Drop</a>
+            <ul>
+                {% block draglinks %}
+                <li><a href="/maintestpage.html">Testing</a></li>
+                <li><a href="/dragndrop2">Drag'N'Drop 2</a></li>
+                {% endblock draglinks %}
+            </ul>
+        </li>
+        <li><a href="/pictures">Pics</a></li>
+        <li><button class='btn' onclick="divBordersOn()">divBordersOn</button></li>
+        <li><button class='btn' onclick="window.location.href='/login';">login</button></li>
+        <li><button class='btn' onclick="window.location.href='/logout';">logout</button></li>
+
+    </ul>
+</nav>
+{% endblock nav %}

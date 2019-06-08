@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %} Uploader Page {% endblock %}
+{% block container %}
+<div>
+<h1>Select a file to upload</h1>
+<br>
+<form  role="form" method="post" \
+        enctype="multipart/form-data" \
+        action="{{ url_for('users.uploader') }}">
+  {{ form.csrf_token }}
+  {{ form.file }}
+  <!-- <input type="file" name="file"> -->
+  <label for="file">Choose a file for upload</label>
+  <p>
+    <span class="error">
+        <!-- errors -->
+        {% if error %}
+          <p class="error"><strong>Error:</strong> {{ error }}</p>
+        {% endif %}
+        <!-- messages -->
+        {% for error in form.file.errors %}
+          {{ error }}
+        {% endfor %}
+    </span>
+  </p>
+  <button class="btn" type="submit" value="submit">Upload File</button>
+</form>
+</div>
+{% endblock %}

@@ -2,8 +2,6 @@ a {
     text-decoration: none;
 }
 
-
-
 .scifiBorder1, #headerTop,.dropdown,
 #topicsMenu,.dropbtn{
   border-radius: 15px;
@@ -26,6 +24,7 @@ a {
     margin-left: 0;
     text-align: center;
     display:inline-block;
+        pointer-events: none;
 }
 
 #topicsMenu ul{
@@ -34,15 +33,20 @@ a {
     margin:0;
     padding:5;
     color:#66FF66;
+        pointer-events: none;
 }
-
+#topicsMenu ul li a{
+    pointer-events: auto;
+    z-index: 0;
+}
 /*button container <div> for positioning*/
 .dropdown {
     position: relative;
     display: inline-block;
     z-index: 1;
-    opacity: .9;
+    /* opacity: 1; */
     /* width:20%; */
+
 }
 
 /* dropdown button*/
@@ -53,6 +57,7 @@ a {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    pointer-events: auto;
 }
 
 /* dropdown button on hover and focus */
@@ -74,6 +79,7 @@ a {
     /* padding: 5px; */
     border-radius: 10px;
     font-size: 12px;
+    pointer-events: none;
 }
 
 /* links inside the dropdown */
@@ -81,6 +87,7 @@ a {
     color: #66FF66;
     padding: 10px;
     display: block;
+    pointer-events: auto;
 }
 
 /* change color of dropdown links on hover */
@@ -154,6 +161,7 @@ table {
     border: 0px solid #66FF66;
     border-radius: 10px;
     z-index: 1;
+    font-size: 11px;
 }
 
 th {
@@ -177,10 +185,12 @@ td {
     border: 1px solid #66FF66;
     border-radius: 10px;
 }
-
+tbody {
+        font-size: 18px;
+}
 .tdNoDrag {
     color: #66FF66;
-    font-size: 16px;
+    font-size: 11px;
     white-space: nowrap;
 }
 
@@ -191,7 +201,7 @@ td {
 
 .tdDrag {
     color: #66FF66;
-    font-size: 16px;
+    font-size: 11px;
     display: inline-block;
 }
 

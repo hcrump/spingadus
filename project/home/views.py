@@ -62,9 +62,6 @@ def dashboard():
 # def connect_db():
 #     return sqlite3.connect(app.database)
 
-@home_blueprint.route('/upload/')
-def upload():
-    return 'Hellow World!'
 
 @home_blueprint.route('/blog')
 def blog():
@@ -88,6 +85,7 @@ def about():
 #     return app.send_static_file(page_name)
 
 
-@home_blueprint.errorhandler(404)
+# @home_blueprint.errorhandler(404)
+@app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'),404

@@ -15,32 +15,10 @@
     {% endblock head %}
 </head>
 <body class="overlay">
-    <nav id="nav">
-        <ul>
-            <li>
-                <a href="/">Home</a>
-                <ul>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </li>
-            <li><a href="/blog">Blog</a></li>
-            <li>
-                <a href="/dragndrop">Drag'N'Drop</a>
-                <ul>
-                    <li><a href="/certification">Certification</a></li>
-                    <li><a href="/japanese">Japanese</a></li>
-                    <li><a href="/kids">Kids</a></li>
-                    <li><a href="/testing">Testing</a></li>
-                </ul>
-            </li>
-            <li><a href="/pictures">Pics</a></li>
-            <li><button class='btn' onclick="divBordersOn()">divBordersOn</button></li>
-            <li><button class='btn' onclick="window.location.href='/login';">login</button></li>
-            <li><button class='btn' onclick="window.location.href='/logout';">logout</button></li>
-
-        </ul>
-    </nav>
+    {% block nav %}
+    {% block draglinks %}
+    {% endblock draglinks %}
+    {% endblock nav %}
     <div id='container'>
 
         <!-- child template -->

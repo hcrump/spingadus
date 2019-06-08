@@ -1,6 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import TextField, PasswordField
 from wtforms.validators import DataRequired, Length, Email, EqualTo
+from flask_wtf.file import FileField, FileAllowed, FileRequired
 
 
 class LoginForm(FlaskForm):
@@ -27,3 +28,9 @@ class RegisterForm(FlaskForm):
             DataRequired(), EqualTo('password', message='Passwords must match.')
         ]
     )
+
+class UploadForm(FlaskForm):
+    file = FileField(validators=[
+        FileRequired(),
+        FileAllowed(['xls','xlsx'], 'Excel only!')
+    ])
