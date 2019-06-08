@@ -3,7 +3,7 @@
 #################
 
 from project import app
-from flask import Blueprint,url_for,redirect,render_template,request,current_app
+from flask import Blueprint,url_for,redirect,render_template,request,current_app,Markup
 import os
 
 ################
@@ -27,20 +27,52 @@ def get_json_dirs():
 ################
 #### routes ####
 ################
-@dragndrop_blueprint.route('/<string:page_name>')
-def dragndrop(page_name):
-    print('-----------------', page_name, '----------------------')
-    # app.logger.debug('A value for debugging')
-    # print(app.config['JSON_LINKS'])
-    if page_name in app.config['JSON_LINKS']:
-        return render_template('dragndrop.html',title=page_name)
-    else:
-        return render_template('404.html')
+# @dragndrop_blueprint.route('/<string:page_name>')
+# def dragndrop(page_name):
+#     print('-----------------', page_name, '----------------------')
+#     # app.logger.debug('A value for debugging')
+#     # print(app.config['JSON_LINKS'])
+#     if page_name in app.config['JSON_LINKS']:
+#         return render_template('dragndrop.html',title=page_name)
+#     else:
+#         return render_template('404.html')
 
+@dragndrop_blueprint.route('/<string:page_name>')
 # @dragndrop_blueprint.route('/dragndrop')
-# def dragndrop():
-#     return render_template('dragndrop.html')
-#
+def dragtest(page_name):
+    folder = page_name
+    json_dir = app.config['JSON_DIR']
+    links = []
+    json_files = [file for file in os.listdir(os.path.join(json_dir,folder))
+                if file.endswith(".json")]
+    print(json_files)
+
+    link = ""
+    for file in json_files:
+        file_no_ext = file.split(".")[0]
+        # link = '"#" onclick="mainStartScript('buh');return false;">COMPTIA NETWORK')
+        a = '<a href="#" onclick="mainStartScript('
+        b = "'" + file
+        c = '\');return false;">'
+        d = file_no_ext.upper()
+        e = '</a>';
+        link  = Markup(a + b + c + d + e)
+        print(link)
+        links.append(link)
+
+    if len(links) == 0:
+        links.append('No Files Sorry!')
+    return render_template('dragtest.html',links=links)
+
+
+
+
+
+
+
+
+
+
 # @dragndrop_blueprint.route('/certification')
 # def certification():
 #     title = request.url_rule

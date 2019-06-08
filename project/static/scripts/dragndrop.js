@@ -309,28 +309,6 @@ window.onclick = function(event) {
     }
 };
 
-function footer() {
-    var d = new Date();
-    var year = d.getFullYear();
-    msg = '\u00A9' + year + " Made by Horacecrump.com";
-    $('footer').html(msg);
-}
-
-function getFileToHtml(element, filename) {
-    $(element).load(filename, function() {
-        console.log('Loaded ' + filename + ' to' + element);
-    });
-}
-
-function getFileToVar(filename) {
-    var dt;
-    $.get(filename, function(data) {
-        dt = data;
-        buildButtons(dt);
-    });
-    return dt;
-}
-
 //makes topicsmenu  pulldown links to mainStartScript and json files
 //only happens on main page refresh
 function buildButtons(text) {
@@ -345,7 +323,7 @@ function buildButtons(text) {
         var d = fixNames(text[i].toUpperCase(),false);
         var e = '</a>';
         var scrunch = a + b + c + d + e;
-        console.log('build:'+ scrunch);
+        console.log('build: '+ scrunch);
 
         // build dropdown buttons
         $('#myDropdown').append(scrunch);
@@ -353,36 +331,24 @@ function buildButtons(text) {
     }
 }
 
-function getFilez() {
-    var dt = $.get("http://localhost/testing/json/jsonlist.txt", function(data) {
-        console.log('data:' + data);
+function getFileToVar(filename) {
+    var dt;
+    $.get(filename, function(data) {
         dt = data;
+        buildButtons(dt);
     });
-}
-
-function getDirList() {
-    $.get('json/', (data) => {
-        //console.log(data);
-        let listing = parseDirectoryListing(data);
-        //$('body').append(JSON.stringify(listing));
-
-    });
-
-    function parseDirectoryListing(text) {
-        let docs = text
-            .match(/href="([\w]+)/g) // pull out the hrefs
-            .map((x) => x.replace('href="', '')); // clean up
-        //console.log(docs);
-        return docs;
-    }
+    return dt;
 }
 
 // Main start script, base page, no tests
-function mainInitScript() {
+function mainInitScript(folder="") {
     console.log("mainInitScript: started");
-
-    footer();
-    //getFileToVar('json/jsonlist.txt');
-    var files = getFileToVar('/json/jsonlist.txt');
-    console.log('files:'+files);
+    // footer();
+    if(folder != ""){
+        console.log('-------:' + folder);
+        var files = getFileToVar('/json/'+ folder + '/jsonlist.txt');
+        console.log('files:'+files);
+    }else {
+        console.log('no folder')
+    }
 }

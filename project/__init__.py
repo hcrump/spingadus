@@ -26,6 +26,7 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 JSON_DIR = os.path.join(APP_ROOT,'static','json')
 JSON_LINKS = [x for x in os.listdir(JSON_DIR)
             if os.path.isdir(os.path.join(JSON_DIR,x))]
+            
 app.config['APP_ROOT'] = APP_ROOT
 app.config['JSON_DIR'] = JSON_DIR
 app.config['JSON_LINKS'] = JSON_LINKS
@@ -33,11 +34,13 @@ app.config['JSON_LINKS'] = JSON_LINKS
 from project.users.views import users_blueprint
 from project.home.views import home_blueprint
 from project.dragndrop.views import dragndrop_blueprint
+from project.api.views import api_blueprint
 
 # register blueprints
 app.register_blueprint(users_blueprint)
 app.register_blueprint(home_blueprint)
 app.register_blueprint(dragndrop_blueprint)
+app.register_blueprint(api_blueprint)
 
 from project.models import User
 
