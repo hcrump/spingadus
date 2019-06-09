@@ -23,11 +23,13 @@ app.config.from_object(os.environ['APP_SETTINGS'])
 db = SQLAlchemy(app)
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
-JSON_DIR = os.path.join(APP_ROOT,'static','json')
+STATIC_ROOT = os.path.join(APP_ROOT,'static')
+JSON_DIR = os.path.join(STATIC_ROOT,'json')
 JSON_LINKS = [x for x in os.listdir(JSON_DIR)
             if os.path.isdir(os.path.join(JSON_DIR,x))]
-            
+
 app.config['APP_ROOT'] = APP_ROOT
+app.config['STATIC_ROOT'] = STATIC_ROOT
 app.config['JSON_DIR'] = JSON_DIR
 app.config['JSON_LINKS'] = JSON_LINKS
 

@@ -151,6 +151,7 @@ ul li a {
     /* background-color: #c5efa7; */
     padding: 10px;
     border-radius: 10px;
+    text-align: center;
 }
 
 #innerData:empty {

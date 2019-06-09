@@ -4,11 +4,12 @@
 
 from project import app, db
 from project.models import BlogPost
-from flask import ( request, redirect, flash, render_template, url_for, send_from_directory, Blueprint)
+from flask import ( request, redirect, flash, render_template, url_for,
+                    send_from_directory, Blueprint, current_app)
 from flask_login import login_required, current_user
 from .form import MessageForm
 import os
-
+from collections import OrderedDict
 ################
 #### config ####
 ################
@@ -70,7 +71,22 @@ def blog():
 
 @home_blueprint.route('/pictures')
 def pictures():
-    return render_template('pictures.html')
+    static_dir = app.config['STATIC_ROOT']
+    pic_dir = 'media/images/pictures'
+    path = os.path.join(static_dir,'media','images','pictures')
+    pic_dict = {}
+    # pic_dict.setdefault('zz',None)
+    # print(path)
+    for folder in os.listdir(path):
+        if os.path.isdir(os.path.join(path,folder)):
+            print(folder)
+            pic_dict.setdefault(folder,[])
+            # pic_dict.setdefault(folder,"")
+            for subfolder in os.listdir(os.path.join(path,folder)):
+                print('----'+subfolder)
+                pic_dict[folder].append(subfolder)
+    sorted_dict = OrderedDict(reversed(sorted(pic_dict.items())))
+    return render_template('pictures.html',pic_dict=sorted_dict)
 
 @home_blueprint.route('/contact')
 def contact():

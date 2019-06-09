@@ -13,9 +13,9 @@ var answersLength=0;
 //any text that I call a lot. For easy use
 function msgInnerData () {
     $('#innerData').css('innerData');
-    $('#innerData').html('<p>This is the start page for many fun and interesting tests!' +
-    ' They are all drag and drop without any scoring. You can test all you want until you' +
-    ' get them all right.</p><p> Start by choosing a test from the Tests menu button. </p>');
+    $('#innerData').html('<p> Start by choosing a test from the list.' +
+    ' They are all drag and drop. You can test all you want until you' +
+    ' get them all right.</p>');
 }
 
 function insertMainTable () {
@@ -195,7 +195,7 @@ function buildTable(topEl) {
 
         // instructions
         $('#instructions').html('<p id="instructionsP">');
-        $('#instructionsP').html('Just drag the answers from the right to the appropriate place on the left');
+        $('#instructionsP').html('Just drag the answers to the appropriate place on the table');
 
         insertMainTable();
         // create table headers
@@ -268,7 +268,7 @@ function mainStartScript(jsonFileName) {
 //remove extension if a filename
 //convert _ to space. looks better for link text
 function fixNames(string,isFilename) {
-    console.log('fixnames:'+string);
+    // console.log('fixnames:'+string);
     string = string.replace(/_/g, ' ');
     if(isFilename){  //filename, so remove extension
         string = string.replace(/\.[^/.]+$/, "");
@@ -279,7 +279,7 @@ function fixNames(string,isFilename) {
 
 // create sub topics links
 function fixLink(string, funcName) {
-    console.log('fixLink:'+string);
+    // console.log('fixLink:'+string);
     var a = '<a href="#" onclick="' + funcName + '(';
     var b = "'" + string + "'";
     var c = ');return false;">';

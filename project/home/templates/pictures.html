@@ -2,7 +2,7 @@
 {% block title %}Pictures{% endblock %}
 {% block container %}
 
-<div id='picLinks'>
+<!-- <div id='picLinks'>
     <ul id='menu'>
         <li><a href="#">2016</a>
             <ul id='sub-menu'>
@@ -16,6 +16,18 @@
     <ul><li>2018</li></ul>
     <ul><li>2019</li></ul>
     Under Construction
+</div> -->
+<div id='picLinks'>
+    <ul id='menu' class='menu1'>
+    {% for key,values in pic_dict.items() %}
+        <li><a href="#">{{key}}</a>
+            <ul id='sub-menu' class='sub-menu1'>
+        {% for value in values %}
+                <li><a href="#" onclick="doPic();">{{value}}</a></li>
+        {% endfor %}
+            </ul>
+    {% endfor %}
+    </ul>
 </div>
 <div id="picViewer">
     <br>
@@ -26,21 +38,5 @@
 {% endblock %}
 {% block script %}
 <script>
-function doPic(){
-    // var img = document.createElement('IMG');
-    // img.src = '/media/images/slideshow/640x480-shore.jpg';
-    // $('#picViewer').html(img);
-    $('#picViewer').html("<img class='mainImage' src='/media/images/slideshow/640x480-shore.jpg'>");
-}
-function divBordersOn(){
-    $('div').toggleClass("div");
-}
-// $("menu li ul").hide();
-$("#menu > li > a").click(function () {
-    // console.log('click');
-    $('#sub-menu').slideToggle();
-    // e.preventDefault();
-// e.stopPropagation();
-});
 </script>
 {% endblock %}

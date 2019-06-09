@@ -209,7 +209,7 @@ body::after{
     margin: 0 auto;
     width: 400px;
 }
-#picLinks{
+#picLinks,#picLinks2{
     min-width: 300px;
     margin: 0 auto;
     float:left;
@@ -223,7 +223,7 @@ body::after{
     height: 480px;
     position:relative;
 }
-#sub-menu, #menu {
+.sub-menu, .menu {
     /* display:none; */
 }
 a {

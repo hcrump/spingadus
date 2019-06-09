@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %} {{ title }} {% endblock title %}
+{% block title %} Dragtest {% endblock title %}
 {% block head %}
 <script src="{{ url_for('static', filename='scripts/aliensimple.js')}}"></script>
 <script src="{{ url_for('static', filename='scripts/dragndrop.js')}}"></script>
@@ -11,7 +11,11 @@
     <div>
         <div class="dropdown">
             <button onclick="clickHide()" class="dropbtn">TOPICS</button>
-            <div id="myDropdown" class="dropdown-content"></div>
+            <div id="myDropdown" class="dropdown-content">
+                {% for link in links -%}
+                    {{- link -}}
+                {%- endfor %}
+            </div>
         </div>
         <div id="headerTop">
             <h1>Welcome and Have Fun Testing Yourself !!</h1>
@@ -51,8 +55,8 @@
 {% block script %}
 <script>
     //normal startup
-    $(document).ready(function() {
-        mainInitScript('{{title}}');
-    });
+    // $(document).ready(function() {
+    //     mainInitScript();
+    // });
 </script>
 {% endblock %}

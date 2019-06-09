@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %} Dragtest {% endblock title %}
+{% block title %} {{ title }} {% endblock title %}
 {% block head %}
 <script src="{{ url_for('static', filename='scripts/aliensimple.js')}}"></script>
 <script src="{{ url_for('static', filename='scripts/dragndrop.js')}}"></script>
@@ -11,12 +11,7 @@
     <div>
         <div class="dropdown">
             <button onclick="clickHide()" class="dropbtn">TOPICS</button>
-            <div id="myDropdown" class="dropdown-content">
-                {% for link in links -%}
-                    <a href="#">{{- link -}}</a>
-                {%- endfor %}
-                <!-- <a href="#">{{- link -}}</a> -->
-            </div>
+            <div id="myDropdown" class="dropdown-content"></div>
         </div>
         <div id="headerTop">
             <h1>Welcome and Have Fun Testing Yourself !!</h1>
@@ -28,7 +23,15 @@
                 <ul></ul>
             </div>
         <div id="data">
-            <div id="innerData"></div>
+            <div id="innerData">
+                <p><br>
+                    WELCOME!<br><br>
+                    The DRAG'N'DROP section  is where all the tests are.
+                    Select an area from the Drag'N'Drop pull down menu
+                    and the green TOPICS button menu will populate with
+                    tests.
+                </p>
+            </div>
             <table id='mainTable'>
                 <thead id="thead1">
                     <tr></tr>
@@ -57,7 +60,7 @@
 <script>
     //normal startup
     // $(document).ready(function() {
-    //     mainInitScript();
+    //     mainInitScript('{{title}}');
     // });
 </script>
 {% endblock %}
