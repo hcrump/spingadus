@@ -100,7 +100,7 @@ def uploader():
 
 
         #print(jsonArray)
-        jsonPath = current_app.config['UPLOAD_JSON']
+        jsonPath = current_app.config['JSON_DIR']
         j = json.dumps(jsonArray,indent=4,sort_keys=True)
         newfilename = os.path.splitext(filename)[0] + '.json'
         p = os.path.join(jsonPath, newfilename)

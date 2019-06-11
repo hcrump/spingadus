@@ -1,0 +1,7409 @@
+[
+    {
+        "subject": "level 1"
+    },
+    {
+        "character": "\u5de5"
+    },
+    {
+        "meaning": "construction, industry"
+    },
+    {
+        "reading": "\u3053\u3046, \u304f"
+    },
+    {
+        "character": "\u516b"
+    },
+    {
+        "meaning": "eight"
+    },
+    {
+        "reading": "\u306f\u3061"
+    },
+    {
+        "character": "\u5c71"
+    },
+    {
+        "meaning": "mountain"
+    },
+    {
+        "reading": "\u3055\u3093"
+    },
+    {
+        "character": "\u5927"
+    },
+    {
+        "meaning": "big, large"
+    },
+    {
+        "reading": "\u305f\u3044, \u3060\u3044"
+    },
+    {
+        "character": "\u4e0b"
+    },
+    {
+        "meaning": "below, down, under, beneath"
+    },
+    {
+        "reading": "\u304b, \u3052"
+    },
+    {
+        "character": "\u529b"
+    },
+    {
+        "meaning": "power, strength"
+    },
+    {
+        "reading": "\u308a\u3087\u304f, \u308a\u304d"
+    },
+    {
+        "character": "\u5165"
+    },
+    {
+        "meaning": "enter"
+    },
+    {
+        "reading": "\u306b\u3085\u3046"
+    },
+    {
+        "character": "\u4eba"
+    },
+    {
+        "meaning": "person"
+    },
+    {
+        "reading": "\u306b\u3093, \u3058\u3093"
+    },
+    {
+        "character": "\u4e8c"
+    },
+    {
+        "meaning": "two"
+    },
+    {
+        "reading": "\u306b"
+    },
+    {
+        "character": "\u4e03"
+    },
+    {
+        "meaning": "seven"
+    },
+    {
+        "reading": "\u3057\u3061"
+    },
+    {
+        "character": "\u4e00"
+    },
+    {
+        "meaning": "one"
+    },
+    {
+        "reading": "\u3044\u3061, \u3044\u3064"
+    },
+    {
+        "character": "\u4e5d"
+    },
+    {
+        "meaning": "nine"
+    },
+    {
+        "reading": "\u304f, \u304d\u3085\u3046"
+    },
+    {
+        "character": "\u5341"
+    },
+    {
+        "meaning": "ten"
+    },
+    {
+        "reading": "\u3058\u3085\u3046"
+    },
+    {
+        "character": "\u4e09"
+    },
+    {
+        "meaning": "three"
+    },
+    {
+        "reading": "\u3055\u3093"
+    },
+    {
+        "character": "\u4e0a"
+    },
+    {
+        "meaning": "above, up, over"
+    },
+    {
+        "reading": "\u3058\u3087\u3046"
+    },
+    {
+        "character": "\u53e3"
+    },
+    {
+        "meaning": "mouth"
+    },
+    {
+        "reading": "\u3053\u3046, \u304f"
+    },
+    {
+        "character": "\u5973"
+    },
+    {
+        "meaning": "woman"
+    },
+    {
+        "reading": "\u3058\u3087"
+    },
+    {
+        "character": "\u5ddd"
+    },
+    {
+        "meaning": "river"
+    },
+    {
+        "reading": "\u304b\u308f"
+    },
+    {
+        "subject": "level 2"
+    },
+    {
+        "character": "\u516d"
+    },
+    {
+        "meaning": "six"
+    },
+    {
+        "reading": "\u308d\u304f"
+    },
+    {
+        "character": "\u624b"
+    },
+    {
+        "meaning": "hand"
+    },
+    {
+        "reading": "\u3066"
+    },
+    {
+        "character": "\u5186"
+    },
+    {
+        "meaning": "yen, round, circle"
+    },
+    {
+        "reading": "\u3048\u3093"
+    },
+    {
+        "character": "\u7530"
+    },
+    {
+        "meaning": "rice paddy, rice field, field"
+    },
+    {
+        "reading": "\u305f"
+    },
+    {
+        "character": "\u7acb"
+    },
+    {
+        "meaning": "stand"
+    },
+    {
+        "reading": "\u308a\u3064, \u308a\u3085\u3046"
+    },
+    {
+        "character": "\u767d"
+    },
+    {
+        "meaning": "white"
+    },
+    {
+        "reading": "\u306f\u304f"
+    },
+    {
+        "character": "\u7389"
+    },
+    {
+        "meaning": "ball"
+    },
+    {
+        "reading": "\u305f\u307e"
+    },
+    {
+        "character": "\u53f3"
+    },
+    {
+        "meaning": "right"
+    },
+    {
+        "reading": "\u3046, \u3086\u3046"
+    },
+    {
+        "character": "\u706b"
+    },
+    {
+        "meaning": "fire"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u6c34"
+    },
+    {
+        "meaning": "water"
+    },
+    {
+        "reading": "\u3059\u3044"
+    },
+    {
+        "character": "\u6708"
+    },
+    {
+        "meaning": "moon, month"
+    },
+    {
+        "reading": "\u3052\u3064, \u304c\u3064"
+    },
+    {
+        "character": "\u5929"
+    },
+    {
+        "meaning": "heaven"
+    },
+    {
+        "reading": "\u3066\u3093"
+    },
+    {
+        "character": "\u53c8"
+    },
+    {
+        "meaning": "again"
+    },
+    {
+        "reading": "\u307e\u305f"
+    },
+    {
+        "character": "\u5915"
+    },
+    {
+        "meaning": "evening"
+    },
+    {
+        "reading": "\u3086\u3046"
+    },
+    {
+        "character": "\u5343"
+    },
+    {
+        "meaning": "thousand"
+    },
+    {
+        "reading": "\u305b\u3093"
+    },
+    {
+        "character": "\u5200"
+    },
+    {
+        "meaning": "sword, katana"
+    },
+    {
+        "reading": "\u3068\u3046"
+    },
+    {
+        "character": "\u65e5"
+    },
+    {
+        "meaning": "sun, day"
+    },
+    {
+        "reading": "\u306b\u3061, \u3058\u3064"
+    },
+    {
+        "character": "\u571f"
+    },
+    {
+        "meaning": "dirt, soil, earth, ground"
+    },
+    {
+        "reading": "\u3069, \u3068"
+    },
+    {
+        "character": "\u5b50"
+    },
+    {
+        "meaning": "child, kid"
+    },
+    {
+        "reading": "\u3057, \u3059"
+    },
+    {
+        "character": "\u5c0f"
+    },
+    {
+        "meaning": "small, little"
+    },
+    {
+        "reading": "\u3057\u3087\u3046"
+    },
+    {
+        "character": "\u4e01"
+    },
+    {
+        "meaning": "street"
+    },
+    {
+        "reading": "\u3061\u3087\u3046, \u3066\u3044"
+    },
+    {
+        "character": "\u4e86"
+    },
+    {
+        "meaning": "finish, complete, end"
+    },
+    {
+        "reading": "\u308a\u3087\u3046"
+    },
+    {
+        "character": "\u4e38"
+    },
+    {
+        "meaning": "circle, circular, round"
+    },
+    {
+        "reading": "\u307e\u308b"
+    },
+    {
+        "character": "\u624d"
+    },
+    {
+        "meaning": "genius"
+    },
+    {
+        "reading": "\u3055\u3044"
+    },
+    {
+        "character": "\u4e2d"
+    },
+    {
+        "meaning": "middle, in, inside, center"
+    },
+    {
+        "reading": "\u3061\u3085\u3046"
+    },
+    {
+        "character": "\u4e94"
+    },
+    {
+        "meaning": "five"
+    },
+    {
+        "reading": "\u3054"
+    },
+    {
+        "character": "\u6587"
+    },
+    {
+        "meaning": "writing, sentence"
+    },
+    {
+        "reading": "\u3076\u3093, \u3082\u3093"
+    },
+    {
+        "character": "\u6728"
+    },
+    {
+        "meaning": "tree, wood"
+    },
+    {
+        "reading": "\u3082\u304f, \u307c\u304f"
+    },
+    {
+        "character": "\u72ac"
+    },
+    {
+        "meaning": "dog"
+    },
+    {
+        "reading": "\u3044\u306c"
+    },
+    {
+        "character": "\u738b"
+    },
+    {
+        "meaning": "king"
+    },
+    {
+        "reading": "\u304a\u3046"
+    },
+    {
+        "character": "\u51fa"
+    },
+    {
+        "meaning": "exit"
+    },
+    {
+        "reading": "\u3057\u3085\u3064"
+    },
+    {
+        "character": "\u56db"
+    },
+    {
+        "meaning": "four"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u5de6"
+    },
+    {
+        "meaning": "left"
+    },
+    {
+        "reading": "\u3055"
+    },
+    {
+        "character": "\u672c"
+    },
+    {
+        "meaning": "book, origin, real, main"
+    },
+    {
+        "reading": "\u307b\u3093"
+    },
+    {
+        "character": "\u6b63"
+    },
+    {
+        "meaning": "correct"
+    },
+    {
+        "reading": "\u305b\u3044, \u3057\u3087\u3046"
+    },
+    {
+        "character": "\u76ee"
+    },
+    {
+        "meaning": "eye"
+    },
+    {
+        "reading": "\u3081"
+    },
+    {
+        "character": "\u3005"
+    },
+    {
+        "meaning": "repeater, repetition, reduplication, iteration mark"
+    },
+    {
+        "reading": "\u306e\u307e"
+    },
+    {
+        "subject": "level 3"
+    },
+    {
+        "character": "\u751f"
+    },
+    {
+        "meaning": "life"
+    },
+    {
+        "reading": "\u305b\u3044, \u3057\u3087\u3046"
+    },
+    {
+        "character": "\u77e2"
+    },
+    {
+        "meaning": "arrow"
+    },
+    {
+        "reading": "\u3084"
+    },
+    {
+        "character": "\u7528"
+    },
+    {
+        "meaning": "task, use"
+    },
+    {
+        "reading": "\u3088\u3046"
+    },
+    {
+        "character": "\u6bcd"
+    },
+    {
+        "meaning": "mother, mom, mum"
+    },
+    {
+        "reading": "\u306f\u306f"
+    },
+    {
+        "character": "\u5e83"
+    },
+    {
+        "meaning": "wide"
+    },
+    {
+        "reading": "\u3072\u308d"
+    },
+    {
+        "character": "\u5e02"
+    },
+    {
+        "meaning": "city"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u5916"
+    },
+    {
+        "meaning": "outside"
+    },
+    {
+        "reading": "\u304c\u3044"
+    },
+    {
+        "character": "\u53f0"
+    },
+    {
+        "meaning": "machine"
+    },
+    {
+        "reading": "\u3060\u3044, \u305f\u3044"
+    },
+    {
+        "character": "\u53e4"
+    },
+    {
+        "meaning": "old"
+    },
+    {
+        "reading": "\u3053"
+    },
+    {
+        "character": "\u534a"
+    },
+    {
+        "meaning": "half"
+    },
+    {
+        "reading": "\u306f\u3093"
+    },
+    {
+        "character": "\u5317"
+    },
+    {
+        "meaning": "north"
+    },
+    {
+        "reading": "\u307b\u304f"
+    },
+    {
+        "character": "\u51ac"
+    },
+    {
+        "meaning": "winter"
+    },
+    {
+        "reading": "\u3075\u3086"
+    },
+    {
+        "character": "\u6b62"
+    },
+    {
+        "meaning": "stop"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u6bdb"
+    },
+    {
+        "meaning": "fur, hair"
+    },
+    {
+        "reading": "\u3082\u3046"
+    },
+    {
+        "character": "\u7236"
+    },
+    {
+        "meaning": "father, dad"
+    },
+    {
+        "reading": "\u3061\u3061"
+    },
+    {
+        "character": "\u725b"
+    },
+    {
+        "meaning": "cow"
+    },
+    {
+        "reading": "\u304e\u3085\u3046"
+    },
+    {
+        "character": "\u65b9"
+    },
+    {
+        "meaning": "direction, way"
+    },
+    {
+        "reading": "\u307b\u3046"
+    },
+    {
+        "character": "\u6238"
+    },
+    {
+        "meaning": "door"
+    },
+    {
+        "reading": "\u3068"
+    },
+    {
+        "character": "\u5fc3"
+    },
+    {
+        "meaning": "heart"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u5f15"
+    },
+    {
+        "meaning": "pull"
+    },
+    {
+        "reading": "\u3072"
+    },
+    {
+        "character": "\u5c11"
+    },
+    {
+        "meaning": "few, a little"
+    },
+    {
+        "reading": "\u3057\u3087\u3046"
+    },
+    {
+        "character": "\u592a"
+    },
+    {
+        "meaning": "fat"
+    },
+    {
+        "reading": "\u305f\u3044, \u305f"
+    },
+    {
+        "character": "\u53cb"
+    },
+    {
+        "meaning": "friend"
+    },
+    {
+        "reading": "\u3086\u3046"
+    },
+    {
+        "character": "\u5348"
+    },
+    {
+        "meaning": "noon"
+    },
+    {
+        "reading": "\u3054"
+    },
+    {
+        "character": "\u5207"
+    },
+    {
+        "meaning": "cut"
+    },
+    {
+        "reading": "\u305b\u3064"
+    },
+    {
+        "character": "\u5206"
+    },
+    {
+        "meaning": "part, minute, separate, understand"
+    },
+    {
+        "reading": "\u3076\u3093, \u3075\u3093, \u3076"
+    },
+    {
+        "character": "\u5185"
+    },
+    {
+        "meaning": "inside, within"
+    },
+    {
+        "reading": "\u306a\u3044"
+    },
+    {
+        "character": "\u516c"
+    },
+    {
+        "meaning": "public"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u5143"
+    },
+    {
+        "meaning": "origin"
+    },
+    {
+        "reading": "\u3052\u3093, \u304c\u3093"
+    },
+    {
+        "character": "\u4eca"
+    },
+    {
+        "meaning": "now"
+    },
+    {
+        "reading": "\u3053\u3093"
+    },
+    {
+        "character": "\u4e07"
+    },
+    {
+        "meaning": "ten thousand"
+    },
+    {
+        "reading": "\u307e\u3093, \u3070\u3093"
+    },
+    {
+        "subject": "level 4"
+    },
+    {
+        "character": "\u8d64"
+    },
+    {
+        "meaning": "red"
+    },
+    {
+        "reading": "\u3042\u304b"
+    },
+    {
+        "character": "\u898b"
+    },
+    {
+        "meaning": "see"
+    },
+    {
+        "reading": "\u307f"
+    },
+    {
+        "character": "\u4ed6"
+    },
+    {
+        "meaning": "other"
+    },
+    {
+        "reading": "\u305f"
+    },
+    {
+        "character": "\u4e0d"
+    },
+    {
+        "meaning": "not"
+    },
+    {
+        "reading": "\u3075"
+    },
+    {
+        "character": "\u8db3"
+    },
+    {
+        "meaning": "foot, leg, sufficient"
+    },
+    {
+        "reading": "\u305d\u304f"
+    },
+    {
+        "character": "\u82b1"
+    },
+    {
+        "meaning": "flower"
+    },
+    {
+        "reading": "\u306f\u306a"
+    },
+    {
+        "character": "\u866b"
+    },
+    {
+        "meaning": "insect, bug"
+    },
+    {
+        "reading": "\u3080\u3057"
+    },
+    {
+        "character": "\u8033"
+    },
+    {
+        "meaning": "ear"
+    },
+    {
+        "reading": "\u307f\u307f"
+    },
+    {
+        "character": "\u7cf8"
+    },
+    {
+        "meaning": "thread"
+    },
+    {
+        "reading": "\u3044\u3068"
+    },
+    {
+        "character": "\u7af9"
+    },
+    {
+        "meaning": "bamboo"
+    },
+    {
+        "reading": "\u305f\u3051"
+    },
+    {
+        "character": "\u6c17"
+    },
+    {
+        "meaning": "energy, spirit"
+    },
+    {
+        "reading": "\u304d, \u3051"
+    },
+    {
+        "character": "\u540d"
+    },
+    {
+        "meaning": "name, famous"
+    },
+    {
+        "reading": "\u3081\u3044, \u307f\u3087\u3046"
+    },
+    {
+        "character": "\u76bf"
+    },
+    {
+        "meaning": "plate, dish"
+    },
+    {
+        "reading": "\u3055\u3089"
+    },
+    {
+        "character": "\u6c37"
+    },
+    {
+        "meaning": "ice"
+    },
+    {
+        "reading": "\u3053\u304a\u308a"
+    },
+    {
+        "character": "\u592e"
+    },
+    {
+        "meaning": "center, centre"
+    },
+    {
+        "reading": "\u304a\u3046"
+    },
+    {
+        "character": "\u53bb"
+    },
+    {
+        "meaning": "past"
+    },
+    {
+        "reading": "\u304d\u3087, \u3053"
+    },
+    {
+        "character": "\u77f3"
+    },
+    {
+        "meaning": "stone"
+    },
+    {
+        "reading": "\u305b\u304d"
+    },
+    {
+        "character": "\u4e16"
+    },
+    {
+        "meaning": "world, generation"
+    },
+    {
+        "reading": "\u305b, \u305b\u3044"
+    },
+    {
+        "character": "\u4e3b"
+    },
+    {
+        "meaning": "master, main"
+    },
+    {
+        "reading": "\u3057\u3085"
+    },
+    {
+        "character": "\u4ee3"
+    },
+    {
+        "meaning": "substitute, replace, period, age"
+    },
+    {
+        "reading": "\u3060\u3044"
+    },
+    {
+        "character": "\u5199"
+    },
+    {
+        "meaning": "copy"
+    },
+    {
+        "reading": "\u3057\u3083"
+    },
+    {
+        "character": "\u53f7"
+    },
+    {
+        "meaning": "number"
+    },
+    {
+        "reading": "\u3054\u3046"
+    },
+    {
+        "character": "\u5e73"
+    },
+    {
+        "meaning": "flat, peace"
+    },
+    {
+        "reading": "\u3078\u3044, \u3072\u3087\u3046, \u3073\u3087\u3046"
+    },
+    {
+        "character": "\u6253"
+    },
+    {
+        "meaning": "hit"
+    },
+    {
+        "reading": "\u3060"
+    },
+    {
+        "character": "\u7533"
+    },
+    {
+        "meaning": "say humbly, say, humbly say"
+    },
+    {
+        "reading": "\u3082\u3046"
+    },
+    {
+        "character": "\u793c"
+    },
+    {
+        "meaning": "thanks"
+    },
+    {
+        "reading": "\u308c\u3044"
+    },
+    {
+        "character": "\u4f11"
+    },
+    {
+        "meaning": "rest"
+    },
+    {
+        "reading": "\u304d\u3085\u3046"
+    },
+    {
+        "character": "\u5148"
+    },
+    {
+        "meaning": "previous, ahead, past, former"
+    },
+    {
+        "reading": "\u305b\u3093"
+    },
+    {
+        "character": "\u5b57"
+    },
+    {
+        "meaning": "letter, character, symbol"
+    },
+    {
+        "reading": "\u3058"
+    },
+    {
+        "character": "\u5e74"
+    },
+    {
+        "meaning": "year"
+    },
+    {
+        "reading": "\u306d\u3093"
+    },
+    {
+        "character": "\u65e9"
+    },
+    {
+        "meaning": "early, fast, quick"
+    },
+    {
+        "reading": "\u305d\u3046"
+    },
+    {
+        "character": "\u767e"
+    },
+    {
+        "meaning": "hundred"
+    },
+    {
+        "reading": "\u3072\u3083\u304f"
+    },
+    {
+        "character": "\u6751"
+    },
+    {
+        "meaning": "village"
+    },
+    {
+        "reading": "\u3080\u3089"
+    },
+    {
+        "character": "\u7537"
+    },
+    {
+        "meaning": "man"
+    },
+    {
+        "reading": "\u3060\u3093, \u306a\u3093"
+    },
+    {
+        "character": "\u753a"
+    },
+    {
+        "meaning": "town"
+    },
+    {
+        "reading": "\u3061\u3087\u3046"
+    },
+    {
+        "character": "\u8c9d"
+    },
+    {
+        "meaning": "shellfish, shell"
+    },
+    {
+        "reading": "\u304b\u3044"
+    },
+    {
+        "character": "\u8eca"
+    },
+    {
+        "meaning": "car"
+    },
+    {
+        "reading": "\u3057\u3083"
+    },
+    {
+        "character": "\u4ed5"
+    },
+    {
+        "meaning": "doing, do"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u5b9d"
+    },
+    {
+        "meaning": "treasure"
+    },
+    {
+        "reading": "\u307b\u3046"
+    },
+    {
+        "subject": "level 5"
+    },
+    {
+        "character": "\u97f3"
+    },
+    {
+        "meaning": "sound"
+    },
+    {
+        "reading": "\u304a\u3093"
+    },
+    {
+        "character": "\u8349"
+    },
+    {
+        "meaning": "grass, weed"
+    },
+    {
+        "reading": "\u304f\u3055"
+    },
+    {
+        "character": "\u9752"
+    },
+    {
+        "meaning": "blue"
+    },
+    {
+        "reading": "\u305b\u3044, \u3057\u3087\u3046"
+    },
+    {
+        "character": "\u96e8"
+    },
+    {
+        "meaning": "rain"
+    },
+    {
+        "reading": "\u3042\u3081, \u3042\u307e"
+    },
+    {
+        "character": "\u91d1"
+    },
+    {
+        "meaning": "gold"
+    },
+    {
+        "reading": "\u304d\u3093"
+    },
+    {
+        "character": "\u7a7a"
+    },
+    {
+        "meaning": "sky"
+    },
+    {
+        "reading": "\u304f\u3046"
+    },
+    {
+        "character": "\u6797"
+    },
+    {
+        "meaning": "forest, woods"
+    },
+    {
+        "reading": "\u306f\u3084\u3057"
+    },
+    {
+        "character": "\u5b66"
+    },
+    {
+        "meaning": "study, learn, learning"
+    },
+    {
+        "reading": "\u304c\u304f"
+    },
+    {
+        "character": "\u9ea6"
+    },
+    {
+        "meaning": "wheat"
+    },
+    {
+        "reading": "\u3080\u304e"
+    },
+    {
+        "character": "\u91cc"
+    },
+    {
+        "meaning": "home village, home town"
+    },
+    {
+        "reading": "\u3055\u3068"
+    },
+    {
+        "character": "\u8fd1"
+    },
+    {
+        "meaning": "near, close"
+    },
+    {
+        "reading": "\u304d\u3093, \u3053\u3093"
+    },
+    {
+        "character": "\u8d70"
+    },
+    {
+        "meaning": "run"
+    },
+    {
+        "reading": "\u305d\u3046"
+    },
+    {
+        "character": "\u8c37"
+    },
+    {
+        "meaning": "valley"
+    },
+    {
+        "reading": "\u305f\u306b"
+    },
+    {
+        "character": "\u8a00"
+    },
+    {
+        "meaning": "say"
+    },
+    {
+        "reading": "\u3052\u3093, \u3054\u3093"
+    },
+    {
+        "character": "\u89d2"
+    },
+    {
+        "meaning": "angle, corner"
+    },
+    {
+        "reading": "\u304b\u304f"
+    },
+    {
+        "character": "\u793e"
+    },
+    {
+        "meaning": "company"
+    },
+    {
+        "reading": "\u3057\u3083"
+    },
+    {
+        "character": "\u6765"
+    },
+    {
+        "meaning": "come, next"
+    },
+    {
+        "reading": "\u3089\u3044"
+    },
+    {
+        "character": "\u5f62"
+    },
+    {
+        "meaning": "shape, form, appearance"
+    },
+    {
+        "reading": "\u3051\u3044, \u304e\u3087\u3046"
+    },
+    {
+        "character": "\u5f1f"
+    },
+    {
+        "meaning": "younger brother, little brother"
+    },
+    {
+        "reading": "\u3060\u3044, \u3067, \u3066\u3044"
+    },
+    {
+        "character": "\u58f0"
+    },
+    {
+        "meaning": "voice"
+    },
+    {
+        "reading": "\u3053\u3048"
+    },
+    {
+        "character": "\u56f3"
+    },
+    {
+        "meaning": "diagram"
+    },
+    {
+        "reading": "\u305a, \u3068"
+    },
+    {
+        "character": "\u4f5c"
+    },
+    {
+        "meaning": "make"
+    },
+    {
+        "reading": "\u3055\u304f, \u3055"
+    },
+    {
+        "character": "\u4f53"
+    },
+    {
+        "meaning": "body"
+    },
+    {
+        "reading": "\u305f\u3044"
+    },
+    {
+        "character": "\u4f55"
+    },
+    {
+        "meaning": "what"
+    },
+    {
+        "reading": "\u306a\u306b, \u306a\u3093"
+    },
+    {
+        "character": "\u897f"
+    },
+    {
+        "meaning": "west"
+    },
+    {
+        "reading": "\u305b\u3044, \u3055\u3044"
+    },
+    {
+        "character": "\u884c"
+    },
+    {
+        "meaning": "go"
+    },
+    {
+        "reading": "\u3053\u3046, \u304e\u3087\u3046"
+    },
+    {
+        "character": "\u8272"
+    },
+    {
+        "meaning": "color"
+    },
+    {
+        "reading": "\u3044\u308d"
+    },
+    {
+        "character": "\u81ea"
+    },
+    {
+        "meaning": "self"
+    },
+    {
+        "reading": "\u3058, \u3057"
+    },
+    {
+        "character": "\u8089"
+    },
+    {
+        "meaning": "meat"
+    },
+    {
+        "reading": "\u306b\u304f"
+    },
+    {
+        "character": "\u8003"
+    },
+    {
+        "meaning": "think, consider"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u7fbd"
+    },
+    {
+        "meaning": "feather, feathers, wing, wings"
+    },
+    {
+        "reading": "\u306f\u306d, \u306f, \u308f"
+    },
+    {
+        "character": "\u7c73"
+    },
+    {
+        "meaning": "rice, america"
+    },
+    {
+        "reading": "\u3079\u3044, \u307e\u3044"
+    },
+    {
+        "character": "\u6bce"
+    },
+    {
+        "meaning": "every"
+    },
+    {
+        "reading": "\u307e\u3044"
+    },
+    {
+        "character": "\u5f53"
+    },
+    {
+        "meaning": "correct, right, success"
+    },
+    {
+        "reading": "\u3068\u3046"
+    },
+    {
+        "character": "\u591a"
+    },
+    {
+        "meaning": "many, much, lots of"
+    },
+    {
+        "reading": "\u305f"
+    },
+    {
+        "character": "\u56de"
+    },
+    {
+        "meaning": "times, revolve"
+    },
+    {
+        "reading": "\u304b\u3044"
+    },
+    {
+        "character": "\u540c"
+    },
+    {
+        "meaning": "same"
+    },
+    {
+        "reading": "\u3069\u3046"
+    },
+    {
+        "character": "\u5149"
+    },
+    {
+        "meaning": "sunlight, light"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u4f1a"
+    },
+    {
+        "meaning": "meet"
+    },
+    {
+        "reading": "\u304b\u3044"
+    },
+    {
+        "character": "\u4ea4"
+    },
+    {
+        "meaning": "mix, mingle"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u76ae"
+    },
+    {
+        "meaning": "skin"
+    },
+    {
+        "reading": "\u3072"
+    },
+    {
+        "character": "\u5144"
+    },
+    {
+        "meaning": "older brother, big brother, elder brother"
+    },
+    {
+        "reading": "\u304d\u3087\u3046"
+    },
+    {
+        "subject": "level 6"
+    },
+    {
+        "character": "\u76f4"
+    },
+    {
+        "meaning": "fix, direct"
+    },
+    {
+        "reading": "\u3061\u3087\u304f, \u3058\u304d"
+    },
+    {
+        "character": "\u7f8a"
+    },
+    {
+        "meaning": "sheep"
+    },
+    {
+        "reading": "\u3088\u3046"
+    },
+    {
+        "character": "\u98df"
+    },
+    {
+        "meaning": "eat, meal"
+    },
+    {
+        "reading": "\u3057\u3087\u304f"
+    },
+    {
+        "character": "\u77e5"
+    },
+    {
+        "meaning": "know"
+    },
+    {
+        "reading": "\u3061"
+    },
+    {
+        "character": "\u6b69"
+    },
+    {
+        "meaning": "walk"
+    },
+    {
+        "reading": "\u307b"
+    },
+    {
+        "character": "\u660e"
+    },
+    {
+        "meaning": "bright"
+    },
+    {
+        "reading": "\u3081\u3044"
+    },
+    {
+        "character": "\u8840"
+    },
+    {
+        "meaning": "blood"
+    },
+    {
+        "reading": "\u3051\u3064"
+    },
+    {
+        "character": "\u6b21"
+    },
+    {
+        "meaning": "next"
+    },
+    {
+        "reading": "\u3058"
+    },
+    {
+        "character": "\u5168"
+    },
+    {
+        "meaning": "all, whole"
+    },
+    {
+        "reading": "\u305c\u3093"
+    },
+    {
+        "character": "\u4e21"
+    },
+    {
+        "meaning": "both"
+    },
+    {
+        "reading": "\u308a\u3087\u3046"
+    },
+    {
+        "character": "\u5316"
+    },
+    {
+        "meaning": "change"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u6771"
+    },
+    {
+        "meaning": "east"
+    },
+    {
+        "reading": "\u3068\u3046"
+    },
+    {
+        "character": "\u4eac"
+    },
+    {
+        "meaning": "capital"
+    },
+    {
+        "reading": "\u304d\u3087\u3046"
+    },
+    {
+        "character": "\u4ea1"
+    },
+    {
+        "meaning": "death, deceased"
+    },
+    {
+        "reading": "\u307c\u3046"
+    },
+    {
+        "character": "\u5730"
+    },
+    {
+        "meaning": "earth, ground"
+    },
+    {
+        "reading": "\u3061, \u3058"
+    },
+    {
+        "character": "\u5411"
+    },
+    {
+        "meaning": "yonder, facing"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u5b89"
+    },
+    {
+        "meaning": "relax, cheap"
+    },
+    {
+        "reading": "\u3042\u3093"
+    },
+    {
+        "character": "\u5dde"
+    },
+    {
+        "meaning": "state, province, county"
+    },
+    {
+        "reading": "\u3057\u3085\u3046"
+    },
+    {
+        "character": "\u66f2"
+    },
+    {
+        "meaning": "music, bend"
+    },
+    {
+        "reading": "\u304d\u3087\u304f"
+    },
+    {
+        "character": "\u6709"
+    },
+    {
+        "meaning": "have"
+    },
+    {
+        "reading": "\u3086\u3046, \u3046"
+    },
+    {
+        "character": "\u6b7b"
+    },
+    {
+        "meaning": "death"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u56fd"
+    },
+    {
+        "meaning": "country"
+    },
+    {
+        "reading": "\u3053\u304f"
+    },
+    {
+        "character": "\u591c"
+    },
+    {
+        "meaning": "night, evening"
+    },
+    {
+        "reading": "\u3084"
+    },
+    {
+        "character": "\u59b9"
+    },
+    {
+        "meaning": "younger sister, little sister"
+    },
+    {
+        "reading": "\u307e\u3044"
+    },
+    {
+        "character": "\u59c9"
+    },
+    {
+        "meaning": "older sister, big sister, elder sister"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u5e97"
+    },
+    {
+        "meaning": "shop, store"
+    },
+    {
+        "reading": "\u3066\u3093"
+    },
+    {
+        "character": "\u753b"
+    },
+    {
+        "meaning": "drawing, picture, painting"
+    },
+    {
+        "reading": "\u304c, \u304b\u304f"
+    },
+    {
+        "character": "\u9577"
+    },
+    {
+        "meaning": "long, leader"
+    },
+    {
+        "reading": "\u3061\u3087\u3046"
+    },
+    {
+        "character": "\u524d"
+    },
+    {
+        "meaning": "front, before"
+    },
+    {
+        "reading": "\u305c\u3093"
+    },
+    {
+        "character": "\u5357"
+    },
+    {
+        "meaning": "south"
+    },
+    {
+        "reading": "\u306a\u3093"
+    },
+    {
+        "character": "\u5ba4"
+    },
+    {
+        "meaning": "room"
+    },
+    {
+        "reading": "\u3057\u3064"
+    },
+    {
+        "character": "\u5f8c"
+    },
+    {
+        "meaning": "behind, after, back, rear"
+    },
+    {
+        "reading": "\u3054, \u3053\u3046"
+    },
+    {
+        "character": "\u601d"
+    },
+    {
+        "meaning": "think, thought"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u661f"
+    },
+    {
+        "meaning": "star"
+    },
+    {
+        "reading": "\u305b\u3044"
+    },
+    {
+        "character": "\u6d3b"
+    },
+    {
+        "meaning": "lively"
+    },
+    {
+        "reading": "\u304b\u3064"
+    },
+    {
+        "character": "\u6d77"
+    },
+    {
+        "meaning": "sea, ocean"
+    },
+    {
+        "reading": "\u304b\u3044"
+    },
+    {
+        "character": "\u70b9"
+    },
+    {
+        "meaning": "point, decimal, decimal point"
+    },
+    {
+        "reading": "\u3066\u3093"
+    },
+    {
+        "character": "\u79d1"
+    },
+    {
+        "meaning": "course, science, department"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u8336"
+    },
+    {
+        "meaning": "tea"
+    },
+    {
+        "reading": "\u3061\u3083, \u3055"
+    },
+    {
+        "character": "\u9996"
+    },
+    {
+        "meaning": "neck"
+    },
+    {
+        "reading": "\u304f\u3073"
+    },
+    {
+        "character": "\u79c1"
+    },
+    {
+        "meaning": "i, private"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "subject": "level 7"
+    },
+    {
+        "character": "\u98a8"
+    },
+    {
+        "meaning": "wind, style"
+    },
+    {
+        "reading": "\u3075\u3046, \u3075"
+    },
+    {
+        "character": "\u9ed2"
+    },
+    {
+        "meaning": "black"
+    },
+    {
+        "reading": "\u3053\u304f"
+    },
+    {
+        "character": "\u9ec4"
+    },
+    {
+        "meaning": "yellow"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u9ce5"
+    },
+    {
+        "meaning": "bird"
+    },
+    {
+        "reading": "\u3061\u3087\u3046"
+    },
+    {
+        "character": "\u9b5a"
+    },
+    {
+        "meaning": "fish"
+    },
+    {
+        "reading": "\u304e\u3087"
+    },
+    {
+        "character": "\u96ea"
+    },
+    {
+        "meaning": "snow"
+    },
+    {
+        "reading": "\u3086\u304d"
+    },
+    {
+        "character": "\u9031"
+    },
+    {
+        "meaning": "week"
+    },
+    {
+        "reading": "\u3057\u3085\u3046"
+    },
+    {
+        "character": "\u8239"
+    },
+    {
+        "meaning": "boat, ship"
+    },
+    {
+        "reading": "\u305b\u3093"
+    },
+    {
+        "character": "\u7d44"
+    },
+    {
+        "meaning": "group, association, team"
+    },
+    {
+        "reading": "\u305d"
+    },
+    {
+        "character": "\u7406"
+    },
+    {
+        "meaning": "reason"
+    },
+    {
+        "reading": "\u308a"
+    },
+    {
+        "character": "\u6559"
+    },
+    {
+        "meaning": "teach"
+    },
+    {
+        "reading": "\u304d\u3087\u3046"
+    },
+    {
+        "character": "\u5f37"
+    },
+    {
+        "meaning": "strong, strength"
+    },
+    {
+        "reading": "\u304d\u3087\u3046"
+    },
+    {
+        "character": "\u9ad8"
+    },
+    {
+        "meaning": "tall, expensive, high"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u901a"
+    },
+    {
+        "meaning": "pass through"
+    },
+    {
+        "reading": "\u3064\u3046"
+    },
+    {
+        "character": "\u8a18"
+    },
+    {
+        "meaning": "write down, record"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u7d19"
+    },
+    {
+        "meaning": "paper"
+    },
+    {
+        "reading": "\u304b\u307f"
+    },
+    {
+        "character": "\u6642"
+    },
+    {
+        "meaning": "time, o'clock, hour"
+    },
+    {
+        "reading": "\u3058"
+    },
+    {
+        "character": "\u5f31"
+    },
+    {
+        "meaning": "weak"
+    },
+    {
+        "reading": "\u3058\u3083\u304f"
+    },
+    {
+        "character": "\u5bb6"
+    },
+    {
+        "meaning": "house, home"
+    },
+    {
+        "reading": "\u304b, \u3051"
+    },
+    {
+        "character": "\u590f"
+    },
+    {
+        "meaning": "summer"
+    },
+    {
+        "reading": "\u306a\u3064"
+    },
+    {
+        "character": "\u6821"
+    },
+    {
+        "meaning": "school"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u672b"
+    },
+    {
+        "meaning": "end"
+    },
+    {
+        "reading": "\u307e\u3064"
+    },
+    {
+        "character": "\u672a"
+    },
+    {
+        "meaning": "not yet"
+    },
+    {
+        "reading": "\u307f"
+    },
+    {
+        "character": "\u5fc5"
+    },
+    {
+        "meaning": "certain"
+    },
+    {
+        "reading": "\u3072\u3064"
+    },
+    {
+        "character": "\u5931"
+    },
+    {
+        "meaning": "fault"
+    },
+    {
+        "reading": "\u3057\u3064"
+    },
+    {
+        "character": "\u4ee5"
+    },
+    {
+        "meaning": "from, since, compared with, with, by means of"
+    },
+    {
+        "reading": "\u3044"
+    },
+    {
+        "character": "\u4ed8"
+    },
+    {
+        "meaning": "attach"
+    },
+    {
+        "reading": "\u3064"
+    },
+    {
+        "character": "\u8fba"
+    },
+    {
+        "meaning": "area"
+    },
+    {
+        "reading": "\u3078\u3093"
+    },
+    {
+        "character": "\u6c11"
+    },
+    {
+        "meaning": "peoples, people, nation"
+    },
+    {
+        "reading": "\u307f\u3093"
+    },
+    {
+        "character": "\u672d"
+    },
+    {
+        "meaning": "bill, tag, label, note"
+    },
+    {
+        "reading": "\u3055\u3064"
+    },
+    {
+        "character": "\u7531"
+    },
+    {
+        "meaning": "reason"
+    },
+    {
+        "reading": "\u3086\u3046"
+    },
+    {
+        "character": "\u6c0f"
+    },
+    {
+        "meaning": "family name, last name, surname"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u6b20"
+    },
+    {
+        "meaning": "lack"
+    },
+    {
+        "reading": "\u3051\u3064"
+    },
+    {
+        "subject": "level 8"
+    },
+    {
+        "character": "\u53cd"
+    },
+    {
+        "meaning": "anti"
+    },
+    {
+        "reading": "\u306f\u3093"
+    },
+    {
+        "character": "\u6240"
+    },
+    {
+        "meaning": "place"
+    },
+    {
+        "reading": "\u3057\u3087"
+    },
+    {
+        "character": "\u96fb"
+    },
+    {
+        "meaning": "electricity"
+    },
+    {
+        "reading": "\u3067\u3093"
+    },
+    {
+        "character": "\u8a71"
+    },
+    {
+        "meaning": "talk, speak"
+    },
+    {
+        "reading": "\u308f"
+    },
+    {
+        "character": "\u697d"
+    },
+    {
+        "meaning": "comfort, ease, pleasure"
+    },
+    {
+        "reading": "\u3089\u304f, \u304c\u304f"
+    },
+    {
+        "character": "\u6570"
+    },
+    {
+        "meaning": "count, number, amount"
+    },
+    {
+        "reading": "\u3059\u3046"
+    },
+    {
+        "character": "\u96f2"
+    },
+    {
+        "meaning": "cloud"
+    },
+    {
+        "reading": "\u304f\u3082"
+    },
+    {
+        "character": "\u9593"
+    },
+    {
+        "meaning": "interval, interval of time, time interval"
+    },
+    {
+        "reading": "\u304b\u3093, \u3051\u3093"
+    },
+    {
+        "character": "\u9053"
+    },
+    {
+        "meaning": "road, street, path, way"
+    },
+    {
+        "reading": "\u3069\u3046"
+    },
+    {
+        "character": "\u8cb7"
+    },
+    {
+        "meaning": "buy"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u7d75"
+    },
+    {
+        "meaning": "drawing, painting"
+    },
+    {
+        "reading": "\u3048"
+    },
+    {
+        "character": "\u7b54"
+    },
+    {
+        "meaning": "answer, response, reply"
+    },
+    {
+        "reading": "\u3053\u305f"
+    },
+    {
+        "character": "\u756a"
+    },
+    {
+        "meaning": "number in a series, turn, ordinal number"
+    },
+    {
+        "reading": "\u3070\u3093"
+    },
+    {
+        "character": "\u671d"
+    },
+    {
+        "meaning": "morning"
+    },
+    {
+        "reading": "\u3042\u3055"
+    },
+    {
+        "character": "\u5834"
+    },
+    {
+        "meaning": "location, place"
+    },
+    {
+        "reading": "\u3058\u3087\u3046"
+    },
+    {
+        "character": "\u68ee"
+    },
+    {
+        "meaning": "forest, woods"
+    },
+    {
+        "reading": "\u3082\u308a"
+    },
+    {
+        "character": "\u99ac"
+    },
+    {
+        "meaning": "horse"
+    },
+    {
+        "reading": "\u3070"
+    },
+    {
+        "character": "\u7814"
+    },
+    {
+        "meaning": "sharpen"
+    },
+    {
+        "reading": "\u3051\u3093"
+    },
+    {
+        "character": "\u8005"
+    },
+    {
+        "meaning": "someone, somebody"
+    },
+    {
+        "reading": "\u3057\u3083"
+    },
+    {
+        "character": "\u8eab"
+    },
+    {
+        "meaning": "somebody, someone, body"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u7a76"
+    },
+    {
+        "meaning": "research"
+    },
+    {
+        "reading": "\u304d\u3085\u3046"
+    },
+    {
+        "character": "\u6c7a"
+    },
+    {
+        "meaning": "decide, decision"
+    },
+    {
+        "reading": "\u3051\u3064"
+    },
+    {
+        "character": "\u6295"
+    },
+    {
+        "meaning": "throw"
+    },
+    {
+        "reading": "\u3068\u3046"
+    },
+    {
+        "character": "\u5f79"
+    },
+    {
+        "meaning": "service, duty"
+    },
+    {
+        "reading": "\u3084\u304f"
+    },
+    {
+        "character": "\u5c40"
+    },
+    {
+        "meaning": "bureau, department"
+    },
+    {
+        "reading": "\u304d\u3087\u304f"
+    },
+    {
+        "character": "\u5bfe"
+    },
+    {
+        "meaning": "versus, opposite"
+    },
+    {
+        "reading": "\u305f\u3044"
+    },
+    {
+        "character": "\u541b"
+    },
+    {
+        "meaning": "buddy"
+    },
+    {
+        "reading": "\u304f\u3093"
+    },
+    {
+        "character": "\u533b"
+    },
+    {
+        "meaning": "medicine"
+    },
+    {
+        "reading": "\u3044"
+    },
+    {
+        "character": "\u52a9"
+    },
+    {
+        "meaning": "help"
+    },
+    {
+        "reading": "\u3058\u3087"
+    },
+    {
+        "character": "\u4f4f"
+    },
+    {
+        "meaning": "dwelling, reside, dwell"
+    },
+    {
+        "reading": "\u3058\u3085\u3046"
+    },
+    {
+        "character": "\u652f"
+    },
+    {
+        "meaning": "support, branch"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u6c60"
+    },
+    {
+        "meaning": "pond"
+    },
+    {
+        "reading": "\u3061"
+    },
+    {
+        "subject": "level 9"
+    },
+    {
+        "character": "\u58f2"
+    },
+    {
+        "meaning": "sell"
+    },
+    {
+        "reading": "\u3070\u3044"
+    },
+    {
+        "character": "\u9a13"
+    },
+    {
+        "meaning": "test"
+    },
+    {
+        "reading": "\u3051\u3093"
+    },
+    {
+        "character": "\u8a66"
+    },
+    {
+        "meaning": "try, attempt"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u4fdd"
+    },
+    {
+        "meaning": "preserve, guarantee"
+    },
+    {
+        "reading": "\u307b"
+    },
+    {
+        "character": "\u8fd4"
+    },
+    {
+        "meaning": "return"
+    },
+    {
+        "reading": "\u3078\u3093"
+    },
+    {
+        "character": "\u65b0"
+    },
+    {
+        "meaning": "new"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u4e88"
+    },
+    {
+        "meaning": "beforehand"
+    },
+    {
+        "reading": "\u3088"
+    },
+    {
+        "character": "\u4eee"
+    },
+    {
+        "meaning": "temporary"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u52dd"
+    },
+    {
+        "meaning": "win"
+    },
+    {
+        "reading": "\u3057\u3087\u3046"
+    },
+    {
+        "character": "\u8981"
+    },
+    {
+        "meaning": "need"
+    },
+    {
+        "reading": "\u3088\u3046"
+    },
+    {
+        "character": "\u8ac7"
+    },
+    {
+        "meaning": "discuss"
+    },
+    {
+        "reading": "\u3060\u3093"
+    },
+    {
+        "character": "\u91cd"
+    },
+    {
+        "meaning": "heavy"
+    },
+    {
+        "reading": "\u3058\u3085\u3046, \u3061\u3087\u3046"
+    },
+    {
+        "character": "\u9001"
+    },
+    {
+        "meaning": "send"
+    },
+    {
+        "reading": "\u305d\u3046"
+    },
+    {
+        "character": "\u8ca0"
+    },
+    {
+        "meaning": "lose"
+    },
+    {
+        "reading": "\u3075"
+    },
+    {
+        "character": "\u7f8e"
+    },
+    {
+        "meaning": "beauty, beautiful"
+    },
+    {
+        "reading": "\u3073, \u307f"
+    },
+    {
+        "character": "\u770c"
+    },
+    {
+        "meaning": "prefecture"
+    },
+    {
+        "reading": "\u3051\u3093"
+    },
+    {
+        "character": "\u76f8"
+    },
+    {
+        "meaning": "mutual"
+    },
+    {
+        "reading": "\u305d\u3046, \u3057\u3087\u3046"
+    },
+    {
+        "character": "\u767a"
+    },
+    {
+        "meaning": "departure"
+    },
+    {
+        "reading": "\u306f\u3064"
+    },
+    {
+        "character": "\u754c"
+    },
+    {
+        "meaning": "world"
+    },
+    {
+        "reading": "\u304b\u3044"
+    },
+    {
+        "character": "\u6301"
+    },
+    {
+        "meaning": "hold"
+    },
+    {
+        "reading": "\u3058"
+    },
+    {
+        "character": "\u5ea6"
+    },
+    {
+        "meaning": "degrees, occurrence"
+    },
+    {
+        "reading": "\u3069, \u305f\u304f"
+    },
+    {
+        "character": "\u5c4b"
+    },
+    {
+        "meaning": "roof, shop, store"
+    },
+    {
+        "reading": "\u3084"
+    },
+    {
+        "character": "\u5ba2"
+    },
+    {
+        "meaning": "guest, customer"
+    },
+    {
+        "reading": "\u304d\u3083\u304f"
+    },
+    {
+        "character": "\u4e57"
+    },
+    {
+        "meaning": "ride"
+    },
+    {
+        "reading": "\u306e"
+    },
+    {
+        "character": "\u90e8"
+    },
+    {
+        "meaning": "part, department, club"
+    },
+    {
+        "reading": "\u3076"
+    },
+    {
+        "character": "\u8868"
+    },
+    {
+        "meaning": "express"
+    },
+    {
+        "reading": "\u3072\u3087\u3046"
+    },
+    {
+        "character": "\u82e6"
+    },
+    {
+        "meaning": "suffering"
+    },
+    {
+        "reading": "\u304f"
+    },
+    {
+        "character": "\u7269"
+    },
+    {
+        "meaning": "thing"
+    },
+    {
+        "reading": "\u3076\u3064, \u3082\u3064"
+    },
+    {
+        "character": "\u6cf3"
+    },
+    {
+        "meaning": "swim"
+    },
+    {
+        "reading": "\u304a\u3088"
+    },
+    {
+        "character": "\u670d"
+    },
+    {
+        "meaning": "clothes, clothing"
+    },
+    {
+        "reading": "\u3075\u304f"
+    },
+    {
+        "character": "\u5b9f"
+    },
+    {
+        "meaning": "truth, reality"
+    },
+    {
+        "reading": "\u3058\u3064"
+    },
+    {
+        "character": "\u5b9a"
+    },
+    {
+        "meaning": "determine"
+    },
+    {
+        "reading": "\u3066\u3044, \u3058\u3087\u3046"
+    },
+    {
+        "character": "\u548c"
+    },
+    {
+        "meaning": "peace, japanese style"
+    },
+    {
+        "reading": "\u308f, \u304a"
+    },
+    {
+        "character": "\u53d7"
+    },
+    {
+        "meaning": "accept, receive"
+    },
+    {
+        "reading": "\u3058\u3085"
+    },
+    {
+        "character": "\u5177"
+    },
+    {
+        "meaning": "tool"
+    },
+    {
+        "reading": "\u3050"
+    },
+    {
+        "character": "\u4f7f"
+    },
+    {
+        "meaning": "use"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u4e8b"
+    },
+    {
+        "meaning": "action, matter, thing"
+    },
+    {
+        "reading": "\u3058"
+    },
+    {
+        "subject": "level 10"
+    },
+    {
+        "character": "\u7fd2"
+    },
+    {
+        "meaning": "learn"
+    },
+    {
+        "reading": "\u3057\u3085\u3046"
+    },
+    {
+        "character": "\u6c42"
+    },
+    {
+        "meaning": "request"
+    },
+    {
+        "reading": "\u304d\u3085\u3046"
+    },
+    {
+        "character": "\u6700"
+    },
+    {
+        "meaning": "most"
+    },
+    {
+        "reading": "\u3055\u3044"
+    },
+    {
+        "character": "\u75c5"
+    },
+    {
+        "meaning": "sick, sickness, ill, illness"
+    },
+    {
+        "reading": "\u3073\u3087\u3046"
+    },
+    {
+        "character": "\u9854"
+    },
+    {
+        "meaning": "face"
+    },
+    {
+        "reading": "\u304b\u304a"
+    },
+    {
+        "character": "\u982d"
+    },
+    {
+        "meaning": "head"
+    },
+    {
+        "reading": "\u3042\u305f\u307e"
+    },
+    {
+        "character": "\u89aa"
+    },
+    {
+        "meaning": "parent"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u8abf"
+    },
+    {
+        "meaning": "investigate, tone"
+    },
+    {
+        "reading": "\u3061\u3087\u3046"
+    },
+    {
+        "character": "\u6a2a"
+    },
+    {
+        "meaning": "side, horizontal"
+    },
+    {
+        "reading": "\u3088\u3053"
+    },
+    {
+        "character": "\u7dda"
+    },
+    {
+        "meaning": "line"
+    },
+    {
+        "reading": "\u305b\u3093"
+    },
+    {
+        "character": "\u9cf4"
+    },
+    {
+        "meaning": "chirp"
+    },
+    {
+        "reading": "\u306a"
+    },
+    {
+        "character": "\u8aad"
+    },
+    {
+        "meaning": "read"
+    },
+    {
+        "reading": "\u3088"
+    },
+    {
+        "character": "\u8a9e"
+    },
+    {
+        "meaning": "language"
+    },
+    {
+        "reading": "\u3054"
+    },
+    {
+        "character": "\u805e"
+    },
+    {
+        "meaning": "hear"
+    },
+    {
+        "reading": "\u3076\u3093, \u3082\u3093"
+    },
+    {
+        "character": "\u7b97"
+    },
+    {
+        "meaning": "calculate, calculation"
+    },
+    {
+        "reading": "\u3055\u3093"
+    },
+    {
+        "character": "\u6b4c"
+    },
+    {
+        "meaning": "song, sing"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u9244"
+    },
+    {
+        "meaning": "iron"
+    },
+    {
+        "reading": "\u3066\u3064"
+    },
+    {
+        "character": "\u8fb2"
+    },
+    {
+        "meaning": "farming, agriculture"
+    },
+    {
+        "reading": "\u306e\u3046"
+    },
+    {
+        "character": "\u8def"
+    },
+    {
+        "meaning": "road"
+    },
+    {
+        "reading": "\u308d"
+    },
+    {
+        "character": "\u6f22"
+    },
+    {
+        "meaning": "chinese, china"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u696d"
+    },
+    {
+        "meaning": "business"
+    },
+    {
+        "reading": "\u304e\u3087\u3046"
+    },
+    {
+        "character": "\u98f2"
+    },
+    {
+        "meaning": "drink"
+    },
+    {
+        "reading": "\u306e"
+    },
+    {
+        "character": "\u96c6"
+    },
+    {
+        "meaning": "collect, gather"
+    },
+    {
+        "reading": "\u3057\u3085\u3046"
+    },
+    {
+        "character": "\u958b"
+    },
+    {
+        "meaning": "open"
+    },
+    {
+        "reading": "\u304b\u3044"
+    },
+    {
+        "character": "\u904b"
+    },
+    {
+        "meaning": "carry, luck"
+    },
+    {
+        "reading": "\u3046\u3093"
+    },
+    {
+        "character": "\u8efd"
+    },
+    {
+        "meaning": "lightweight, light, light weight"
+    },
+    {
+        "reading": "\u304b\u308b, \u304b\u308d"
+    },
+    {
+        "character": "\u8449"
+    },
+    {
+        "meaning": "leaf, leaves"
+    },
+    {
+        "reading": "\u306f, \u3070"
+    },
+    {
+        "character": "\u843d"
+    },
+    {
+        "meaning": "fall"
+    },
+    {
+        "reading": "\u3089\u304f"
+    },
+    {
+        "character": "\u9032"
+    },
+    {
+        "meaning": "advance"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u8ee2"
+    },
+    {
+        "meaning": "revolve"
+    },
+    {
+        "reading": "\u3066\u3093"
+    },
+    {
+        "character": "\u7d42"
+    },
+    {
+        "meaning": "end, finish"
+    },
+    {
+        "reading": "\u3057\u3085\u3046"
+    },
+    {
+        "character": "\u9662"
+    },
+    {
+        "meaning": "institution"
+    },
+    {
+        "reading": "\u3044\u3093"
+    },
+    {
+        "character": "\u9152"
+    },
+    {
+        "meaning": "alcohol"
+    },
+    {
+        "reading": "\u3057\u3085"
+    },
+    {
+        "character": "\u914d"
+    },
+    {
+        "meaning": "distribute"
+    },
+    {
+        "reading": "\u306f\u3044"
+    },
+    {
+        "character": "\u901f"
+    },
+    {
+        "meaning": "fast"
+    },
+    {
+        "reading": "\u305d\u304f"
+    },
+    {
+        "character": "\u8d77"
+    },
+    {
+        "meaning": "wake up"
+    },
+    {
+        "reading": "\u304a"
+    },
+    {
+        "character": "\u59cb"
+    },
+    {
+        "meaning": "begin, start"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "subject": "level 11"
+    },
+    {
+        "character": "\u521d"
+    },
+    {
+        "meaning": "first"
+    },
+    {
+        "reading": "\u3057\u3087"
+    },
+    {
+        "character": "\u6d0b"
+    },
+    {
+        "meaning": "western style, ocean"
+    },
+    {
+        "reading": "\u3088\u3046"
+    },
+    {
+        "character": "\u8ffd"
+    },
+    {
+        "meaning": "follow, chase"
+    },
+    {
+        "reading": "\u304a"
+    },
+    {
+        "character": "\u5473"
+    },
+    {
+        "meaning": "flavor, taste"
+    },
+    {
+        "reading": "\u307f"
+    },
+    {
+        "character": "\u610f"
+    },
+    {
+        "meaning": "idea"
+    },
+    {
+        "reading": "\u3044"
+    },
+    {
+        "character": "\u4ee4"
+    },
+    {
+        "meaning": "orders"
+    },
+    {
+        "reading": "\u308c\u3044"
+    },
+    {
+        "character": "\u50cd"
+    },
+    {
+        "meaning": "work, labor"
+    },
+    {
+        "reading": "\u3069\u3046"
+    },
+    {
+        "character": "\u4fbf"
+    },
+    {
+        "meaning": "convenience, convenient"
+    },
+    {
+        "reading": "\u3079\u3093, \u3073\u3093"
+    },
+    {
+        "character": "\u7279"
+    },
+    {
+        "meaning": "special"
+    },
+    {
+        "reading": "\u3068\u304f"
+    },
+    {
+        "character": "\u529f"
+    },
+    {
+        "meaning": "achievement, accomplishment"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u826f"
+    },
+    {
+        "meaning": "good"
+    },
+    {
+        "reading": "\u308a\u3087\u3046"
+    },
+    {
+        "character": "\u7af6"
+    },
+    {
+        "meaning": "compete"
+    },
+    {
+        "reading": "\u304d\u3087\u3046"
+    },
+    {
+        "character": "\u6226"
+    },
+    {
+        "meaning": "war, battle"
+    },
+    {
+        "reading": "\u305b\u3093"
+    },
+    {
+        "character": "\u7d1a"
+    },
+    {
+        "meaning": "level, grade, rank"
+    },
+    {
+        "reading": "\u304d\u3085\u3046"
+    },
+    {
+        "character": "\u79d2"
+    },
+    {
+        "meaning": "second"
+    },
+    {
+        "reading": "\u3073\u3087\u3046"
+    },
+    {
+        "character": "\u795e"
+    },
+    {
+        "meaning": "god"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u6307"
+    },
+    {
+        "meaning": "finger"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u62fe"
+    },
+    {
+        "meaning": "pick up"
+    },
+    {
+        "reading": "\u3072\u308d"
+    },
+    {
+        "character": "\u80b2"
+    },
+    {
+        "meaning": "nurture, raise"
+    },
+    {
+        "reading": "\u3044\u304f"
+    },
+    {
+        "character": "\u6ce8"
+    },
+    {
+        "meaning": "pour"
+    },
+    {
+        "reading": "\u3061\u3085\u3046"
+    },
+    {
+        "character": "\u6ce2"
+    },
+    {
+        "meaning": "wave"
+    },
+    {
+        "reading": "\u306f"
+    },
+    {
+        "character": "\u6614"
+    },
+    {
+        "meaning": "long ago, long time ago"
+    },
+    {
+        "reading": "\u3080\u304b\u3057"
+    },
+    {
+        "character": "\u653e"
+    },
+    {
+        "meaning": "release"
+    },
+    {
+        "reading": "\u307b\u3046"
+    },
+    {
+        "character": "\u5cb8"
+    },
+    {
+        "meaning": "coast, shore"
+    },
+    {
+        "reading": "\u304c\u3093"
+    },
+    {
+        "character": "\u547d"
+    },
+    {
+        "meaning": "fate"
+    },
+    {
+        "reading": "\u3081\u3044, \u307f\u3087\u3046"
+    },
+    {
+        "character": "\u52b4"
+    },
+    {
+        "meaning": "labor"
+    },
+    {
+        "reading": "\u308d\u3046"
+    },
+    {
+        "character": "\u52aa"
+    },
+    {
+        "meaning": "toil"
+    },
+    {
+        "reading": "\u3069"
+    },
+    {
+        "character": "\u5229"
+    },
+    {
+        "meaning": "profit, benefit, advantage"
+    },
+    {
+        "reading": "\u308a"
+    },
+    {
+        "character": "\u5225"
+    },
+    {
+        "meaning": "separate"
+    },
+    {
+        "reading": "\u3079\u3064"
+    },
+    {
+        "character": "\u4f4e"
+    },
+    {
+        "meaning": "low"
+    },
+    {
+        "reading": "\u3066\u3044"
+    },
+    {
+        "character": "\u4f4d"
+    },
+    {
+        "meaning": "rank"
+    },
+    {
+        "reading": "\u3044"
+    },
+    {
+        "character": "\u8001"
+    },
+    {
+        "meaning": "elderly"
+    },
+    {
+        "reading": "\u308d\u3046"
+    },
+    {
+        "character": "\u6210"
+    },
+    {
+        "meaning": "become"
+    },
+    {
+        "reading": "\u305b\u3044"
+    },
+    {
+        "character": "\u597d"
+    },
+    {
+        "meaning": "like"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u5171"
+    },
+    {
+        "meaning": "together"
+    },
+    {
+        "reading": "\u304d\u3087\u3046"
+    },
+    {
+        "character": "\u4f1d"
+    },
+    {
+        "meaning": "transmit, tell"
+    },
+    {
+        "reading": "\u3067\u3093"
+    },
+    {
+        "character": "\u4ef2"
+    },
+    {
+        "meaning": "relationship"
+    },
+    {
+        "reading": "\u306a\u304b"
+    },
+    {
+        "character": "\u4e89"
+    },
+    {
+        "meaning": "conflict"
+    },
+    {
+        "reading": "\u305d\u3046"
+    },
+    {
+        "subject": "level 12"
+    },
+    {
+        "character": "\u50d5"
+    },
+    {
+        "meaning": "i, me"
+    },
+    {
+        "reading": "\u307c\u304f"
+    },
+    {
+        "character": "\u5408"
+    },
+    {
+        "meaning": "suit, fit, join"
+    },
+    {
+        "reading": "\u3054\u3046, \u304c\u3063"
+    },
+    {
+        "character": "\u6cc9"
+    },
+    {
+        "meaning": "spring, fountain"
+    },
+    {
+        "reading": "\u305b\u3093"
+    },
+    {
+        "character": "\u91ce"
+    },
+    {
+        "meaning": "field"
+    },
+    {
+        "reading": "\u3084"
+    },
+    {
+        "character": "\u77ed"
+    },
+    {
+        "meaning": "short"
+    },
+    {
+        "reading": "\u305f\u3093"
+    },
+    {
+        "character": "\u7740"
+    },
+    {
+        "meaning": "wear, arrive"
+    },
+    {
+        "reading": "\u3061\u3083\u304f"
+    },
+    {
+        "character": "\u767b"
+    },
+    {
+        "meaning": "climb"
+    },
+    {
+        "reading": "\u3068\u3046, \u3068"
+    },
+    {
+        "character": "\u6e6f"
+    },
+    {
+        "meaning": "hot water"
+    },
+    {
+        "reading": "\u3086"
+    },
+    {
+        "character": "\u6e2f"
+    },
+    {
+        "meaning": "harbor, port, harbour"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u6e29"
+    },
+    {
+        "meaning": "warm"
+    },
+    {
+        "reading": "\u304a\u3093"
+    },
+    {
+        "character": "\u6b6f"
+    },
+    {
+        "meaning": "tooth, teeth"
+    },
+    {
+        "reading": "\u306f"
+    },
+    {
+        "character": "\u690d"
+    },
+    {
+        "meaning": "plant"
+    },
+    {
+        "reading": "\u3057\u3087\u304f"
+    },
+    {
+        "character": "\u671f"
+    },
+    {
+        "meaning": "period of time, time period"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u6691"
+    },
+    {
+        "meaning": "hot, hot weather"
+    },
+    {
+        "reading": "\u3042\u3064"
+    },
+    {
+        "character": "\u5bd2"
+    },
+    {
+        "meaning": "cold"
+    },
+    {
+        "reading": "\u3055\u3080"
+    },
+    {
+        "character": "\u968e"
+    },
+    {
+        "meaning": "floor, story, storey"
+    },
+    {
+        "reading": "\u304b\u3044"
+    },
+    {
+        "character": "\u967d"
+    },
+    {
+        "meaning": "sunshine, sunlight"
+    },
+    {
+        "reading": "\u3088\u3046"
+    },
+    {
+        "character": "\u7ae5"
+    },
+    {
+        "meaning": "juvenile"
+    },
+    {
+        "reading": "\u3069\u3046"
+    },
+    {
+        "character": "\u7403"
+    },
+    {
+        "meaning": "sphere, ball"
+    },
+    {
+        "reading": "\u304d\u3085\u3046"
+    },
+    {
+        "character": "\u6df1"
+    },
+    {
+        "meaning": "deep"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u65cf"
+    },
+    {
+        "meaning": "tribe, family"
+    },
+    {
+        "reading": "\u305e\u304f"
+    },
+    {
+        "character": "\u60aa"
+    },
+    {
+        "meaning": "bad, evil"
+    },
+    {
+        "reading": "\u3042\u304f, \u304a"
+    },
+    {
+        "character": "\u5546"
+    },
+    {
+        "meaning": "merchandise"
+    },
+    {
+        "reading": "\u3057\u3087\u3046"
+    },
+    {
+        "character": "\u52d5"
+    },
+    {
+        "meaning": "move"
+    },
+    {
+        "reading": "\u3069\u3046"
+    },
+    {
+        "character": "\u90fd"
+    },
+    {
+        "meaning": "metropolis"
+    },
+    {
+        "reading": "\u3068, \u3064"
+    },
+    {
+        "character": "\u7b2c"
+    },
+    {
+        "meaning": "ordinal number prefix, ordinal prefix, number"
+    },
+    {
+        "reading": "\u3060\u3044"
+    },
+    {
+        "character": "\u7ae0"
+    },
+    {
+        "meaning": "chapter"
+    },
+    {
+        "reading": "\u3057\u3087\u3046"
+    },
+    {
+        "character": "\u796d"
+    },
+    {
+        "meaning": "festival"
+    },
+    {
+        "reading": "\u3055\u3044"
+    },
+    {
+        "character": "\u5cf6"
+    },
+    {
+        "meaning": "island"
+    },
+    {
+        "reading": "\u3057\u307e"
+    },
+    {
+        "character": "\u54e1"
+    },
+    {
+        "meaning": "member"
+    },
+    {
+        "reading": "\u3044\u3093"
+    },
+    {
+        "character": "\u500d"
+    },
+    {
+        "meaning": "double, times, multiply"
+    },
+    {
+        "reading": "\u3070\u3044"
+    },
+    {
+        "character": "\u6d88"
+    },
+    {
+        "meaning": "extinguish"
+    },
+    {
+        "reading": "\u3057\u3087\u3046"
+    },
+    {
+        "character": "\u6d41"
+    },
+    {
+        "meaning": "stream"
+    },
+    {
+        "reading": "\u308a\u3085\u3046, \u308b"
+    },
+    {
+        "character": "\u6839"
+    },
+    {
+        "meaning": "root"
+    },
+    {
+        "reading": "\u3053\u3093"
+    },
+    {
+        "character": "\u65c5"
+    },
+    {
+        "meaning": "trip, travel"
+    },
+    {
+        "reading": "\u308a\u3087"
+    },
+    {
+        "character": "\u606f"
+    },
+    {
+        "meaning": "breath"
+    },
+    {
+        "reading": "\u305d\u304f"
+    },
+    {
+        "character": "\u5ead"
+    },
+    {
+        "meaning": "garden"
+    },
+    {
+        "reading": "\u3066\u3044"
+    },
+    {
+        "character": "\u52c9"
+    },
+    {
+        "meaning": "exertion"
+    },
+    {
+        "reading": "\u3079\u3093"
+    },
+    {
+        "character": "\u5f85"
+    },
+    {
+        "meaning": "wait"
+    },
+    {
+        "reading": "\u305f\u3044"
+    },
+    {
+        "subject": "level 13"
+    },
+    {
+        "character": "\u6599"
+    },
+    {
+        "meaning": "fee, material"
+    },
+    {
+        "reading": "\u308a\u3087\u3046"
+    },
+    {
+        "character": "\u58eb"
+    },
+    {
+        "meaning": "samurai"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u5668"
+    },
+    {
+        "meaning": "container, vessel"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u5104"
+    },
+    {
+        "meaning": "hundred million"
+    },
+    {
+        "reading": "\u304a\u304f"
+    },
+    {
+        "character": "\u99c5"
+    },
+    {
+        "meaning": "station, train station"
+    },
+    {
+        "reading": "\u3048\u304d"
+    },
+    {
+        "character": "\u9928"
+    },
+    {
+        "meaning": "public building"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u984c"
+    },
+    {
+        "meaning": "topic"
+    },
+    {
+        "reading": "\u3060\u3044"
+    },
+    {
+        "character": "\u9280"
+    },
+    {
+        "meaning": "silver"
+    },
+    {
+        "reading": "\u304e\u3093"
+    },
+    {
+        "character": "\u8a69"
+    },
+    {
+        "meaning": "poem"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u7df4"
+    },
+    {
+        "meaning": "practice"
+    },
+    {
+        "reading": "\u308c\u3093"
+    },
+    {
+        "character": "\u7dd1"
+    },
+    {
+        "meaning": "green"
+    },
+    {
+        "reading": "\u307f\u3069\u308a"
+    },
+    {
+        "character": "\u798f"
+    },
+    {
+        "meaning": "luck, fortune"
+    },
+    {
+        "reading": "\u3075\u304f"
+    },
+    {
+        "character": "\u6a4b"
+    },
+    {
+        "meaning": "bridge"
+    },
+    {
+        "reading": "\u306f\u3057"
+    },
+    {
+        "character": "\u69d8"
+    },
+    {
+        "meaning": "formal name title, formal name ender, manner"
+    },
+    {
+        "reading": "\u3055\u307e"
+    },
+    {
+        "character": "\u6697"
+    },
+    {
+        "meaning": "dark"
+    },
+    {
+        "reading": "\u3042\u3093"
+    },
+    {
+        "character": "\u6574"
+    },
+    {
+        "meaning": "arrange, organize"
+    },
+    {
+        "reading": "\u305b\u3044"
+    },
+    {
+        "character": "\u611f"
+    },
+    {
+        "meaning": "feeling"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u60f3"
+    },
+    {
+        "meaning": "concept"
+    },
+    {
+        "reading": "\u305d\u3046"
+    },
+    {
+        "character": "\u5bbf"
+    },
+    {
+        "meaning": "lodge"
+    },
+    {
+        "reading": "\u3057\u3085\u304f"
+    },
+    {
+        "character": "\u554f"
+    },
+    {
+        "meaning": "problem"
+    },
+    {
+        "reading": "\u3082\u3093"
+    },
+    {
+        "character": "\u7686"
+    },
+    {
+        "meaning": "all, everyone, everything, everybody"
+    },
+    {
+        "reading": "\u307f\u306a, \u307f\u3093\u306a"
+    },
+    {
+        "character": "\u7591"
+    },
+    {
+        "meaning": "doubt"
+    },
+    {
+        "reading": "\u304e"
+    },
+    {
+        "character": "\u6620"
+    },
+    {
+        "meaning": "reflect, reflection"
+    },
+    {
+        "reading": "\u3048\u3044"
+    },
+    {
+        "character": "\u8b1d"
+    },
+    {
+        "meaning": "apologize, apologise"
+    },
+    {
+        "reading": "\u3057\u3083"
+    },
+    {
+        "character": "\u60c5"
+    },
+    {
+        "meaning": "feeling, emotion"
+    },
+    {
+        "reading": "\u3058\u3087\u3046"
+    },
+    {
+        "character": "\u50cf"
+    },
+    {
+        "meaning": "statue, image"
+    },
+    {
+        "reading": "\u305e\u3046"
+    },
+    {
+        "character": "\u990a"
+    },
+    {
+        "meaning": "foster"
+    },
+    {
+        "reading": "\u3088\u3046"
+    },
+    {
+        "character": "\u9858"
+    },
+    {
+        "meaning": "request"
+    },
+    {
+        "reading": "\u304c\u3093"
+    },
+    {
+        "character": "\u93e1"
+    },
+    {
+        "meaning": "mirror"
+    },
+    {
+        "reading": "\u304b\u304c\u307f"
+    },
+    {
+        "character": "\u9078"
+    },
+    {
+        "meaning": "choose"
+    },
+    {
+        "reading": "\u305b\u3093"
+    },
+    {
+        "character": "\u8f2a"
+    },
+    {
+        "meaning": "wheel, ring, loop"
+    },
+    {
+        "reading": "\u308a\u3093"
+    },
+    {
+        "character": "\u8cde"
+    },
+    {
+        "meaning": "prize"
+    },
+    {
+        "reading": "\u3057\u3087\u3046"
+    },
+    {
+        "character": "\u8ab2"
+    },
+    {
+        "meaning": "section"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u71b1"
+    },
+    {
+        "meaning": "heat, fever"
+    },
+    {
+        "reading": "\u306d\u3064"
+    },
+    {
+        "character": "\u7136"
+    },
+    {
+        "meaning": "nature"
+    },
+    {
+        "reading": "\u305c\u3093, \u306d\u3093"
+    },
+    {
+        "character": "\u6bba"
+    },
+    {
+        "meaning": "kill"
+    },
+    {
+        "reading": "\u3055\u3064"
+    },
+    {
+        "character": "\u6a19"
+    },
+    {
+        "meaning": "signpost"
+    },
+    {
+        "reading": "\u3072\u3087\u3046"
+    },
+    {
+        "subject": "level 14"
+    },
+    {
+        "character": "\u9811"
+    },
+    {
+        "meaning": "stubborn"
+    },
+    {
+        "reading": "\u304c\u3093"
+    },
+    {
+        "character": "\u96f0"
+    },
+    {
+        "meaning": "atmosphere"
+    },
+    {
+        "reading": "\u3075\u3093"
+    },
+    {
+        "character": "\u59a5"
+    },
+    {
+        "meaning": "gentle"
+    },
+    {
+        "reading": "\u3060"
+    },
+    {
+        "character": "\u9aa8"
+    },
+    {
+        "meaning": "bone"
+    },
+    {
+        "reading": "\u3053\u3064"
+    },
+    {
+        "character": "\u8853"
+    },
+    {
+        "meaning": "art"
+    },
+    {
+        "reading": "\u3058\u3085\u3064"
+    },
+    {
+        "character": "\u80fd"
+    },
+    {
+        "meaning": "ability"
+    },
+    {
+        "reading": "\u306e\u3046"
+    },
+    {
+        "character": "\u683c"
+    },
+    {
+        "meaning": "status"
+    },
+    {
+        "reading": "\u304b\u304f"
+    },
+    {
+        "character": "\u6280"
+    },
+    {
+        "meaning": "skill"
+    },
+    {
+        "reading": "\u304e"
+    },
+    {
+        "character": "\u6027"
+    },
+    {
+        "meaning": "gender, nature, sex"
+    },
+    {
+        "reading": "\u305b\u3044, \u3057\u3087\u3046"
+    },
+    {
+        "character": "\u57fa"
+    },
+    {
+        "meaning": "foundation"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u82b8"
+    },
+    {
+        "meaning": "acting, art"
+    },
+    {
+        "reading": "\u3052\u3044"
+    },
+    {
+        "character": "\u7d04"
+    },
+    {
+        "meaning": "promise"
+    },
+    {
+        "reading": "\u3084\u304f"
+    },
+    {
+        "character": "\u7684"
+    },
+    {
+        "meaning": "target, al, ~al, like, ~like"
+    },
+    {
+        "reading": "\u3066\u304d"
+    },
+    {
+        "character": "\u6b8b"
+    },
+    {
+        "meaning": "remainder"
+    },
+    {
+        "reading": "\u3056\u3093"
+    },
+    {
+        "character": "\u677e"
+    },
+    {
+        "meaning": "pine, pine tree"
+    },
+    {
+        "reading": "\u307e\u3064"
+    },
+    {
+        "character": "\u675f"
+    },
+    {
+        "meaning": "bundle"
+    },
+    {
+        "reading": "\u305d\u304f"
+    },
+    {
+        "character": "\u6750"
+    },
+    {
+        "meaning": "lumber, material, timber"
+    },
+    {
+        "reading": "\u3056\u3044"
+    },
+    {
+        "character": "\u671b"
+    },
+    {
+        "meaning": "hope"
+    },
+    {
+        "reading": "\u307c\u3046"
+    },
+    {
+        "character": "\u6298"
+    },
+    {
+        "meaning": "fold, bend"
+    },
+    {
+        "reading": "\u305b\u3064"
+    },
+    {
+        "character": "\u5ff5"
+    },
+    {
+        "meaning": "thought"
+    },
+    {
+        "reading": "\u306d\u3093"
+    },
+    {
+        "character": "\u5e0c"
+    },
+    {
+        "meaning": "wish"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u5b8c"
+    },
+    {
+        "meaning": "perfect"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u5b63"
+    },
+    {
+        "meaning": "seasons"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u56fa"
+    },
+    {
+        "meaning": "hard"
+    },
+    {
+        "reading": "\u3053"
+    },
+    {
+        "character": "\u56f2"
+    },
+    {
+        "meaning": "surround"
+    },
+    {
+        "reading": "\u3044"
+    },
+    {
+        "character": "\u5468"
+    },
+    {
+        "meaning": "circumference"
+    },
+    {
+        "reading": "\u3057\u3085\u3046"
+    },
+    {
+        "character": "\u53c2"
+    },
+    {
+        "meaning": "participate"
+    },
+    {
+        "reading": "\u3055\u3093, \u3057\u3093"
+    },
+    {
+        "character": "\u5354"
+    },
+    {
+        "meaning": "cooperation"
+    },
+    {
+        "reading": "\u304d\u3087\u3046"
+    },
+    {
+        "character": "\u5352"
+    },
+    {
+        "meaning": "graduate"
+    },
+    {
+        "reading": "\u305d\u3064"
+    },
+    {
+        "character": "\u4f8b"
+    },
+    {
+        "meaning": "example"
+    },
+    {
+        "reading": "\u308c\u3044"
+    },
+    {
+        "subject": "level 15"
+    },
+    {
+        "character": "\u4e08"
+    },
+    {
+        "meaning": "height, ten feet"
+    },
+    {
+        "reading": "\u3058\u3087\u3046"
+    },
+    {
+        "character": "\u732b"
+    },
+    {
+        "meaning": "cat"
+    },
+    {
+        "reading": "\u306d\u3053"
+    },
+    {
+        "character": "\u6669"
+    },
+    {
+        "meaning": "night, evening"
+    },
+    {
+        "reading": "\u3070\u3093"
+    },
+    {
+        "character": "\u7bc9"
+    },
+    {
+        "meaning": "construct, build"
+    },
+    {
+        "reading": "\u3061\u304f"
+    },
+    {
+        "character": "\u4ecf"
+    },
+    {
+        "meaning": "buddha"
+    },
+    {
+        "reading": "\u3076\u3064"
+    },
+    {
+        "character": "\u98ef"
+    },
+    {
+        "meaning": "meal, food"
+    },
+    {
+        "reading": "\u306f\u3093"
+    },
+    {
+        "character": "\u8ecd"
+    },
+    {
+        "meaning": "army"
+    },
+    {
+        "reading": "\u3050\u3093"
+    },
+    {
+        "character": "\u82f1"
+    },
+    {
+        "meaning": "england, english"
+    },
+    {
+        "reading": "\u3048\u3044"
+    },
+    {
+        "character": "\u7d00"
+    },
+    {
+        "meaning": "account, narrative"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u6d45"
+    },
+    {
+        "meaning": "shallow"
+    },
+    {
+        "reading": "\u3042\u3055"
+    },
+    {
+        "character": "\u6ce3"
+    },
+    {
+        "meaning": "cry"
+    },
+    {
+        "reading": "\u306a"
+    },
+    {
+        "character": "\u6cd5"
+    },
+    {
+        "meaning": "method, law"
+    },
+    {
+        "reading": "\u307b\u3046"
+    },
+    {
+        "character": "\u6bd2"
+    },
+    {
+        "meaning": "poison"
+    },
+    {
+        "reading": "\u3069\u304f"
+    },
+    {
+        "character": "\u6628"
+    },
+    {
+        "meaning": "previous, yesterday"
+    },
+    {
+        "reading": "\u3055\u304f"
+    },
+    {
+        "character": "\u5efa"
+    },
+    {
+        "meaning": "build, construct"
+    },
+    {
+        "reading": "\u3051\u3093"
+    },
+    {
+        "character": "\u592b"
+    },
+    {
+        "meaning": "husband"
+    },
+    {
+        "reading": "\u3075\u3046, \u3075"
+    },
+    {
+        "character": "\u5909"
+    },
+    {
+        "meaning": "change, strange"
+    },
+    {
+        "reading": "\u3078\u3093"
+    },
+    {
+        "character": "\u53f8"
+    },
+    {
+        "meaning": "director"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u5358"
+    },
+    {
+        "meaning": "simple"
+    },
+    {
+        "reading": "\u305f\u3093"
+    },
+    {
+        "character": "\u52c7"
+    },
+    {
+        "meaning": "courage, bravery, valor, valour"
+    },
+    {
+        "reading": "\u3086\u3046"
+    },
+    {
+        "character": "\u4fe1"
+    },
+    {
+        "meaning": "believe, trust"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u5f0f"
+    },
+    {
+        "meaning": "ritual, ceremony, equation"
+    },
+    {
+        "reading": "\u3057\u304d"
+    },
+    {
+        "character": "\u5742"
+    },
+    {
+        "meaning": "slope"
+    },
+    {
+        "reading": "\u3055\u304b"
+    },
+    {
+        "character": "\u533a"
+    },
+    {
+        "meaning": "district, ward"
+    },
+    {
+        "reading": "\u304f"
+    },
+    {
+        "character": "\u5217"
+    },
+    {
+        "meaning": "row"
+    },
+    {
+        "reading": "\u308c\u3064"
+    },
+    {
+        "character": "\u8a08"
+    },
+    {
+        "meaning": "measure, measurement"
+    },
+    {
+        "reading": "\u3051\u3044"
+    },
+    {
+        "character": "\u79cb"
+    },
+    {
+        "meaning": "autumn, fall"
+    },
+    {
+        "reading": "\u3042\u304d"
+    },
+    {
+        "character": "\u6674"
+    },
+    {
+        "meaning": "clear up"
+    },
+    {
+        "reading": "\u306f"
+    },
+    {
+        "character": "\u663c"
+    },
+    {
+        "meaning": "noon"
+    },
+    {
+        "reading": "\u3072\u308b"
+    },
+    {
+        "character": "\u6625"
+    },
+    {
+        "meaning": "spring"
+    },
+    {
+        "reading": "\u306f\u308b"
+    },
+    {
+        "character": "\u5e30"
+    },
+    {
+        "meaning": "return, return home"
+    },
+    {
+        "reading": "\u304b\u3048"
+    },
+    {
+        "character": "\u5ca9"
+    },
+    {
+        "meaning": "boulder"
+    },
+    {
+        "reading": "\u3044\u308f"
+    },
+    {
+        "character": "\u5bfa"
+    },
+    {
+        "meaning": "temple"
+    },
+    {
+        "reading": "\u3066\u3089"
+    },
+    {
+        "subject": "level 16"
+    },
+    {
+        "character": "\u962a"
+    },
+    {
+        "meaning": "heights, slope"
+    },
+    {
+        "reading": "\u306f\u3093"
+    },
+    {
+        "character": "\u5197"
+    },
+    {
+        "meaning": "superfluous, unnecessary, uselessness"
+    },
+    {
+        "reading": "\u3058\u3087\u3046"
+    },
+    {
+        "character": "\u5192"
+    },
+    {
+        "meaning": "dare"
+    },
+    {
+        "reading": "\u307c\u3046"
+    },
+    {
+        "character": "\u5c02"
+    },
+    {
+        "meaning": "specialty"
+    },
+    {
+        "reading": "\u305b\u3093"
+    },
+    {
+        "character": "\u5b58"
+    },
+    {
+        "meaning": "exist, suppose"
+    },
+    {
+        "reading": "\u305d\u3093, \u305e\u3093"
+    },
+    {
+        "character": "\u5371"
+    },
+    {
+        "meaning": "dangerous"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u967a"
+    },
+    {
+        "meaning": "risky, steep"
+    },
+    {
+        "reading": "\u3051\u3093"
+    },
+    {
+        "character": "\u8a3c"
+    },
+    {
+        "meaning": "evidence, proof"
+    },
+    {
+        "reading": "\u3057\u3087\u3046"
+    },
+    {
+        "character": "\u7559"
+    },
+    {
+        "meaning": "detain"
+    },
+    {
+        "reading": "\u308b, \u308a\u3085\u3046"
+    },
+    {
+        "character": "\u653f"
+    },
+    {
+        "meaning": "politics, government"
+    },
+    {
+        "reading": "\u305b\u3044"
+    },
+    {
+        "character": "\u5f01"
+    },
+    {
+        "meaning": "dialect, speech"
+    },
+    {
+        "reading": "\u3079\u3093"
+    },
+    {
+        "character": "\u95a2"
+    },
+    {
+        "meaning": "related, connected"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u8f9e"
+    },
+    {
+        "meaning": "quit, word"
+    },
+    {
+        "reading": "\u3058"
+    },
+    {
+        "character": "\u7b11"
+    },
+    {
+        "meaning": "laugh"
+    },
+    {
+        "reading": "\u308f\u3089, \u3048"
+    },
+    {
+        "character": "\u6d74"
+    },
+    {
+        "meaning": "bathe"
+    },
+    {
+        "reading": "\u3088\u304f"
+    },
+    {
+        "character": "\u6cbb"
+    },
+    {
+        "meaning": "cure, heal, reign, rule"
+    },
+    {
+        "reading": "\u3058, \u3061"
+    },
+    {
+        "character": "\u5e9c"
+    },
+    {
+        "meaning": "government"
+    },
+    {
+        "reading": "\u3075"
+    },
+    {
+        "character": "\u5178"
+    },
+    {
+        "meaning": "rule"
+    },
+    {
+        "reading": "\u3066\u3093"
+    },
+    {
+        "character": "\u9762"
+    },
+    {
+        "meaning": "face, surface"
+    },
+    {
+        "reading": "\u3081\u3093"
+    },
+    {
+        "character": "\u8377"
+    },
+    {
+        "meaning": "luggage"
+    },
+    {
+        "reading": "\u306b"
+    },
+    {
+        "character": "\u7bb1"
+    },
+    {
+        "meaning": "box"
+    },
+    {
+        "reading": "\u306f\u3053"
+    },
+    {
+        "character": "\u771f"
+    },
+    {
+        "meaning": "reality"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u6025"
+    },
+    {
+        "meaning": "hurry"
+    },
+    {
+        "reading": "\u304d\u3085\u3046"
+    },
+    {
+        "character": "\u5e78"
+    },
+    {
+        "meaning": "happiness"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u5b88"
+    },
+    {
+        "meaning": "protect"
+    },
+    {
+        "reading": "\u3059, \u3057\u3085"
+    },
+    {
+        "character": "\u54c1"
+    },
+    {
+        "meaning": "product, article, goods, products"
+    },
+    {
+        "reading": "\u3072\u3093"
+    },
+    {
+        "character": "\u53d6"
+    },
+    {
+        "meaning": "take"
+    },
+    {
+        "reading": "\u3057\u3085"
+    },
+    {
+        "character": "\u4fc2"
+    },
+    {
+        "meaning": "connection"
+    },
+    {
+        "reading": "\u3051\u3044"
+    },
+    {
+        "character": "\u9580"
+    },
+    {
+        "meaning": "gates, gate"
+    },
+    {
+        "reading": "\u3082\u3093"
+    },
+    {
+        "character": "\u9060"
+    },
+    {
+        "meaning": "far"
+    },
+    {
+        "reading": "\u3048\u3093"
+    },
+    {
+        "character": "\u66f8"
+    },
+    {
+        "meaning": "write, writing"
+    },
+    {
+        "reading": "\u3057\u3087"
+    },
+    {
+        "character": "\u66dc"
+    },
+    {
+        "meaning": "weekday, day of the week"
+    },
+    {
+        "reading": "\u3088\u3046"
+    },
+    {
+        "character": "\u5712"
+    },
+    {
+        "meaning": "garden, park"
+    },
+    {
+        "reading": "\u3048\u3093"
+    },
+    {
+        "subject": "level 17"
+    },
+    {
+        "character": "\u8b66"
+    },
+    {
+        "meaning": "warn, admonish"
+    },
+    {
+        "reading": "\u3051\u3044"
+    },
+    {
+        "character": "\u5287"
+    },
+    {
+        "meaning": "drama"
+    },
+    {
+        "reading": "\u3052\u304d"
+    },
+    {
+        "character": "\u8a73"
+    },
+    {
+        "meaning": "detailed"
+    },
+    {
+        "reading": "\u3057\u3087\u3046"
+    },
+    {
+        "character": "\u5e7b"
+    },
+    {
+        "meaning": "illusion"
+    },
+    {
+        "reading": "\u3052\u3093"
+    },
+    {
+        "character": "\u8aac"
+    },
+    {
+        "meaning": "theory"
+    },
+    {
+        "reading": "\u305b\u3064"
+    },
+    {
+        "character": "\u899a"
+    },
+    {
+        "meaning": "memorize, awake"
+    },
+    {
+        "reading": "\u304b\u304f"
+    },
+    {
+        "character": "\u604b"
+    },
+    {
+        "meaning": "romance"
+    },
+    {
+        "reading": "\u308c\u3093"
+    },
+    {
+        "character": "\u7f72"
+    },
+    {
+        "meaning": "government office, political office, office"
+    },
+    {
+        "reading": "\u3057\u3087"
+    },
+    {
+        "character": "\u611b"
+    },
+    {
+        "meaning": "love"
+    },
+    {
+        "reading": "\u3042\u3044"
+    },
+    {
+        "character": "\u5e95"
+    },
+    {
+        "meaning": "bottom"
+    },
+    {
+        "reading": "\u305d\u3053"
+    },
+    {
+        "character": "\u5bdf"
+    },
+    {
+        "meaning": "guess"
+    },
+    {
+        "reading": "\u3055\u3064"
+    },
+    {
+        "character": "\u5b98"
+    },
+    {
+        "meaning": "government"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u865a"
+    },
+    {
+        "meaning": "void"
+    },
+    {
+        "reading": "\u304d\u3087, \u3053"
+    },
+    {
+        "character": "\u6e09"
+    },
+    {
+        "meaning": "ford"
+    },
+    {
+        "reading": "\u3057\u3087\u3046"
+    },
+    {
+        "character": "\u662f"
+    },
+    {
+        "meaning": "absolutely"
+    },
+    {
+        "reading": "\u305c"
+    },
+    {
+        "character": "\u5e72"
+    },
+    {
+        "meaning": "dry"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u975e"
+    },
+    {
+        "meaning": "injustice, negative, mistake"
+    },
+    {
+        "reading": "\u3072"
+    },
+    {
+        "character": "\u8b58"
+    },
+    {
+        "meaning": "discerning, discriminating, know"
+    },
+    {
+        "reading": "\u3057\u304d"
+    },
+    {
+        "character": "\u5e38"
+    },
+    {
+        "meaning": "ordinary, normal, usual"
+    },
+    {
+        "reading": "\u3058\u3087\u3046"
+    },
+    {
+        "character": "\u56e0"
+    },
+    {
+        "meaning": "cause"
+    },
+    {
+        "reading": "\u3044\u3093"
+    },
+    {
+        "character": "\u7d50"
+    },
+    {
+        "meaning": "bind, tie"
+    },
+    {
+        "reading": "\u3051\u3064"
+    },
+    {
+        "character": "\u7121"
+    },
+    {
+        "meaning": "nothing"
+    },
+    {
+        "reading": "\u3080, \u3076"
+    },
+    {
+        "character": "\u6885"
+    },
+    {
+        "meaning": "ume, japanese plum"
+    },
+    {
+        "reading": "\u3046\u3081"
+    },
+    {
+        "character": "\u6804"
+    },
+    {
+        "meaning": "prosper, flourish"
+    },
+    {
+        "reading": "\u3048\u3044"
+    },
+    {
+        "character": "\u679c"
+    },
+    {
+        "meaning": "fruit"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u6557"
+    },
+    {
+        "meaning": "failure, fail"
+    },
+    {
+        "reading": "\u306f\u3044"
+    },
+    {
+        "character": "\u5e2d"
+    },
+    {
+        "meaning": "seat"
+    },
+    {
+        "reading": "\u305b\u304d"
+    },
+    {
+        "character": "\u5869"
+    },
+    {
+        "meaning": "salt"
+    },
+    {
+        "reading": "\u3057\u304a"
+    },
+    {
+        "character": "\u5802"
+    },
+    {
+        "meaning": "hall, public chamber"
+    },
+    {
+        "reading": "\u3069\u3046"
+    },
+    {
+        "character": "\u5175"
+    },
+    {
+        "meaning": "soldier"
+    },
+    {
+        "reading": "\u3078\u3044, \u3072\u3087\u3046"
+    },
+    {
+        "character": "\u5074"
+    },
+    {
+        "meaning": "side"
+    },
+    {
+        "reading": "\u304c\u308f, \u305d\u3070"
+    },
+    {
+        "character": "\u9f3b"
+    },
+    {
+        "meaning": "nose"
+    },
+    {
+        "reading": "\u306f\u306a"
+    },
+    {
+        "character": "\u85ac"
+    },
+    {
+        "meaning": "medicine, drug, drugs"
+    },
+    {
+        "reading": "\u3084\u304f"
+    },
+    {
+        "character": "\u7d30"
+    },
+    {
+        "meaning": "thin"
+    },
+    {
+        "reading": "\u3055\u3044"
+    },
+    {
+        "character": "\u539f"
+    },
+    {
+        "meaning": "original, fundamental, field"
+    },
+    {
+        "reading": "\u3052\u3093"
+    },
+    {
+        "character": "\u559c"
+    },
+    {
+        "meaning": "rejoice, delighted, pleased"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u60b2"
+    },
+    {
+        "meaning": "sad"
+    },
+    {
+        "reading": "\u3072"
+    },
+    {
+        "subject": "level 18"
+    },
+    {
+        "character": "\u7948"
+    },
+    {
+        "meaning": "pray"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u5589"
+    },
+    {
+        "meaning": "throat"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u98f4"
+    },
+    {
+        "meaning": "candy"
+    },
+    {
+        "reading": "\u3042\u3081"
+    },
+    {
+        "character": "\u53e9"
+    },
+    {
+        "meaning": "strike, beat"
+    },
+    {
+        "reading": "\u3053\u3046"
+    },
+    {
+        "character": "\u7159"
+    },
+    {
+        "meaning": "smoke"
+    },
+    {
+        "reading": "\u3048\u3093"
+    },
+    {
+        "character": "\u55ab"
+    },
+    {
+        "meaning": "consume"
+    },
+    {
+        "reading": "\u304d\u3064"
+    },
+    {
+        "character": "\u7981"
+    },
+    {
+        "meaning": "prohibit, prohibition"
+    },
+    {
+        "reading": "\u304d\u3093"
+    },
+    {
+        "character": "\u53e5"
+    },
+    {
+        "meaning": "paragraph"
+    },
+    {
+        "reading": "\u304f"
+    },
+    {
+        "character": "\u9759"
+    },
+    {
+        "meaning": "quiet"
+    },
+    {
+        "reading": "\u305b\u3044"
+    },
+    {
+        "character": "\u679a"
+    },
+    {
+        "meaning": "flat objects counter, flat object, counter for flat objects"
+    },
+    {
+        "reading": "\u307e\u3044"
+    },
+    {
+        "character": "\u8a31"
+    },
+    {
+        "meaning": "permit, allow"
+    },
+    {
+        "reading": "\u304d\u3087"
+    },
+    {
+        "character": "\u53ef"
+    },
+    {
+        "meaning": "possible, passable"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u7985"
+    },
+    {
+        "meaning": "zen, zen buddhism"
+    },
+    {
+        "reading": "\u305c\u3093"
+    },
+    {
+        "character": "\u50e7"
+    },
+    {
+        "meaning": "priest, monk"
+    },
+    {
+        "reading": "\u305d\u3046"
+    },
+    {
+        "character": "\u8133"
+    },
+    {
+        "meaning": "brain"
+    },
+    {
+        "reading": "\u306e\u3046"
+    },
+    {
+        "character": "\u80f8"
+    },
+    {
+        "meaning": "chest, breast"
+    },
+    {
+        "reading": "\u3080\u306d"
+    },
+    {
+        "character": "\u6d17"
+    },
+    {
+        "meaning": "wash"
+    },
+    {
+        "reading": "\u305b\u3093"
+    },
+    {
+        "character": "\u5fd8"
+    },
+    {
+        "meaning": "forget"
+    },
+    {
+        "reading": "\u307c\u3046"
+    },
+    {
+        "character": "\u5ea7"
+    },
+    {
+        "meaning": "sit, seat"
+    },
+    {
+        "reading": "\u3056"
+    },
+    {
+        "character": "\u713c"
+    },
+    {
+        "meaning": "bake, cook, burn"
+    },
+    {
+        "reading": "\u3084"
+    },
+    {
+        "character": "\u501f"
+    },
+    {
+        "meaning": "borrow"
+    },
+    {
+        "reading": "\u3057\u3083\u304f"
+    },
+    {
+        "character": "\u6c7d"
+    },
+    {
+        "meaning": "steam"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u7b49"
+    },
+    {
+        "meaning": "equal"
+    },
+    {
+        "reading": "\u3068\u3046"
+    },
+    {
+        "character": "\u5831"
+    },
+    {
+        "meaning": "news, report"
+    },
+    {
+        "reading": "\u307b\u3046"
+    },
+    {
+        "character": "\u985e"
+    },
+    {
+        "meaning": "type, category, kind"
+    },
+    {
+        "reading": "\u308b\u3044"
+    },
+    {
+        "character": "\u9054"
+    },
+    {
+        "meaning": "attain, plural"
+    },
+    {
+        "reading": "\u305f\u3064"
+    },
+    {
+        "character": "\u7a2e"
+    },
+    {
+        "meaning": "kind, type"
+    },
+    {
+        "reading": "\u3057\u3085"
+    },
+    {
+        "character": "\u544a"
+    },
+    {
+        "meaning": "announce"
+    },
+    {
+        "reading": "\u3053\u304f"
+    },
+    {
+        "character": "\u5f13"
+    },
+    {
+        "meaning": "bow"
+    },
+    {
+        "reading": "\u304d\u3085\u3046"
+    },
+    {
+        "character": "\u8a13"
+    },
+    {
+        "meaning": "instruction"
+    },
+    {
+        "reading": "\u304f\u3093"
+    },
+    {
+        "subject": "level 19"
+    },
+    {
+        "character": "\u5fd9"
+    },
+    {
+        "meaning": "busy"
+    },
+    {
+        "reading": "\u307c\u3046"
+    },
+    {
+        "character": "\u53f2"
+    },
+    {
+        "meaning": "history"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u7b1b"
+    },
+    {
+        "meaning": "flute"
+    },
+    {
+        "reading": "\u3066\u304d"
+    },
+    {
+        "character": "\u6bd4"
+    },
+    {
+        "meaning": "compare"
+    },
+    {
+        "reading": "\u3072"
+    },
+    {
+        "character": "\u7d61"
+    },
+    {
+        "meaning": "entangle, coil around, entwine"
+    },
+    {
+        "reading": "\u3089\u304f"
+    },
+    {
+        "character": "\u5584"
+    },
+    {
+        "meaning": "morally good, good"
+    },
+    {
+        "reading": "\u305c\u3093"
+    },
+    {
+        "character": "\u9023"
+    },
+    {
+        "meaning": "take along"
+    },
+    {
+        "reading": "\u308c\u3093"
+    },
+    {
+        "character": "\u7d9a"
+    },
+    {
+        "meaning": "continue"
+    },
+    {
+        "reading": "\u305e\u304f"
+    },
+    {
+        "character": "\u6539"
+    },
+    {
+        "meaning": "renew"
+    },
+    {
+        "reading": "\u304b\u3044"
+    },
+    {
+        "character": "\u5f97"
+    },
+    {
+        "meaning": "acquire"
+    },
+    {
+        "reading": "\u3068\u304f"
+    },
+    {
+        "character": "\u5f92"
+    },
+    {
+        "meaning": "junior, follower"
+    },
+    {
+        "reading": "\u3068"
+    },
+    {
+        "character": "\u4e71"
+    },
+    {
+        "meaning": "riot"
+    },
+    {
+        "reading": "\u3089\u3093"
+    },
+    {
+        "character": "\u6df7"
+    },
+    {
+        "meaning": "mix"
+    },
+    {
+        "reading": "\u3053\u3093"
+    },
+    {
+        "character": "\u66b4"
+    },
+    {
+        "meaning": "violence"
+    },
+    {
+        "reading": "\u307c\u3046"
+    },
+    {
+        "character": "\u56e3"
+    },
+    {
+        "meaning": "group"
+    },
+    {
+        "reading": "\u3060\u3093, \u3068\u3093"
+    },
+    {
+        "character": "\u5c65"
+    },
+    {
+        "meaning": "boots"
+    },
+    {
+        "reading": "\u308a"
+    },
+    {
+        "character": "\u5b99"
+    },
+    {
+        "meaning": "midair"
+    },
+    {
+        "reading": "\u3061\u3085\u3046"
+    },
+    {
+        "character": "\u5b87"
+    },
+    {
+        "meaning": "outer space"
+    },
+    {
+        "reading": "\u3046"
+    },
+    {
+        "character": "\u518a"
+    },
+    {
+        "meaning": "book counter, counter for books, counter for volumes"
+    },
+    {
+        "reading": "\u3055\u3064"
+    },
+    {
+        "character": "\u820c"
+    },
+    {
+        "meaning": "tongue"
+    },
+    {
+        "reading": "\u3057\u305f"
+    },
+    {
+        "character": "\u6b74"
+    },
+    {
+        "meaning": "continuation"
+    },
+    {
+        "reading": "\u308c\u304d"
+    },
+    {
+        "character": "\u95a5"
+    },
+    {
+        "meaning": "clique, clan"
+    },
+    {
+        "reading": "\u3070\u3064"
+    },
+    {
+        "character": "\u6606"
+    },
+    {
+        "meaning": "descendants"
+    },
+    {
+        "reading": "\u3053\u3093"
+    },
+    {
+        "character": "\u8a5e"
+    },
+    {
+        "meaning": "part of speech, speech particle, particle of speech, grammar particle"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u82e5"
+    },
+    {
+        "meaning": "young"
+    },
+    {
+        "reading": "\u308f\u304b, \u3082"
+    },
+    {
+        "character": "\u8ca1"
+    },
+    {
+        "meaning": "wealth"
+    },
+    {
+        "reading": "\u3055\u3044, \u3056\u3044"
+    },
+    {
+        "character": "\u6613"
+    },
+    {
+        "meaning": "easy"
+    },
+    {
+        "reading": "\u3044, \u3048\u304d"
+    },
+    {
+        "character": "\u5e03"
+    },
+    {
+        "meaning": "cloth"
+    },
+    {
+        "reading": "\u3075"
+    },
+    {
+        "character": "\u5bb9"
+    },
+    {
+        "meaning": "form, appearance, shape, figure"
+    },
+    {
+        "reading": "\u3088\u3046"
+    },
+    {
+        "character": "\u9806"
+    },
+    {
+        "meaning": "order, sequence"
+    },
+    {
+        "reading": "\u3058\u3085\u3093"
+    },
+    {
+        "character": "\u6e1b"
+    },
+    {
+        "meaning": "decrease"
+    },
+    {
+        "reading": "\u3052\u3093"
+    },
+    {
+        "character": "\u7bc0"
+    },
+    {
+        "meaning": "season"
+    },
+    {
+        "reading": "\u305b\u3064"
+    },
+    {
+        "character": "\u52a0"
+    },
+    {
+        "meaning": "add"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "subject": "level 20"
+    },
+    {
+        "character": "\u5727"
+    },
+    {
+        "meaning": "pressure"
+    },
+    {
+        "reading": "\u3042\u3064"
+    },
+    {
+        "character": "\u5c3b"
+    },
+    {
+        "meaning": "butt, buttocks"
+    },
+    {
+        "reading": "\u3057\u308a"
+    },
+    {
+        "character": "\u88ab"
+    },
+    {
+        "meaning": "incur"
+    },
+    {
+        "reading": "\u3072"
+    },
+    {
+        "character": "\u7a74"
+    },
+    {
+        "meaning": "hole, cave"
+    },
+    {
+        "reading": "\u3042\u306a"
+    },
+    {
+        "character": "\u7523"
+    },
+    {
+        "meaning": "give birth, birth"
+    },
+    {
+        "reading": "\u3055\u3093"
+    },
+    {
+        "character": "\u5922"
+    },
+    {
+        "meaning": "dream"
+    },
+    {
+        "reading": "\u3080"
+    },
+    {
+        "character": "\u5728"
+    },
+    {
+        "meaning": "exist"
+    },
+    {
+        "reading": "\u3056\u3044"
+    },
+    {
+        "character": "\u500b"
+    },
+    {
+        "meaning": "individual"
+    },
+    {
+        "reading": "\u3053"
+    },
+    {
+        "character": "\u5acc"
+    },
+    {
+        "meaning": "dislike"
+    },
+    {
+        "reading": "\u3051\u3093, \u3052\u3093"
+    },
+    {
+        "character": "\u78ba"
+    },
+    {
+        "meaning": "certain"
+    },
+    {
+        "reading": "\u304b\u304f"
+    },
+    {
+        "character": "\u68b0"
+    },
+    {
+        "meaning": "contraption"
+    },
+    {
+        "reading": "\u304b\u3044"
+    },
+    {
+        "character": "\u5c3e"
+    },
+    {
+        "meaning": "tail"
+    },
+    {
+        "reading": "\u3073"
+    },
+    {
+        "character": "\u9707"
+    },
+    {
+        "meaning": "earthquake, quake, shake"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u88d5"
+    },
+    {
+        "meaning": "abundant, plentiful"
+    },
+    {
+        "reading": "\u3086\u3046"
+    },
+    {
+        "character": "\u59a8"
+    },
+    {
+        "meaning": "obstruct, impede"
+    },
+    {
+        "reading": "\u307c\u3046"
+    },
+    {
+        "character": "\u96e3"
+    },
+    {
+        "meaning": "difficult"
+    },
+    {
+        "reading": "\u306a\u3093"
+    },
+    {
+        "character": "\u4f59"
+    },
+    {
+        "meaning": "surplus, excess"
+    },
+    {
+        "reading": "\u3088"
+    },
+    {
+        "character": "\u5bb3"
+    },
+    {
+        "meaning": "damage, injury, harm"
+    },
+    {
+        "reading": "\u304c\u3044"
+    },
+    {
+        "character": "\u98db"
+    },
+    {
+        "meaning": "fly"
+    },
+    {
+        "reading": "\u3072"
+    },
+    {
+        "character": "\u7387"
+    },
+    {
+        "meaning": "percent, percentage"
+    },
+    {
+        "reading": "\u308a\u3064, \u305d\u3064"
+    },
+    {
+        "character": "\u6a5f"
+    },
+    {
+        "meaning": "machine"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u707d"
+    },
+    {
+        "meaning": "disaster"
+    },
+    {
+        "reading": "\u3055\u3044"
+    },
+    {
+        "character": "\u56f0"
+    },
+    {
+        "meaning": "distressed, troubled"
+    },
+    {
+        "reading": "\u3053\u3093"
+    },
+    {
+        "character": "\u7d4c"
+    },
+    {
+        "meaning": "passage of time, pass through, manage"
+    },
+    {
+        "reading": "\u3051\u3044"
+    },
+    {
+        "character": "\u8ad6"
+    },
+    {
+        "meaning": "theory"
+    },
+    {
+        "reading": "\u308d\u3093"
+    },
+    {
+        "character": "\u9632"
+    },
+    {
+        "meaning": "prevent, prevention"
+    },
+    {
+        "reading": "\u307c\u3046"
+    },
+    {
+        "character": "\u7f6a"
+    },
+    {
+        "meaning": "guilt"
+    },
+    {
+        "reading": "\u3056\u3044"
+    },
+    {
+        "character": "\u72af"
+    },
+    {
+        "meaning": "crime"
+    },
+    {
+        "reading": "\u306f\u3093"
+    },
+    {
+        "character": "\u8b70"
+    },
+    {
+        "meaning": "deliberation, discussion"
+    },
+    {
+        "reading": "\u304e"
+    },
+    {
+        "character": "\u59bb"
+    },
+    {
+        "meaning": "wife"
+    },
+    {
+        "reading": "\u3055\u3044"
+    },
+    {
+        "character": "\u539a"
+    },
+    {
+        "meaning": "thick"
+    },
+    {
+        "reading": "\u3042\u3064"
+    },
+    {
+        "character": "\u81ed"
+    },
+    {
+        "meaning": "stinking, stinky, smelly"
+    },
+    {
+        "reading": "\u304f\u3055"
+    },
+    {
+        "character": "\u5012"
+    },
+    {
+        "meaning": "overthrow, collapse"
+    },
+    {
+        "reading": "\u3068\u3046"
+    },
+    {
+        "subject": "level 21"
+    },
+    {
+        "character": "\u6a29"
+    },
+    {
+        "meaning": "rights"
+    },
+    {
+        "reading": "\u3051\u3093"
+    },
+    {
+        "character": "\u7fa9"
+    },
+    {
+        "meaning": "righteousness"
+    },
+    {
+        "reading": "\u304e"
+    },
+    {
+        "character": "\u4f01"
+    },
+    {
+        "meaning": "plan"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u8a8d"
+    },
+    {
+        "meaning": "recognize"
+    },
+    {
+        "reading": "\u306b\u3093"
+    },
+    {
+        "character": "\u969b"
+    },
+    {
+        "meaning": "occasion"
+    },
+    {
+        "reading": "\u3055\u3044"
+    },
+    {
+        "character": "\u89e3"
+    },
+    {
+        "meaning": "untie, solve"
+    },
+    {
+        "reading": "\u304b\u3044"
+    },
+    {
+        "character": "\u7a0e"
+    },
+    {
+        "meaning": "tax"
+    },
+    {
+        "reading": "\u305c\u3044"
+    },
+    {
+        "character": "\u5897"
+    },
+    {
+        "meaning": "increase"
+    },
+    {
+        "reading": "\u305e\u3046"
+    },
+    {
+        "character": "\u7701"
+    },
+    {
+        "meaning": "conserve"
+    },
+    {
+        "reading": "\u3057\u3087\u3046, \u305b\u3044"
+    },
+    {
+        "character": "\u8cac"
+    },
+    {
+        "meaning": "blame"
+    },
+    {
+        "reading": "\u305b\u304d"
+    },
+    {
+        "character": "\u6761"
+    },
+    {
+        "meaning": "clause"
+    },
+    {
+        "reading": "\u3058\u3087\u3046"
+    },
+    {
+        "character": "\u5be9"
+    },
+    {
+        "meaning": "judge"
+    },
+    {
+        "reading": "\u3057\u3093"
+    },
+    {
+        "character": "\u691c"
+    },
+    {
+        "meaning": "examine"
+    },
+    {
+        "reading": "\u3051\u3093"
+    },
+    {
+        "character": "\u4efb"
+    },
+    {
+        "meaning": "duty"
+    },
+    {
+        "reading": "\u306b\u3093"
+    },
+    {
+        "character": "\u6279"
+    },
+    {
+        "meaning": "criticism"
+    },
+    {
+        "reading": "\u3072"
+    },
+    {
+        "character": "\u8a55"
+    },
+    {
+        "meaning": "evaluate"
+    },
+    {
+        "reading": "\u3072\u3087\u3046"
+    },
+    {
+        "character": "\u65ad"
+    },
+    {
+        "meaning": "cut off"
+    },
+    {
+        "reading": "\u3060\u3093"
+    },
+    {
+        "character": "\u7d20"
+    },
+    {
+        "meaning": "element"
+    },
+    {
+        "reading": "\u305d, \u3059"
+    },
+    {
+        "character": "\u5ca1"
+    },
+    {
+        "meaning": "hill"
+    },
+    {
+        "reading": "\u304a\u304b"
+    },
+    {
+        "character": "\u6d3e"
+    },
+    {
+        "meaning": "sect"
+    },
+    {
+        "reading": "\u306f"
+    },
+    {
+        "character": "\u4ef6"
+    },
+    {
+        "meaning": "matter, affair"
+    },
+    {
+        "reading": "\u3051\u3093"
+    },
+    {
+        "character": "\u8cc7"
+    },
+    {
+        "meaning": "resources"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u8a2d"
+    },
+    {
+        "meaning": "establish"
+    },
+    {
+        "reading": "\u305b\u3064"
+    },
+    {
+        "character": "\u7dcf"
+    },
+    {
+        "meaning": "whole"
+    },
+    {
+        "reading": "\u305d\u3046"
+    },
+    {
+        "character": "\u67fb"
+    },
+    {
+        "meaning": "inspect, investigate, inspection, investigation"
+    },
+    {
+        "reading": "\u3055"
+    },
+    {
+        "character": "\u52d9"
+    },
+    {
+        "meaning": "task"
+    },
+    {
+        "reading": "\u3080"
+    },
+    {
+        "character": "\u5236"
+    },
+    {
+        "meaning": "control, system"
+    },
+    {
+        "reading": "\u305b\u3044"
+    },
+    {
+        "character": "\u5224"
+    },
+    {
+        "meaning": "judge"
+    },
+    {
+        "reading": "\u306f\u3093"
+    },
+    {
+        "character": "\u6319"
+    },
+    {
+        "meaning": "raise"
+    },
+    {
+        "reading": "\u304d\u3087"
+    },
+    {
+        "character": "\u59d4"
+    },
+    {
+        "meaning": "committee"
+    },
+    {
+        "reading": "\u3044"
+    },
+    {
+        "character": "\u6e08"
+    },
+    {
+        "meaning": "come to an end"
+    },
+    {
+        "reading": "\u3055\u3044"
+    },
+    {
+        "character": "\u6575"
+    },
+    {
+        "meaning": "enemy"
+    },
+    {
+        "reading": "\u3066\u304d"
+    },
+    {
+        "subject": "level 22"
+    },
+    {
+        "character": "\u89b3"
+    },
+    {
+        "meaning": "view"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u55b6"
+    },
+    {
+        "meaning": "manage"
+    },
+    {
+        "reading": "\u3048\u3044"
+    },
+    {
+        "character": "\u8cc0"
+    },
+    {
+        "meaning": "congratulations"
+    },
+    {
+        "reading": "\u304c"
+    },
+    {
+        "character": "\u614b"
+    },
+    {
+        "meaning": "appearance"
+    },
+    {
+        "reading": "\u305f\u3044"
+    },
+    {
+        "character": "\u72b6"
+    },
+    {
+        "meaning": "condition"
+    },
+    {
+        "reading": "\u3058\u3087\u3046"
+    },
+    {
+        "character": "\u63f4"
+    },
+    {
+        "meaning": "aid, assist"
+    },
+    {
+        "reading": "\u3048\u3093"
+    },
+    {
+        "character": "\u63d0"
+    },
+    {
+        "meaning": "present, submit"
+    },
+    {
+        "reading": "\u3066\u3044"
+    },
+    {
+        "character": "\u5fdc"
+    },
+    {
+        "meaning": "respond"
+    },
+    {
+        "reading": "\u304a\u3046"
+    },
+    {
+        "character": "\u59ff"
+    },
+    {
+        "meaning": "figure, shape, form"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u57df"
+    },
+    {
+        "meaning": "region, boundary"
+    },
+    {
+        "reading": "\u3044\u304d"
+    },
+    {
+        "character": "\u5438"
+    },
+    {
+        "meaning": "suck, inhale"
+    },
+    {
+        "reading": "\u304d\u3085\u3046"
+    },
+    {
+        "character": "\u5024"
+    },
+    {
+        "meaning": "value, price"
+    },
+    {
+        "reading": "\u3061"
+    },
+    {
+        "character": "\u526f"
+    },
+    {
+        "meaning": "vice, side"
+    },
+    {
+        "reading": "\u3075\u304f"
+    },
+    {
+        "character": "\u85e4"
+    },
+    {
+        "meaning": "wisteria"
+    },
+    {
+        "reading": "\u3075\u3058"
+    },
+    {
+        "character": "\u7b56"
+    },
+    {
+        "meaning": "plan"
+    },
+    {
+        "reading": "\u3055\u304f"
+    },
+    {
+        "character": "\u9818"
+    },
+    {
+        "meaning": "territory"
+    },
+    {
+        "reading": "\u308a\u3087\u3046"
+    },
+    {
+        "character": "\u7d71"
+    },
+    {
+        "meaning": "unite"
+    },
+    {
+        "reading": "\u3068\u3046"
+    },
+    {
+        "character": "\u793a"
+    },
+    {
+        "meaning": "indicate, show"
+    },
+    {
+        "reading": "\u3058, \u3057"
+    },
+    {
+        "character": "\u52e2"
+    },
+    {
+        "meaning": "force"
+    },
+    {
+        "reading": "\u305b\u3044, \u305b"
+    },
+    {
+        "character": "\u4fa1"
+    },
+    {
+        "meaning": "value"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u8cbb"
+    },
+    {
+        "meaning": "expense, cost"
+    },
+    {
+        "reading": "\u3072"
+    },
+    {
+        "character": "\u7f6e"
+    },
+    {
+        "meaning": "put"
+    },
+    {
+        "reading": "\u3061"
+    },
+    {
+        "character": "\u6848"
+    },
+    {
+        "meaning": "plan"
+    },
+    {
+        "reading": "\u3042\u3093"
+    },
+    {
+        "character": "\u5404"
+    },
+    {
+        "meaning": "each"
+    },
+    {
+        "reading": "\u304b\u304f"
+    },
+    {
+        "character": "\u5bae"
+    },
+    {
+        "meaning": "shinto shrine, shrine, palace"
+    },
+    {
+        "reading": "\u307f\u3084"
+    },
+    {
+        "character": "\u5bdd"
+    },
+    {
+        "meaning": "lie down, lay down, sleep"
+    },
+    {
+        "reading": "\u306d"
+    },
+    {
+        "character": "\u574a"
+    },
+    {
+        "meaning": "monk"
+    },
+    {
+        "reading": "\u307c\u3046"
+    },
+    {
+        "character": "\u904e"
+    },
+    {
+        "meaning": "surpass"
+    },
+    {
+        "reading": "\u304b"
+    },
+    {
+        "character": "\u8131"
+    },
+    {
+        "meaning": "undress"
+    },
+    {
+        "reading": "\u3060\u3064"
+    },
+    {
+        "character": "\u8a95"
+    },
+    {
+        "meaning": "birth"
+    },
+    {
+        "reading": "\u305f\u3093"
+    },
+    {
+        "character": "\u7f70"
+    },
+    {
+        "meaning": "penalty, punishment"
+    },
+    {
+        "reading": "\u3070\u3064"
+    },
+    {
+        "subject": "level 23"
+    },
+    {
+        "character": "\u79c0"
+    },
+    {
+        "meaning": "excel"
+    },
+    {
+        "reading": "\u3057\u3085\u3046"
+    },
+    {
+        "character": "\u4ff3"
+    },
+    {
+        "meaning": "haiku"
+    },
+    {
+        "reading": "\u306f\u3044"
+    },
+    {
+        "character": "\u57ce"
+    },
+    {
+        "meaning": "castle"
+    },
+    {
+        "reading": "\u3057\u308d"
+    },
+    {
+        "character": "\u547c"
+    },
+    {
+        "meaning": "call"
+    },
+    {
+        "reading": "\u3088"
+    },
+    {
+        "character": "\u4e73"
+    },
+    {
+        "meaning": "milk"
+    },
+    {
+        "reading": "\u306b\u3085\u3046"
+    },
+    {
+        "character": "\u73fe"
+    },
+    {
+        "meaning": "present time, present"
+    },
+    {
+        "reading": "\u3052\u3093"
+    },
+    {
+        "character": "\u65bd"
+    },
+    {
+        "meaning": "carry out"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u8d05"
+    },
+    {
+        "meaning": "luxury"
+    },
+    {
+        "reading": "\u305c\u3044"
+    },
+    {
+        "character": "\u6ca2"
+    },
+    {
+        "meaning": "swamp"
+    },
+    {
+        "reading": "\u305f\u304f"
+    },
+    {
+        "character": "\u5b85"
+    },
+    {
+        "meaning": "house, home"
+    },
+    {
+        "reading": "\u305f\u304f"
+    },
+    {
+        "character": "\u512a"
+    },
+    {
+        "meaning": "superior, gentle"
+    },
+    {
+        "reading": "\u3086\u3046"
+    },
+    {
+        "character": "\u5f35"
+    },
+    {
+        "meaning": "stretch"
+    },
+    {
+        "reading": "\u3061\u3087\u3046"
+    },
+    {
+        "character": "\u5e79"
+    },
+    {
+        "meaning": "tree trunk"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u5c0e"
+    },
+    {
+        "meaning": "lead"
+    },
+    {
+        "reading": "\u3069\u3046"
+    },
+    {
+        "character": "\u5099"
+    },
+    {
+        "meaning": "provide, equip"
+    },
+    {
+        "reading": "\u3073"
+    },
+    {
+        "character": "\u5247"
+    },
+    {
+        "meaning": "rule"
+    },
+    {
+        "reading": "\u305d\u304f"
+    },
+    {
+        "character": "\u6e96"
+    },
+    {
+        "meaning": "standard"
+    },
+    {
+        "reading": "\u3058\u3085\u3093"
+    },
+    {
+        "character": "\u770b"
+    },
+    {
+        "meaning": "watch over"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u5e2b"
+    },
+    {
+        "meaning": "teacher, expert, master"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u5f8b"
+    },
+    {
+        "meaning": "law"
+    },
+    {
+        "reading": "\u308a\u3064"
+    },
+    {
+        "character": "\u6f14"
+    },
+    {
+        "meaning": "perform, performance"
+    },
+    {
+        "reading": "\u3048\u3093"
+    },
+    {
+        "character": "\u5d0e"
+    },
+    {
+        "meaning": "cape"
+    },
+    {
+        "reading": "\u3055\u304d"
+    },
+    {
+        "character": "\u88c1"
+    },
+    {
+        "meaning": "judge"
+    },
+    {
+        "reading": "\u3055\u3044"
+    },
+    {
+        "character": "\u5272"
+    },
+    {
+        "meaning": "divide"
+    },
+    {
+        "reading": "\u308f\u308a, \u308f"
+    },
+    {
+        "character": "\u8b77"
+    },
+    {
+        "meaning": "defend"
+    },
+    {
+        "reading": "\u3054"
+    },
+    {
+        "character": "\u898f"
+    },
+    {
+        "meaning": "standard"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u9b3c"
+    },
+    {
+        "meaning": "demon"
+    },
+    {
+        "reading": "\u304d"
+    },
+    {
+        "character": "\u8077"
+    },
+    {
+        "meaning": "employment"
+    },
+    {
+        "reading": "\u3057\u3087\u304f"
+    },
+    {
+        "character": "\u9769"
+    },
+    {
+        "meaning": "leather"
+    },
+    {
+        "reading": "\u304b\u304f"
+    },
+    {
+        "character": "\u505c"
+    },
+    {
+        "meaning": "halt"
+    },
+    {
+        "reading": "\u3066\u3044"
+    },
+    {
+        "character": "\u53ce"
+    },
+    {
+        "meaning": "obtain"
+    },
+    {
+        "reading": "\u3057\u3085\u3046"
+    },
+    {
+        "subject": "level 24"
+    },
+    {
+        "character": "\u682a"
+    },
+    {
+        "meaning": "stocks, shares"
+    },
+    {
+        "reading": "\u304b\u3076"
+    },
+    {
+        "character": "\u8ca9"
+    },
+    {
+        "meaning": "sell"
+    },
+    {
+        "reading": "\u306f\u3093"
+    },
+    {
+        "character": "\u5c55"
+    },
+    {
+        "meaning": "expand"
+    },
+    {
+        "reading": "\u3066\u3093"
+    },
+    {
+        "character": "\u4f9b"
+    },
+    {
+        "meaning": "servant, companion"
+    },
+    {
+        "reading": "\u304d\u3087\u3046"
+    },
+    {
+        "character": "\u8ff0"
+    },
+    {
+        "meaning": "mention"
+    },
+    {
+        "reading": "\u3058\u3085\u3064"
+    },
+    {
+        "character": "\u8cea"
+    },
+    {
+        "meaning": "quality"
+    },
+    {
+        "reading": "\u3057\u3064, \u3057\u3061"
+    },
+    {
+        "character": "\u6b66"
+    },
+    {
+        "meaning": "military"
+    },
+    {
+        "reading": "\u3076, \u3080"
+    },
+    {
+        "character": "\u74b0"
+    },
+    {
+        "meaning": "loop"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u5883"
+    },
+    {
+        "meaning": "boundary"
+    },
+    {
+        "reading": "\u304d\u3087\u3046"
+    },
+    {
+        "character": "\u91cf"
+    },
+    {
+        "meaning": "quantity, amount"
+    },
+    {
+        "reading": "\u308a\u3087\u3046"
+    },
+    {
+        "character": "\u8c61"
+    },
+    {
+        "meaning": "elephant, phenomenon"
+    },
+    {
+        "reading": "\u3057\u3087\u3046, \u305e\u3046"
+    },
+    {
+        "character": "\u7ba1"
+    },
+    {
+        "meaning": "pipe"
+    },
+    {
+        "reading": "\u304b\u3093"
+    },
+    {
+        "character": "\u5dee"
+    },
+    {
+        "meaning": "distinction"
+    },
+    {
+        "reading": "\u3055"
+    },
+    {
+        "character": "\u8996"
+    },
+    {
+        "meaning": "look at"
+    },
+    {
+        "reading": "\u3057"
+    },
+    {
+        "character": "\u5e81"
+    },
+    {
+        "meaning": "agency, government office"
+    },
+    {
+        "reading": "\u3061\u3087\u3046"
+    },
+    {
+        "character": "\u578b"
+    },
+    {
+        "meaning": "model, type"
+    },
+    {
+        "reading": "\u3051\u3044"
+    },
+    {
+        "character": "\u5c64"
+    },
+    {
+        "meaning": "layer"
+    },
+    {
+        "reading": "\u305d\u3046"
+    },
+    {
+        "character": "\u8f09"
+    },
+    {
+        "meaning": "publish"
+    },
+    {
+        "reading": "\u3055\u3044"
+    },
+    {
+        "character": "\u89e6"
+    },
+    {
+        "meaning": "touch"
+    },
+    {
+        "reading": "\u3057\u3087\u304f"
+    },
+    {
+        "character": "\u8170"
+    },
+    {
+        "meaning": "waist"
+    },
+    {
+        "reading": "\u3053\u3057"
+    },
+    {
+        "character": "\u8155"
+    },
+    {
+        "meaning": "arm"
+    },
+    {
+        "reading": "\u3046\u3067"
+    },
+    {
+        "character": "\u80a9"
+    },
+    {
+        "meaning": "shoulder"
+    },
+    {
+        "reading": "\u304b\u305f"
+    },
+    {
+        "character": "\u72ed"
+    },
+    {
+        "meaning": "narrow"
+    },
+    {
+        "reading": "\u305b\u307e, \u305b\u3070"
+    },
+    {
+        "character": "\u5c4a"
+    },
+    {
+        "meaning": "deliver"
+    },
+    {
+        "reading": "\u3068\u3069"
+    },
+    {
+        "character": "\u795d"
+    },
+    {
+        "meaning": "celebrate"
+    },
+    {
+        "reading": "\u3057\u3085\u304f, \u3057\u3085\u3046"
+    },
+    {
+        "character": "\u71c3"
+    },
+    {
+        "meaning": "burn"
+    },
+    {
+        "reading": "\u306d\u3093"
+    },
+    {
+        "character": "\u8f38"
+    },
+    {
+        "meaning": "transport"
+    },
+    {
+        "reading": "\u3086"
+    },
+    {
+        "character": "\u9055"
+    },
+    {
+        "meaning": "different"
+    },
+    {
+        "reading": "\u3061\u304c"
+    },
+    {
+        "character": "\u88fd"
+    },
+    {
+        "meaning": "manufacture"
+    },
+    {
+        "reading": "\u305b\u3044"
+    },
+    {
+        "character": "\u984d"
+    },
+    {
+        "meaning": "amount, framed picture, forehead"
+    },
+    {
+        "reading": "\u304c\u304f"
+    },
+    {
+        "character": "\u62c5"
+    },
+    {
+        "meaning": "carry, bear"
+    },
+    {
+        "reading": "\u305f\u3093"
+    }
+]
