@@ -2,21 +2,6 @@
 {% block title %}Pictures{% endblock %}
 {% block container %}
 
-<!-- <div id='picLinks'>
-    <ul id='menu'>
-        <li><a href="#">2016</a>
-            <ul id='sub-menu'>
-                <li><a href="#" onclick="doPic();">Hawaii</a></li>
-                <li><a href="#">Canada</a></li>
-                <li><a href="#">SoCal</a></li>
-            </ul>
-        </li>
-    </ul>
-    <ul><li>2017</li></ul>
-    <ul><li>2018</li></ul>
-    <ul><li>2019</li></ul>
-    Under Construction
-</div> -->
 <div id='picLinks'>
     <ul id='menu' class='menu1'>
     {% for key,values in pic_dict.items() %}
@@ -32,7 +17,7 @@
 <div id="picViewer">
     <br>
     <------- Please make a selection.
-    <!-- <img src='/media/images/slideshow/640x480-shore.jpg' alt='640x480-shore.jpg'> -->
+    <!-- //<img src='/media/images/slideshow/640x480-shore.jpg' alt='640x480-shore.jpg'> -->
 </div>
 
 {% endblock %}

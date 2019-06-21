@@ -95,7 +95,12 @@ def uploader():
             for row in ws.iter_rows(min_row=2, values_only=True):
                 for i,cell in enumerate(row):
                     tempDict = {}
-                    tempDict[header[i]]=cell.lower()
+                    if cell is None:
+                        cell = 'N/A'
+                    try:
+                        tempDict[header[i]]=str(cell).lower()
+                    except:
+                        tempDict[header[i]]=cell
                     jsonArray.append(tempDict)
 
 

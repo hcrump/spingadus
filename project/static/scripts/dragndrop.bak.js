@@ -212,8 +212,8 @@ function buildTable(topEl) {
             for (var j = 0; j < cols; j++) {
                 var tabData;
                 tabData = myMap[topEl][tHeaders[j]][i];
-                if(j == 0 || tabData == 'n/a'){ // col 0 is not dragable
-                    myRows += '<td class="tdNoDrag" id='+tabData+'>'+ tabData + '</td>';
+                if(j == 0){
+                    myRows = '<td class="tdNoDrag" id='+tabData+'>'+ tabData + '</td>';
                 } else {
                     // console.log('id:'+tabData+":");
                     myRows += '<td class="tdNoDrag tdHidden" id=' + 'hidden' +
@@ -309,48 +309,46 @@ window.onclick = function(event) {
     }
 };
 
-// makes topicsmenu  pulldown links to mainStartScript and json files
-// happens on click of the topics main menu button
-// function buildButtons(text) {
-//     text = text.split("\n");
-//     for (var i = 0; i < text.length; i++) {
-//         text[i] = text[i].replace(/\.[^/.]+$/, "");
-//     }
-//     for (var i = 0; i < text.length; i++) {
-//         var a = '<a href="#" onclick="mainStartScript(';
-//         var b = "'" + text[i];
-//         var c = '.json\');return false;">';
-//         var d = fixNames(text[i].toUpperCase(),false);
-//         var e = '.</a>';
-//         var scrunch = a + b + c + d + e;
-//         console.log('build: '+ scrunch);
-//
-//         // build dropdown buttons
-//         $('#myDropdown').append(scrunch);
-//         // msgInnerData();
-//     }
-// }
+//makes topicsmenu  pulldown links to mainStartScript and json files
+//only happens on main page refresh
+function buildButtons(text) {
+    text = text.split("\n");
+    for (var i = 0; i < text.length; i++) {
+        text[i] = text[i].replace(/\.[^/.]+$/, "");
+    }
+    for (var i = 0; i < text.length; i++) {
+        var a = '<a href="#" onclick="mainStartScript(';
+        var b = "'" + text[i];
+        var c = '.json\');return false;">';
+        var d = fixNames(text[i].toUpperCase(),false);
+        var e = '</a>';
+        var scrunch = a + b + c + d + e;
+        console.log('build: '+ scrunch);
 
-// gets json file, passes to buildButtons
-// function getFileToVar(filename) {
-//     var dt;
-//     $.get(filename, function(data) {
-//         dt = data;
-//         buildButtons(dt);
-//     });
-//     return dt;
-// }
+        // build dropdown buttons
+        $('#myDropdown').append(scrunch);
+        msgInnerData();
+    }
+}
 
-// Main start script, called from topics links
-// called when link is clicked not on page refresh
-// function mainInitScript(folder="") {
-//     console.log("mainInitScript: started");
-//     // footer();
-//     if(folder != ""){
-//         console.log('-------:' + folder);
-//         var files = getFileToVar('/json/'+ folder + '/jsonlist.txt');
-//         console.log('files:'+files);
-//     }else {
-//         console.log('no folder')
-//     }
-// }
+function getFileToVar(filename) {
+    var dt;
+    $.get(filename, function(data) {
+        dt = data;
+        buildButtons(dt);
+    });
+    return dt;
+}
+
+// Main start script, base page, no tests
+function mainInitScript(folder="") {
+    console.log("mainInitScript: started");
+    // footer();
+    if(folder != ""){
+        console.log('-------:' + folder);
+        var files = getFileToVar('/json/'+ folder + '/jsonlist.txt');
+        console.log('files:'+files);
+    }else {
+        console.log('no folder')
+    }
+}

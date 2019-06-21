@@ -10,6 +10,9 @@ from flask_login import login_required, current_user
 from .form import MessageForm
 import os
 from collections import OrderedDict
+import pprint
+import logging
+logging.getLogger().setLevel(logging.INFO)
 ################
 #### config ####
 ################
@@ -63,29 +66,38 @@ def dashboard():
 # def connect_db():
 #     return sqlite3.connect(app.database)
 
-
 @home_blueprint.route('/blog')
 def blog():
     posts = db.session.query(BlogPost).all()
     return render_template('blog.html', posts=posts)
 
-@home_blueprint.route('/pictures')
+@home_blueprint.route('/pictures/')
 def pictures():
     static_dir = app.config['STATIC_ROOT']
-    pic_dir = 'media/images/pictures'
     path = os.path.join(static_dir,'media','images','pictures')
     pic_dict = {}
-    # pic_dict.setdefault('zz',None)
-    # print(path)
-    for folder in os.listdir(path):
-        if os.path.isdir(os.path.join(path,folder)):
-            print(folder)
-            pic_dict.setdefault(folder,[])
-            # pic_dict.setdefault(folder,"")
-            for subfolder in os.listdir(os.path.join(path,folder)):
-                print('----'+subfolder)
-                pic_dict[folder].append(subfolder)
+    logging.info("--------------------------")
+    path = os.path.join(app.static_folder,'media','images','pictures')
+    with os.scandir(path) as i:
+        for folder in i:
+            if folder.is_dir():
+                pic_dict.setdefault(folder.name,[])
+                logging.info(folder.name)
+                for subfolder in os.scandir(os.path.join(path,folder)):
+                    if subfolder.is_dir():
+                        logging.info(subfolder.name)
+                        pic_dict[folder.name].append(subfolder.name)
+    logging.info("--------------------------")
+    # for folder in os.listdir(path):
+    #     if os.path.isdir(os.path.join(path,folder)):
+    #         print(folder)
+    #         pic_dict.setdefault(folder,[])
+    #         for subfolder in os.listdir(os.path.join(path,folder)):
+    #             print('----'+subfolder)
+    #             pic_dict[folder].append(subfolder)
     sorted_dict = OrderedDict(reversed(sorted(pic_dict.items())))
+    # print(pic_dict)
+    # sorted_dict = {'2014': ['Canada'], '2015': [], '2016': [], '2017': ['Socal', 'Texas'], '2018': [], '2019': ['Hawaii']}
     return render_template('pictures.html',pic_dict=sorted_dict)
 
 @home_blueprint.route('/contact')

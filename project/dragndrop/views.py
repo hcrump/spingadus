@@ -30,7 +30,7 @@ def get_json_dirs():
 @dragndrop_blueprint.route('/dragndrop')
 def dragndrop_greeting():
     return render_template('dragndrop_greeting.html')
-    
+
 @dragndrop_blueprint.route('/<string:page_name>')
 # @dragndrop_blueprint.route('/dragndrop')
 def dragndrop(page_name):

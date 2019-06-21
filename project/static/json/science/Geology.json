@@ -1,0 +1,665 @@
+[
+    {
+        "subject": "igneous rocks"
+    },
+    {
+        "texture": "plutonic\n(coarse-grained)"
+    },
+    {
+        "light (felsic)": "granite"
+    },
+    {
+        "medium (gray)": "diorite"
+    },
+    {
+        "dark (mafic)": "gabbro"
+    },
+    {
+        "100% olivine": "peridotite"
+    },
+    {
+        "texture": "volcanic\n(fine-grained)"
+    },
+    {
+        "light (felsic)": "rhyolite"
+    },
+    {
+        "medium (gray)": "andesite"
+    },
+    {
+        "dark (mafic)": "basalt"
+    },
+    {
+        "100% olivine": "n/a"
+    },
+    {
+        "subject": "clastic sedimentary"
+    },
+    {
+        "size of grains": "coarse,>2mm"
+    },
+    {
+        "shape or layering": "angular grains"
+    },
+    {
+        "composition": "any"
+    },
+    {
+        "name": "breccia"
+    },
+    {
+        "size of grains": "coarse,>2mm"
+    },
+    {
+        "shape or layering": "rounded - subrounded"
+    },
+    {
+        "composition": "any"
+    },
+    {
+        "name": "conglomerate"
+    },
+    {
+        "size of grains": "medium, 1/16mm-2mm"
+    },
+    {
+        "shape or layering": "generally angular"
+    },
+    {
+        "composition": "quartz with clay and rock fragments"
+    },
+    {
+        "name": "graywacke sandstone"
+    },
+    {
+        "size of grains": "medium, 1/16mm-2mm"
+    },
+    {
+        "shape or layering": "subrounded to angular"
+    },
+    {
+        "composition": "quartz and feldspar,plus micas and ferromags"
+    },
+    {
+        "name": "arkose sandstone"
+    },
+    {
+        "size of grains": "medium, 1/16mm-2mm"
+    },
+    {
+        "shape or layering": "subrounded to rounded"
+    },
+    {
+        "composition": "nearly 100% quartz"
+    },
+    {
+        "name": "quartz sandstone"
+    },
+    {
+        "size of grains": "fine, <1/16mm"
+    },
+    {
+        "shape or layering": "thin to massive layers"
+    },
+    {
+        "composition": "quartz and clay minerals"
+    },
+    {
+        "name": "siltstone"
+    },
+    {
+        "size of grains": "fine, <1/16mm"
+    },
+    {
+        "shape or layering": "fissile - very thin layers"
+    },
+    {
+        "composition": "clay minerals"
+    },
+    {
+        "name": "shale"
+    },
+    {
+        "subject": "biogenic sedimentary"
+    },
+    {
+        "mineral composition": "calcite"
+    },
+    {
+        "fragment/crystal size": "large fragment in finer matrix"
+    },
+    {
+        "type of fragments": "fossil shells in matrix of finer limestone"
+    },
+    {
+        "name": "fossiliferous limestone"
+    },
+    {
+        "mineral composition": "calcite"
+    },
+    {
+        "fragment/crystal size": "microscopic"
+    },
+    {
+        "type of fragments": "interlocking crystals of calcite"
+    },
+    {
+        "name": "microcrystalline limestone (micrite)"
+    },
+    {
+        "mineral composition": "calcite"
+    },
+    {
+        "fragment/crystal size": "microscopic, powdery appearance"
+    },
+    {
+        "type of fragments": "microscopic fossils"
+    },
+    {
+        "name": "chalk"
+    },
+    {
+        "mineral composition": "quartz"
+    },
+    {
+        "fragment/crystal size": "microscopic, powdery appearance"
+    },
+    {
+        "type of fragments": "microscopic fossils"
+    },
+    {
+        "name": "diatomite"
+    },
+    {
+        "mineral composition": "hydrocarbons"
+    },
+    {
+        "fragment/crystal size": "massive"
+    },
+    {
+        "type of fragments": "black, dusty surfaces"
+    },
+    {
+        "name": "coal"
+    },
+    {
+        "subject": "chemical sedimentary"
+    },
+    {
+        "mineral composition": "halite"
+    },
+    {
+        "fragment/crystal size": "varies"
+    },
+    {
+        "type of fragments": "halite crystals"
+    },
+    {
+        "name": "rock salt"
+    },
+    {
+        "mineral composition": "gypsum"
+    },
+    {
+        "fragment/crystal size": "varies, microscopic to massive"
+    },
+    {
+        "type of fragments": "gypsum crystals"
+    },
+    {
+        "name": "gypsum(gyprock)"
+    },
+    {
+        "subject": "metamorphic"
+    },
+    {
+        "class": "foliated"
+    },
+    {
+        "type": "slate"
+    },
+    {
+        "derived from": "shale and volcanic tuff"
+    },
+    {
+        "characteristics": "splits into flat surfaces 'flagstone', usually darker colors"
+    },
+    {
+        "class": "foliated"
+    },
+    {
+        "type": "schists"
+    },
+    {
+        "derived from": "fine grained sedimentary rocks"
+    },
+    {
+        "characteristics": "foliation caused by parallel alignment of micas and other platy minerals.  often contains quartz, feldspar or garnet"
+    },
+    {
+        "class": "foliated"
+    },
+    {
+        "type": "gneiss"
+    },
+    {
+        "derived from": "granite and sedimentary rocks"
+    },
+    {
+        "characteristics": "alternating layers of light and dark colored minerals. quartz, feldspar, mica and garnet are common minerals."
+    },
+    {
+        "class": "non-foliated (granular)"
+    },
+    {
+        "type": "quartzite"
+    },
+    {
+        "derived from": "sandstone"
+    },
+    {
+        "characteristics": "hardest of common rocks. sugary texture, glassy appearance on fresh surfaces"
+    },
+    {
+        "class": "non-foliated (granular)"
+    },
+    {
+        "type": "marble"
+    },
+    {
+        "derived from": "limestone"
+    },
+    {
+        "characteristics": "similar to quartzite, but much softer. individual grains show cleavage, effervesces in hcl acid"
+    },
+    {
+        "class": "non-foliated (granular)"
+    },
+    {
+        "type": "serpentinite"
+    },
+    {
+        "derived from": "peridotite"
+    },
+    {
+        "characteristics": "green and black with polished surfaces"
+    },
+    {
+        "subject": "layers of earth"
+    },
+    {
+        "depth (km)": "0-35 km"
+    },
+    {
+        "specific layer": "crust"
+    },
+    {
+        "subgroup": "lithosphere"
+    },
+    {
+        "main layer": "crust"
+    },
+    {
+        "depth (km)": "35-100 km"
+    },
+    {
+        "specific layer": "solid mantle"
+    },
+    {
+        "subgroup": "upper mantle"
+    },
+    {
+        "main layer": "mantle"
+    },
+    {
+        "depth (km)": "100-670 km"
+    },
+    {
+        "specific layer": "asthenosphere"
+    },
+    {
+        "subgroup": "upper mantle"
+    },
+    {
+        "main layer": "mantle"
+    },
+    {
+        "depth (km)": "670-2900 km"
+    },
+    {
+        "specific layer": "lower mantle"
+    },
+    {
+        "subgroup": "n/a"
+    },
+    {
+        "main layer": "mantle"
+    },
+    {
+        "depth (km)": "2900-5100 km"
+    },
+    {
+        "specific layer": "outer core"
+    },
+    {
+        "subgroup": "n/a"
+    },
+    {
+        "main layer": "core"
+    },
+    {
+        "depth (km)": "5100-6378 km"
+    },
+    {
+        "specific layer": "inner core"
+    },
+    {
+        "subgroup": "n/a"
+    },
+    {
+        "main layer": "core"
+    },
+    {
+        "subject": "geologic time scale"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "cenozoic"
+    },
+    {
+        "period": "quaternary"
+    },
+    {
+        "epoch": "holocene"
+    },
+    {
+        "years (millions)": "0.01"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "cenozoic"
+    },
+    {
+        "period": "quaternary"
+    },
+    {
+        "epoch": "pleistocene"
+    },
+    {
+        "years (millions)": "1.8"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "cenozoic"
+    },
+    {
+        "period": "tertiary-neogene"
+    },
+    {
+        "epoch": "pliocene"
+    },
+    {
+        "years (millions)": "5.3"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "cenozoic"
+    },
+    {
+        "period": "tertiary-neogene"
+    },
+    {
+        "epoch": "miocene"
+    },
+    {
+        "years (millions)": "23"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "cenozoic"
+    },
+    {
+        "period": "tertiary-paleogene"
+    },
+    {
+        "epoch": "oligocene"
+    },
+    {
+        "years (millions)": "33.9"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "cenozoic"
+    },
+    {
+        "period": "tertiary-paleogene"
+    },
+    {
+        "epoch": "eocene"
+    },
+    {
+        "years (millions)": "55.8"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "cenozoic"
+    },
+    {
+        "period": "tertiary-paleogene"
+    },
+    {
+        "epoch": "paleocene"
+    },
+    {
+        "years (millions)": "65.5"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "mesozoic"
+    },
+    {
+        "period": "cretaceous"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "146"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "mesozoic"
+    },
+    {
+        "period": "jurassic"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "200"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "mesozoic"
+    },
+    {
+        "period": "triassic"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "251"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "paleozoic"
+    },
+    {
+        "period": "permian"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "299"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "paleozoic"
+    },
+    {
+        "period": "carboniferous-pennsylvanian"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "318"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "paleozoic"
+    },
+    {
+        "period": "carboniferous-mississippian"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "359"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "paleozoic"
+    },
+    {
+        "period": "devonian"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "416"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "paleozoic"
+    },
+    {
+        "period": "silurian"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "444"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "paleozoic"
+    },
+    {
+        "period": "ordovician"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "488"
+    },
+    {
+        "eon": "phanerozoic"
+    },
+    {
+        "era": "paleozoic"
+    },
+    {
+        "period": "cambrian"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "542"
+    },
+    {
+        "eon": "proterozoic"
+    },
+    {
+        "era": "n/a"
+    },
+    {
+        "period": "n/a"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "2500"
+    },
+    {
+        "eon": "archean"
+    },
+    {
+        "era": "n/a"
+    },
+    {
+        "period": "n/a"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "4000"
+    },
+    {
+        "eon": "hadean"
+    },
+    {
+        "era": "n/a"
+    },
+    {
+        "period": "n/a"
+    },
+    {
+        "epoch": "n/a"
+    },
+    {
+        "years (millions)": "4560"
+    }
+]
